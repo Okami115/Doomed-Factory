@@ -54,7 +54,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Exposure: 0.3
+    - _Exposure: 2.67
     - _ImageType: 0
     - _Layout: 0
     - _Mapping: 1
