@@ -10,4 +10,5 @@ public class PlayerInventory : ScriptableObject
     public bool KeyYellow;
     public bool KeyBlue;
     public bool KeyGreen;
+    [Range(0f, 100f)] public float Battery;
 }

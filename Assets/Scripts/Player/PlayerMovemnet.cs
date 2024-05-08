@@ -21,7 +21,7 @@ public class PlayerMovemnet : MonoBehaviour
         movimiento.y = 0.0f; 
 
         rb.AddForce(movimiento * speed);
-    }
+    }   
 
     private void PlayerMove(Vector3 move)
     {
