@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="Doomed-Factory_WwiseProject" GUID="{AA11AE46-6B52-410D-94EA-CE30995480D1}" Generator="2023.1.4.8496"/>
+	<CacheRoot>../../../../Doomed-Factory_WwiseProject/.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Mac" GUID="{4AD52152-7EC1-4D27-A0D7-1B0151FDC5C4}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../Doomed-Factory_WwiseProject/GeneratedSoundBanks/Mac"/>
+		<Platform Name="Windows" GUID="{227809DA-D3AB-42EA-9B7F-F1C1EC68E568}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../Doomed-Factory_WwiseProject/GeneratedSoundBanks/Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{5DAF8071-1D44-437E-BFCB-3082DEEC3414}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{CE6CFD41-C33B-B8F3-8D26-FFEC95D8A6B8}</FileHash>
+</ProjectInfo>
