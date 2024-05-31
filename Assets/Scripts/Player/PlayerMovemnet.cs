@@ -17,7 +17,6 @@ public class PlayerMovemnet : MonoBehaviour
 
     private void Start()
     {
-        PlayerInputsRead.Moving += PlayerMove;
         if (cameraTransform == null)
         {
             cameraTransform = Camera.main.transform;
@@ -59,9 +58,4 @@ public class PlayerMovemnet : MonoBehaviour
             cameraTransform.localPosition = originalCameraPosition;
         }
     }   
-
-    private void PlayerMove(Vector3 move)
-    {
-        _movePlayer = move;
-    }
 }
