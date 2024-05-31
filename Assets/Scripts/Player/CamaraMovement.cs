@@ -25,5 +25,6 @@ public class CamaraMovement : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0, yRotation, 0);
         camera.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+
     }
 }
