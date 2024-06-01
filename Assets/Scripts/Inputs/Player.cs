@@ -46,6 +46,15 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""6d775e0b-a950-439c-84f4-5fafb06fbb7b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
                     ""name"": ""Spect"",
                     ""type"": ""Button"",
                     ""id"": ""b2457a41-b5f7-4205-a06f-3eeb978d6256"",
@@ -70,7 +79,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""up"",
                     ""id"": ""fb406f71-b617-44d7-90e2-8adac45cf02e"",
-                    ""path"": """",
+                    ""path"": ""<Keyboard>/{Cancel}"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -81,7 +90,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""down"",
                     ""id"": ""61b4b662-d32a-45f7-9025-8ab9ce3d4eec"",
-                    ""path"": """",
+                    ""path"": ""<Keyboard>/{Cancel}"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -136,7 +145,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""48ba5723-9ed2-4fc1-aabb-1d9e0bd8e968"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Keyboard>/f"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -154,6 +163,17 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""action"": ""Spect"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5995751a-280e-4561-887b-0ab4a85c128a"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -164,6 +184,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
         m_World = asset.FindActionMap("World", throwIfNotFound: true);
         m_World_Move = m_World.FindAction("Move", throwIfNotFound: true);
         m_World_Light = m_World.FindAction("Light", throwIfNotFound: true);
+        m_World_Interact = m_World.FindAction("Interact", throwIfNotFound: true);
         m_World_Spect = m_World.FindAction("Spect", throwIfNotFound: true);
     }
 
@@ -228,6 +249,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
     private List<IWorldActions> m_WorldActionsCallbackInterfaces = new List<IWorldActions>();
     private readonly InputAction m_World_Move;
     private readonly InputAction m_World_Light;
+    private readonly InputAction m_World_Interact;
     private readonly InputAction m_World_Spect;
     public struct WorldActions
     {
@@ -235,6 +257,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
         public WorldActions(@Player wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_World_Move;
         public InputAction @Light => m_Wrapper.m_World_Light;
+        public InputAction @Interact => m_Wrapper.m_World_Interact;
         public InputAction @Spect => m_Wrapper.m_World_Spect;
         public InputActionMap Get() { return m_Wrapper.m_World; }
         public void Enable() { Get().Enable(); }
@@ -251,6 +274,9 @@ public partial class @Player: IInputActionCollection2, IDisposable
             @Light.started += instance.OnLight;
             @Light.performed += instance.OnLight;
             @Light.canceled += instance.OnLight;
+            @Interact.started += instance.OnInteract;
+            @Interact.performed += instance.OnInteract;
+            @Interact.canceled += instance.OnInteract;
             @Spect.started += instance.OnSpect;
             @Spect.performed += instance.OnSpect;
             @Spect.canceled += instance.OnSpect;
@@ -264,6 +290,9 @@ public partial class @Player: IInputActionCollection2, IDisposable
             @Light.started -= instance.OnLight;
             @Light.performed -= instance.OnLight;
             @Light.canceled -= instance.OnLight;
+            @Interact.started -= instance.OnInteract;
+            @Interact.performed -= instance.OnInteract;
+            @Interact.canceled -= instance.OnInteract;
             @Spect.started -= instance.OnSpect;
             @Spect.performed -= instance.OnSpect;
             @Spect.canceled -= instance.OnSpect;
@@ -288,6 +317,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnLight(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
         void OnSpect(InputAction.CallbackContext context);
     }
 }
