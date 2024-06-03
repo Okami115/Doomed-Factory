@@ -3,10 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Playables;
+using UnityEngine.Timeline;
 
 public class Door : MonoBehaviour
 {
     [SerializeField] private Keys _doorKey;
+    [SerializeField] private PlayableDirector doorTimeline;
     private bool isPlayerInRange;
     private PlayerInventory _playerInventory;
 
@@ -14,11 +17,8 @@ public class Door : MonoBehaviour
     {
         if (isPlayerInRange)
         {
-            foreach (Keys key in keysList)
-            {
-                if (key == _doorKey)
-                    Destroy(gameObject);
-            }
+            if (keysList.Contains(_doorKey))
+                doorTimeline.Play();
         }
     }
 
