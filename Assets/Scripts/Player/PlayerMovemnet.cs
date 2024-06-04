@@ -1,10 +1,18 @@
-﻿using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerMovemnet : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private Rigidbody rb;
+    [SerializeField] private PlayerInputsReader _inputsReader;
+    [SerializeField] private KeysEventChannel _doorInteraction;
+    [SerializeField] private List<Keys> playerKeys;
     private Vector3 movePlayer;
+    private Vector3 movement;
 
     public float amplitude = 0.001f; 
     [SerializeField] public float frequency = 1f;   
@@ -15,20 +23,40 @@ public class PlayerMovemnet : MonoBehaviour
 
     private void Start()
     {
-        PlayerInputsRead.Moving += PlayerMove;
         if (cameraTransform == null)
         {
             cameraTransform = Camera.main.transform;
         }
         originalCameraPosition = cameraTransform.localPosition;
+        _inputsReader.OnPlayerMove += OnPlayerMove;
+        _inputsReader.OnPlayerInteract += OnPlayerInteract;
+    }
+    private void OnDestroy()
+    {
+        _inputsReader.OnPlayerMove -= OnPlayerMove;
+        _inputsReader.OnPlayerInteract -= OnPlayerInteract;
+    }
+    private void OnPlayerInteract()
+    {
+        _doorInteraction?.Invoke(playerKeys);
+    }
+
+    public void AddKey(Keys newKey)
+    {
+        playerKeys.Add(newKey);
+    }
+
+    private void OnPlayerMove(Vector3 obj)
+    {
+       // movement = obj;
     }
 
     private void Update()
     {
         float movimientoHorizontal = Input.GetAxis("Horizontal");
         float movimientoVertical = Input.GetAxis("Vertical");
-
-
+        
+        
         Vector3 movement = new Vector3(movimientoHorizontal, 0.0f, movimientoVertical);
         movement = Camera.main.transform.TransformDirection(movement);
         movement.y = 0.0f; 
@@ -57,9 +85,4 @@ public class PlayerMovemnet : MonoBehaviour
             cameraTransform.localPosition = originalCameraPosition;
         }
     }   
-
-    private void PlayerMove(Vector3 move)
-    {
-        movePlayer = move;
-    }
 }

@@ -26,4 +26,12 @@ public class PhoneControlle : MonoBehaviour
         SpectOn = !SpectOn;
         m_Animator.SetBool("Spect", SpectOn);
     }
+
+    public void HidePhone()
+    {
+        LightOn = false;
+        SpectOn = false;
+        m_Animator.SetBool("Light", LightOn);
+        m_Animator.SetBool("Spect", SpectOn);
+    }
 }
