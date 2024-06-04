@@ -10,15 +10,21 @@ public class Door : MonoBehaviour
 {
     [SerializeField] private Keys _doorKey;
     [SerializeField] private PlayableDirector doorTimeline;
+    [SerializeField] private PhoneControlle playerPhone;
     private bool isPlayerInRange;
+    private bool isDoorOpen;
     private PlayerInventory _playerInventory;
 
     public void Interact(List<Keys> keysList)
     {
-        if (isPlayerInRange)
+        if (isPlayerInRange && !isDoorOpen)
         {
             if (keysList.Contains(_doorKey))
+            {
+                playerPhone.HidePhone();
                 doorTimeline.Play();
+                isDoorOpen = true;
+            }
         }
     }
 
