@@ -8314,9 +8314,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.5613208, g: 0.773295, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.88520545, b: 0.6839622, a: 1}
   m_Intensity: 1
-  m_Range: 25
+  m_Range: 15
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -12000,7 +12000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb6273e947de69d4aaf7aa1c574dfb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 12
   rb: {fileID: 1289493756}
   _inputsReader: {fileID: 1289493768}
   _doorInteraction: {fileID: 11400000, guid: b9ff08c4ca6f0ff4bb3a4430bdf76174, type: 2}
