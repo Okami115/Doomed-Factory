@@ -1,18 +1,30 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Keys : MonoBehaviour
+public class Keys : MonoBehaviour, IInteractable
 {
     public string name;
     public int id;
 
-    private void OnTriggerEnter(Collider other)
+    private PlayerMovemnet _playerMovement;
+    private bool isPlayerInRange;
+
+    private void Start()
     {
-        if (other.tag == "Player")
+        _playerMovement = FindAnyObjectByType<PlayerMovemnet>();
+    }
+
+    public void ReadyToInteract(bool ans)
+    {
+        isPlayerInRange = ans;
+    }
+
+    public void Interact(List<Keys> keysList)
+    {
+        if (_playerMovement != null && isPlayerInRange)
         {
-            other.GetComponent<PlayerMovemnet>().AddKey(this);
-            transform.position = new Vector3(-10,-10,-10);
+            _playerMovement.AddKey(this);
+            transform.position = new Vector3(-10, -10, -10);
         }
     }
 }
