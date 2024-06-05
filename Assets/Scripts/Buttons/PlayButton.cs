@@ -22,7 +22,7 @@ public class PlayButton : PhoneButton
         base.OnPointerClick(eventData);
 
         if (isMouseInside)
-            SceneManager.LoadScene("Game");
+            SceneManager.LoadScene(1);
     }
 
     public override void OnPointerEnter(PointerEventData eventData)
