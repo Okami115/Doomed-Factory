@@ -107,6 +107,69 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Player_Interact" ID="{C729D829-6AF0-4CDD-867E-FB79182936E5}" ShortID="1054255755">
+					<ChildrenList>
+						<Sound Name="gun-dry-firing-6-39793" ID="{6D03F1E7-9294-429A-BBC4-21ECAEB14F25}" ShortID="328948624">
+							<PropertyList>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CCCA1668-3107-4C89-9A4E-106F1E3411AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C38E60E3-3A6B-4B70-8891-C9DEFFF15D43}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="gun-dry-firing-6-39793" ID="{85CB4D00-C147-46EB-8290-3922D6DA0774}">
+									<PropertyList>
+										<Property Name="LoopEnd" Type="Real64" Value="0.565897959183673"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>gun-dry-firing-6-39793.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="339036891"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{B542647B-EA7F-45C9-B55E-D0638B2F30B0}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="56.8818514007308"/>
+										<Property Name="PanY" Type="Real64" Value="-1.66533453693773E-16"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="gun-dry-firing-6-39793" ID="{85CB4D00-C147-46EB-8290-3922D6DA0774}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="item-equip-6904" ID="{0761959B-7963-447E-BB1E-AF8D05260B2D}" ShortID="301947156">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CCCA1668-3107-4C89-9A4E-106F1E3411AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C38E60E3-3A6B-4B70-8891-C9DEFFF15D43}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="item-equip-6904" ID="{A9037583-45D8-4CCF-AE6D-25590E620E90}">
+									<Language>SFX</Language>
+									<AudioFile>item-equip-6904.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="574586092"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="item-equip-6904" ID="{A9037583-45D8-4CCF-AE6D-25590E620E90}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

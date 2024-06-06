@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="1391712453" Type="User" Language="SFX" Hash="{536A5FEB-2BED-B9DC-93C4-25774FBCBEAF}">
+		<SoundBank Id="1391712453" Type="User" Language="SFX" Hash="{48FC47D2-7C14-97EB-3C6D-0BEC11A4C7C4}">
 			<ShortName>InGameSoundBank</ShortName>
 			<Path>InGameSoundBank.bnk</Path>
 			<Media>
@@ -34,13 +34,21 @@
 					<ShortName>paso_concreto_04.wav</ShortName>
 					<CachePath>SFX/paso_concreto_04_818F3B66.wem</CachePath>
 				</File>
+				<File Id="339036891" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>gun-dry-firing-6-39793.wav</ShortName>
+					<CachePath>SFX/gun-dry-firing-6-39793_818F3B66.wem</CachePath>
+				</File>
+				<File Id="348244579" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>horror-ambience-sound-7-vol-001-147601.wav</ShortName>
+					<CachePath>SFX/horror-ambience-sound-7-vol-001-147601_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="443408336" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>paso_concreto_01.wav</ShortName>
 					<CachePath>SFX/paso_concreto_01_818F3B66.wem</CachePath>
 				</File>
-				<File Id="494921475" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>NIGHT DANCER.wav</ShortName>
-					<CachePath>SFX/NIGHT DANCER_FBC78EF0.wem</CachePath>
+				<File Id="574586092" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>item-equip-6904.wav</ShortName>
+					<CachePath>SFX/item-equip-6904_818F3B66.wem</CachePath>
 				</File>
 				<File Id="903391806" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>paso_concreto_03.wav</ShortName>
@@ -48,9 +56,19 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2540353890" Name="Play_Miley" DurationType="Infinite">
+				<Event Id="3051613610" Name="Play_DefaultEnviroment" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="494921475"/>
+						<MediaRef Id="348244579"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="885077343" Name="Play_KeyPickUp" DurationType="OneShot" DurationMin="0.816" DurationMax="0.816">
+					<MediaRefs>
+						<MediaRef Id="574586092"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1811953720" Name="Play_PhoneInteract" DurationType="OneShot" DurationMin="1.896" DurationMax="1.896">
+					<MediaRefs>
+						<MediaRef Id="339036891"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="98439365" Name="Play_Player_FootSteps" DurationType="OneShot" DurationMin="0.2022449" DurationMax="0.36317462">
@@ -64,5 +82,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6F240E9E-EFCA-9D50-3287-F18C114DC624}</FileHash>
+	<FileHash>{3295112F-0B28-7925-228E-160C0B7EA48F}</FileHash>
 </SoundBanksInfo>

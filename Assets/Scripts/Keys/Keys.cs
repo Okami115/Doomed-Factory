@@ -8,6 +8,7 @@ public class Keys : MonoBehaviour, IInteractable
 
     private PlayerMovemnet _playerMovement;
     private bool isPlayerInRange;
+    private bool alreadyPicked;
 
     private void Start()
     {
@@ -25,6 +26,14 @@ public class Keys : MonoBehaviour, IInteractable
         {
             _playerMovement.AddKey(this);
             transform.position = new Vector3(-10, -10, -10);
+
+            if (!alreadyPicked)
+            {
+                alreadyPicked = true;
+                AkSoundEngine.PostEvent("Play_KeyPickUp", gameObject);
+            }
+
+            
         }
     }
 }

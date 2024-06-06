@@ -6,6 +6,7 @@
 				<SoundBank Name="InGameSoundBank" ID="{91726185-DED0-4467-B3DD-94842CAAE72D}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Player_Movement_Events" ID="{494BD544-DAB1-453D-98A3-3B8328A16E11}" WorkUnitID="{8E671A8F-41FD-47FC-A878-E80FA3E3391E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player_Interect_Events" ID="{B68D8EE2-F520-4874-A195-D8757CEABDCE}" WorkUnitID="{8E671A8F-41FD-47FC-A878-E80FA3E3391E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Enviroment_Music" ID="{24993570-A919-4A4E-974B-2A6018524E1D}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

@@ -13,7 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_MILEY = 2540353890U;
+        static const AkUniqueID PLAY_DEFAULTENVIROMENT = 3051613610U;
+        static const AkUniqueID PLAY_KEYPICKUP = 885077343U;
+        static const AkUniqueID PLAY_PHONEINTERACT = 1811953720U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS = 98439365U;
     } // namespace EVENTS
 

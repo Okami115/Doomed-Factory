@@ -20,12 +20,38 @@
 				</Folder>
 				<Folder Name="Enciroment_Music" ID="{B843EC44-BD0A-43A6-AFAD-D37345CFD807}" ShortID="122321823">
 					<ChildrenList>
-						<Event Name="Play_Miley" ID="{5089C7F8-A1C5-4779-AC3F-9E7B1AF7A5F9}">
+						<Event Name="Play_DefaultEnviroment" ID="{5089C7F8-A1C5-4779-AC3F-9E7B1AF7A5F9}">
 							<ChildrenList>
 								<Action Name="" ID="{040822DD-6B8C-43DB-8EA1-9CF9A7B16858}" ShortID="273699369">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Musica" ID="{DA2492C1-6001-4ADB-924F-E3F0C667899C}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Player_Interect_Events" ID="{B68D8EE2-F520-4874-A195-D8757CEABDCE}" ShortID="693670751">
+					<ChildrenList>
+						<Event Name="Play_KeyPickUp" ID="{187F1B43-7067-456A-B3C6-DF130EE096B5}">
+							<ChildrenList>
+								<Action Name="" ID="{45F777CB-BC44-4C29-9AC1-23C4622F5DA2}" ShortID="249672586">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="item-equip-6904" ID="{0761959B-7963-447E-BB1E-AF8D05260B2D}" WorkUnitID="{F3627F8F-7E7B-415A-819B-9F7E7826558C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_PhoneInteract" ID="{ACA25FB6-18A9-4480-87BF-1E7246313E2B}">
+							<ChildrenList>
+								<Action Name="" ID="{1E1C1A87-6F69-4D0D-A390-DCFAA75D23EE}" ShortID="80461936">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="gun-dry-firing-6-39793" ID="{6D03F1E7-9294-429A-BBC4-21ECAEB14F25}" WorkUnitID="{F3627F8F-7E7B-415A-819B-9F7E7826558C}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

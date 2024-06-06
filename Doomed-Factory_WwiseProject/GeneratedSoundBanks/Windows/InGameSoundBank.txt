@@ -1,11 +1,15 @@
 Event	ID	Name			Wwise Object Path	Notes
 	98439365	Play_Player_FootSteps			\Default Work Unit\Player_Movement_Events\Play_Player_FootSteps	
-	2540353890	Play_Miley			\Default Work Unit\Enciroment_Music\Play_Miley	
+	885077343	Play_KeyPickUp			\Default Work Unit\Player_Interect_Events\Play_KeyPickUp	
+	1811953720	Play_PhoneInteract			\Default Work Unit\Player_Interect_Events\Play_PhoneInteract	
+	3051613610	Play_DefaultEnviroment			\Default Work Unit\Enciroment_Music\Play_DefaultEnviroment	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	14011373	paso_concreto_02	C:\Users\Juniors\Documents\GitHub\Doomed-Factory\Doomed-Factory_WwiseProject\.cache\Windows\SFX\paso_concreto_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Movement\Concrete_Steps\paso_concreto_02		25780
 	177676947	paso_concreto_04	C:\Users\Juniors\Documents\GitHub\Doomed-Factory\Doomed-Factory_WwiseProject\.cache\Windows\SFX\paso_concreto_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Movement\Concrete_Steps\paso_concreto_04		32128
+	339036891	gun-dry-firing-6-39793	C:\Users\Juniors\Documents\GitHub\Doomed-Factory\Doomed-Factory_WwiseProject\.cache\Windows\SFX\gun-dry-firing-6-39793_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Interact\gun-dry-firing-6-39793		182112
+	348244579	horror-ambience-sound-7-vol-001-147601	C:\Users\Juniors\Documents\GitHub\Doomed-Factory\Doomed-Factory_WwiseProject\.cache\Windows\SFX\horror-ambience-sound-7-vol-001-147601_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Enviroment_Music\Musica\GeneralEnviroment\horror-ambience-sound-7-vol-001-147601		6640224
 	443408336	paso_concreto_01	C:\Users\Juniors\Documents\GitHub\Doomed-Factory\Doomed-Factory_WwiseProject\.cache\Windows\SFX\paso_concreto_01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Movement\Concrete_Steps\paso_concreto_01		17934
-	494921475	NIGHT DANCER	C:\Users\Juniors\Documents\GitHub\Doomed-Factory\Doomed-Factory_WwiseProject\.cache\Windows\SFX\NIGHT DANCER_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Enviroment_Music\Musica\NIGHT DANCER\NIGHT DANCER		40162076
+	574586092	item-equip-6904	C:\Users\Juniors\Documents\GitHub\Doomed-Factory\Doomed-Factory_WwiseProject\.cache\Windows\SFX\item-equip-6904_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Interact\item-equip-6904		78432
 	903391806	paso_concreto_03	C:\Users\Juniors\Documents\GitHub\Doomed-Factory\Doomed-Factory_WwiseProject\.cache\Windows\SFX\paso_concreto_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Movement\Concrete_Steps\paso_concreto_03		30070
 
