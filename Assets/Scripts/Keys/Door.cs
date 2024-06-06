@@ -1,19 +1,14 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Playables;
-using UnityEngine.Timeline;
 
-public class Door : MonoBehaviour
+public class Door : MonoBehaviour, IInteractable
 {
     [SerializeField] private Keys _doorKey;
     [SerializeField] private PlayableDirector doorTimeline;
     [SerializeField] private PhoneControlle playerPhone;
     private bool isPlayerInRange;
     private bool isDoorOpen;
-    private PlayerInventory _playerInventory;
 
     public void Interact(List<Keys> keysList)
     {
@@ -24,19 +19,13 @@ public class Door : MonoBehaviour
                 playerPhone.HidePhone();
                 doorTimeline.Play();
                 isDoorOpen = true;
+                Destroy(this);
             }
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void ReadyToInteract(bool ans)
     {
-        if (other.tag == "Player")
-            isPlayerInRange = true;
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player")
-            isPlayerInRange = false;
+        isPlayerInRange = ans;
     }
 }
