@@ -5,28 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d93efe55-6d3e-4ca3-b934-6bc0f6d23f9a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Prefabs/DoorTimelines/Red_LeftDoor.playable" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Prefabs/DoorTimelines/Red_LeftDoor.playable" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/M02_pan.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/M02_pan.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game_Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game_Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Keys/Keys.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Keys/Keys.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Phone/Phone Controlle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Phone/Phone Controlle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/5089C7F8-A1C5-4779-AC3F-9E7B1AF7A5F9.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/5089C7F8-A1C5-4779-AC3F-9E7B1AF7A5F9.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/Actor-Mixer Hierarchy/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/Actor-Mixer Hierarchy/Default Work Unit.wwu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/Attenuations/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/Attenuations/Default Work Unit.wwu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/Events/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/Events/Default Work Unit.wwu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/GeneratedSoundBanks/Mac/InGameSoundBank.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/GeneratedSoundBanks/Mac/InGameSoundBank.bnk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/GeneratedSoundBanks/Mac/InGameSoundBank.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/GeneratedSoundBanks/Mac/InGameSoundBank.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/GeneratedSoundBanks/Windows/InGameSoundBank.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/GeneratedSoundBanks/Windows/InGameSoundBank.bnk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/GeneratedSoundBanks/Windows/InGameSoundBank.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/GeneratedSoundBanks/Windows/InGameSoundBank.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/Interactive Music Hierarchy/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/Interactive Music Hierarchy/Default Work Unit.wwu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/SoundBanks/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Doomed-Factory_WwiseProject/SoundBanks/Default Work Unit.wwu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +107,7 @@
       <workItem from="1717193262665" duration="9355000" />
       <workItem from="1717309519769" duration="888000" />
       <workItem from="1717474834599" duration="919000" />
-      <workItem from="1717701522835" duration="1263000" />
+      <workItem from="1717701522835" duration="1815000" />
     </task>
     <servers />
   </component>
