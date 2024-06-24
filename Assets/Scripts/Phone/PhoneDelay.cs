@@ -8,7 +8,7 @@ public class PhoneDelay : MonoBehaviour
     public float positionSmoothSpeed;
     public float rotationSmoothSpeed;
 
-    void Update()
+    void LateUpdate()
     {
         FollowWithDelay();
     }
