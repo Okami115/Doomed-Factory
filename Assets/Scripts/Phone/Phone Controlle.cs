@@ -12,11 +12,17 @@ public class PhoneControlle : MonoBehaviour
 
     public void OnLight()
     {
-        AkSoundEngine.PostEvent("Play_PhoneInteract",gameObject);
+      
         
         LightOn = !LightOn;
         m_Animator.SetBool("Light", LightOn);
         Debug.Log(LightOn);
+        
+        if (LightOn)
+            AkSoundEngine.PostEvent("Play_SFX_Player_Interact_Phone_Light_On",gameObject);
+        else
+            AkSoundEngine.PostEvent("Play_SFX_Player_Interact_Phone_Light_Off",gameObject);
+        
         if(LightOn && SpectOn)
         {
             SpectOn = false;
@@ -33,7 +39,7 @@ public class PhoneControlle : MonoBehaviour
     public void HidePhone()
     {
         if (LightOn)
-            AkSoundEngine.PostEvent("Play_PhoneInteract",gameObject);
+            AkSoundEngine.PostEvent("Play_SFX_Player_Interact_Phone_Screen_Lock",gameObject);
         
         LightOn = false;
         SpectOn = false;

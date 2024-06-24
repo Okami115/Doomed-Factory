@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d93efe55-6d3e-4ca3-b934-6bc0f6d23f9a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Phone/Phone Controlle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Phone/Phone Controlle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +110,7 @@
       <workItem from="1717309519769" duration="888000" />
       <workItem from="1717474834599" duration="919000" />
       <workItem from="1717701522835" duration="1815000" />
+      <workItem from="1719025124853" duration="591000" />
     </task>
     <servers />
   </component>
@@ -125,27 +128,13 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/SUPER Character Controller/SUPER Character Controller/SUPERCharacterAIO.cs</url>
           <line>1793</line>
-          <properties documentPath="C:\Users\Juniors\Documents\GitHub\Doomed-Factory\Assets\SUPER Character Controller\SUPER Character Controller\SUPERCharacterAIO.cs" initialLine="1793" containingFunctionPresentation="Method 'CalculateFootstepTriggers'">
-            <startOffsets>
-              <option value="78696" />
-            </startOffsets>
-            <endOffsets>
-              <option value="78757" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\Juniors\Documents\GitHub\Doomed-Factory\Assets\SUPER Character Controller\SUPER Character Controller\SUPERCharacterAIO.cs" initialLine="1793" containingFunctionPresentation="Method 'CalculateFootstepTriggers'" />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/SUPER Character Controller/SUPER Character Controller/SUPERCharacterAIO.cs</url>
           <line>1803</line>
-          <properties documentPath="C:\Users\Juniors\Documents\GitHub\Doomed-Factory\Assets\SUPER Character Controller\SUPER Character Controller\SUPERCharacterAIO.cs" initialLine="1803" containingFunctionPresentation="Method 'CalculateFootstepTriggers'">
-            <startOffsets>
-              <option value="79247" />
-            </startOffsets>
-            <endOffsets>
-              <option value="79308" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\Juniors\Documents\GitHub\Doomed-Factory\Assets\SUPER Character Controller\SUPER Character Controller\SUPERCharacterAIO.cs" initialLine="1803" containingFunctionPresentation="Method 'CalculateFootstepTriggers'" />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
