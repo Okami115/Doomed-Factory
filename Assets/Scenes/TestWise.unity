@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.32966688, g: 0.31663653, b: 0.30510414, a: 1}
+  m_IndirectSpecularColor: {r: 0.32965815, g: 0.31665108, b: 0.30509752, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -242,6 +242,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8566306830876359728, guid: 1a6b0cb4f4917e446bff248497198c91, type: 3}
   m_PrefabInstance: {fileID: 1590284323}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &200512223
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f2a2636fcbc7b4c4f9dbf9ae19ea37ca, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 98.77882
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f2a2636fcbc7b4c4f9dbf9ae19ea37ca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00009918213
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f2a2636fcbc7b4c4f9dbf9ae19ea37ca, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 55.163376
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f2a2636fcbc7b4c4f9dbf9ae19ea37ca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f2a2636fcbc7b4c4f9dbf9ae19ea37ca, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f2a2636fcbc7b4c4f9dbf9ae19ea37ca, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f2a2636fcbc7b4c4f9dbf9ae19ea37ca, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f2a2636fcbc7b4c4f9dbf9ae19ea37ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f2a2636fcbc7b4c4f9dbf9ae19ea37ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f2a2636fcbc7b4c4f9dbf9ae19ea37ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f2a2636fcbc7b4c4f9dbf9ae19ea37ca, type: 3}
+      propertyPath: m_Name
+      value: S_LadderExit
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f2a2636fcbc7b4c4f9dbf9ae19ea37ca, type: 3}
 --- !u!850595691 &211706555
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -1558,3 +1615,4 @@ SceneRoots:
   - {fileID: 53483952}
   - {fileID: 794830432}
   - {fileID: 1905527393}
+  - {fileID: 200512223}
