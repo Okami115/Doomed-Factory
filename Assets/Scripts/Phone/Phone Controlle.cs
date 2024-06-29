@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -9,6 +10,7 @@ public class PhoneControlle : MonoBehaviour
 
     [SerializeField] private bool LightOn;
     [SerializeField] private bool SpectOn;
+    [SerializeField] private bool CameraOn;
 
     public void OnLight()
     {
@@ -34,6 +36,19 @@ public class PhoneControlle : MonoBehaviour
     {
         SpectOn = !SpectOn;
         m_Animator.SetBool("Spect", SpectOn);
+
+        if (SpectOn && CameraOn)
+        {
+            CameraOn = !CameraOn;
+            m_Animator.SetBool("Camera", CameraOn);
+        }
+    }
+
+    public void OnCamera()
+    {
+        CameraOn = !CameraOn;
+        m_Animator.SetBool("Camera", CameraOn);
+
     }
 
     public void HidePhone()
@@ -43,8 +58,9 @@ public class PhoneControlle : MonoBehaviour
         
         LightOn = false;
         SpectOn = false;
+        CameraOn = false;
         m_Animator.SetBool("Light", LightOn);
         m_Animator.SetBool("Spect", SpectOn);
-        
+        m_Animator.SetBool("Camera", CameraOn);
     }
 }

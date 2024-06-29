@@ -46,6 +46,15 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
+                    ""name"": ""Camera"",
+                    ""type"": ""Button"",
+                    ""id"": ""666113d7-7978-4a82-b473-fd031ffc46f8"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
                     ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""6d775e0b-a950-439c-84f4-5fafb06fbb7b"",
@@ -174,6 +183,17 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""85dab441-2e31-4709-9930-f651484a6f13"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Camera"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -184,6 +204,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
         m_World = asset.FindActionMap("World", throwIfNotFound: true);
         m_World_Move = m_World.FindAction("Move", throwIfNotFound: true);
         m_World_Light = m_World.FindAction("Light", throwIfNotFound: true);
+        m_World_Camera = m_World.FindAction("Camera", throwIfNotFound: true);
         m_World_Interact = m_World.FindAction("Interact", throwIfNotFound: true);
         m_World_Spect = m_World.FindAction("Spect", throwIfNotFound: true);
     }
@@ -249,6 +270,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
     private List<IWorldActions> m_WorldActionsCallbackInterfaces = new List<IWorldActions>();
     private readonly InputAction m_World_Move;
     private readonly InputAction m_World_Light;
+    private readonly InputAction m_World_Camera;
     private readonly InputAction m_World_Interact;
     private readonly InputAction m_World_Spect;
     public struct WorldActions
@@ -257,6 +279,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
         public WorldActions(@Player wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_World_Move;
         public InputAction @Light => m_Wrapper.m_World_Light;
+        public InputAction @Camera => m_Wrapper.m_World_Camera;
         public InputAction @Interact => m_Wrapper.m_World_Interact;
         public InputAction @Spect => m_Wrapper.m_World_Spect;
         public InputActionMap Get() { return m_Wrapper.m_World; }
@@ -274,6 +297,9 @@ public partial class @Player: IInputActionCollection2, IDisposable
             @Light.started += instance.OnLight;
             @Light.performed += instance.OnLight;
             @Light.canceled += instance.OnLight;
+            @Camera.started += instance.OnCamera;
+            @Camera.performed += instance.OnCamera;
+            @Camera.canceled += instance.OnCamera;
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
@@ -290,6 +316,9 @@ public partial class @Player: IInputActionCollection2, IDisposable
             @Light.started -= instance.OnLight;
             @Light.performed -= instance.OnLight;
             @Light.canceled -= instance.OnLight;
+            @Camera.started -= instance.OnCamera;
+            @Camera.performed -= instance.OnCamera;
+            @Camera.canceled -= instance.OnCamera;
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
@@ -317,6 +346,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnLight(InputAction.CallbackContext context);
+        void OnCamera(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnSpect(InputAction.CallbackContext context);
     }
