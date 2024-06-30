@@ -29,11 +29,9 @@ public class Keys : MonoBehaviour, IInteractable
 
             if (!alreadyPicked)
             {
-                alreadyPicked = true;
+                alreadyPicked = !alreadyPicked;
                 AkSoundEngine.PostEvent("Play_KeyPickUp", gameObject);
             }
-
-            
         }
     }
 }
