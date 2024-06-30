@@ -219,6 +219,7 @@ MonoBehaviour:
   m_Animator: {fileID: 0}
   LightOn: 0
   SpectOn: 0
+  CameraOn: 0
 --- !u!114 &4557202922547347753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,7 +304,7 @@ GameObject:
   - component: {fileID: 4401297165610787073}
   - component: {fileID: 1515685542862178508}
   - component: {fileID: 2022321859459589038}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -365,7 +366,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -561,7 +562,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1118638854408008593}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PhoneFollow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
