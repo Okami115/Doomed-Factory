@@ -6,7 +6,9 @@ using UnityEngine.Serialization;
 
 public class PlayerMovemnet : MonoBehaviour
 {
+    [Header("Walk Variable")]
     [SerializeField] private float speed;
+    [SerializeField] private float Desacelerate;
     [SerializeField] private Rigidbody rb;
     [SerializeField] private PlayerInputsReader _inputsReader;
     [SerializeField] private KeysEventChannel _doorInteraction;
@@ -14,8 +16,12 @@ public class PlayerMovemnet : MonoBehaviour
     private Vector3 movePlayer;
     private Vector3 movement;
 
-    public float amplitude = 0.001f; 
-    [SerializeField] public float frequency = 1f;   
+    [Header("Walk Animation")]
+    [SerializeField] private float amplitudeY; 
+    [SerializeField] private float amplitudeX; 
+    [SerializeField] private float frequencyY;   
+    [SerializeField] private float frequencyX;
+    
     public Transform cameraTransform; 
 
     private Vector3 originalCameraPosition;
@@ -62,25 +68,24 @@ public class PlayerMovemnet : MonoBehaviour
         movement.y = 0.0f; 
 
 
-        if (movement != Vector3.zero)
+        if (Vector3.Distance(movement, Vector3.zero) > Vector3.kEpsilon)
         {
             rb.AddForce(movement * speed);
 
             elapsedTime += Time.deltaTime;
 
-            float oscillation = Mathf.Sin(elapsedTime * frequency) * 0.1f;
-
+            float oscillationY = Mathf.Sin(elapsedTime * frequencyY) * amplitudeY;
+            float oscillationX = Mathf.Sin(elapsedTime * frequencyX) * amplitudeX;
             Vector3 newCameraPosition = originalCameraPosition;
-            newCameraPosition.y += oscillation;
+            newCameraPosition.y += oscillationY * rb.velocity.magnitude;
+            newCameraPosition.x += oscillationX * rb.velocity.magnitude;
             cameraTransform.localPosition = newCameraPosition;
         }
         else
         {
-            if (elapsedTime > 0)
-                elapsedTime -= Time.deltaTime;
-            else
-                elapsedTime = 0f;
+            elapsedTime = Mathf.LerpUnclamped(elapsedTime, 0, 2);
 
+            rb.velocity = Vector3.Lerp(rb.velocity, movement, Desacelerate);
 
             cameraTransform.localPosition = originalCameraPosition;
         }
