@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
+using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class PlayButton : PhoneButton
 {
+    [SerializeField] private Animator _camAnimator;
+    [SerializeField] private Animator _doorAnimator;
+    [SerializeField] private int sceneBuildIndex;
+    [SerializeField] private float waitTime;
     public override void OnPointerDown(PointerEventData eventData)
     {
         base.OnPointerDown(eventData);
@@ -22,7 +27,19 @@ public class PlayButton : PhoneButton
         base.OnPointerClick(eventData);
 
         if (isMouseInside)
-            SceneManager.LoadScene(1);
+        {
+            _camAnimator.SetBool("Play",true);
+            _doorAnimator.SetTrigger("Open");
+            StartCoroutine(LoadScene());
+        }
+
+        
+    }
+
+    public IEnumerator LoadScene()
+    {
+        yield return new WaitForSeconds(waitTime);
+        SceneManager.LoadScene(sceneBuildIndex);
     }
 
     public override void OnPointerEnter(PointerEventData eventData)
