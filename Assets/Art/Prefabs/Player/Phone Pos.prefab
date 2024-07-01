@@ -182,7 +182,6 @@ GameObject:
   - component: {fileID: 3357467405983143137}
   - component: {fileID: 8603206801543756145}
   - component: {fileID: 8772312584087499995}
-  - component: {fileID: 2006197842239911604}
   m_Layer: 0
   m_Name: MiniMap
   m_TagString: Untagged
@@ -255,28 +254,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2006197842239911604
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1299698571508104553}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2968918035619966239
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,7 +993,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 247
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: c953a141cf1fa254a9494d06c8c8ae76, type: 2}
   m_TargetDisplay: 0
