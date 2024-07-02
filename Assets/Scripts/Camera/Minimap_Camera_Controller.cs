@@ -2,7 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+public enum GameZones
+{
+    Entrance,
+    Red_Zone,
+    Blue_Zone
+}
 public class Minimap_Camera_Controller : MonoBehaviour
 {
     [SerializeField] Camera minimapCamera;
@@ -12,12 +17,7 @@ public class Minimap_Camera_Controller : MonoBehaviour
 
     [SerializeField] private GameZones currentZone = GameZones.Entrance;
     
-    public enum GameZones
-    {
-        Entrance,
-        Red_Zone,
-        Blue_Zone
-    }
+   
 
     public void SetMiniMapCameraPosition(GameZones newZone) => currentZone = newZone;
 
