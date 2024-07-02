@@ -6,9 +6,8 @@ using UnityEngine.Serialization;
 
 public class PlayerMovemnet : MonoBehaviour
 {
-    [Header("Walk Variable")] [SerializeField]
-    private float timeBetweenSteps;
-
+    [Header("Walk Variable")]
+    [SerializeField] private float timeBetweenSteps;
     [SerializeField] private float speed;
     [SerializeField] private float Desacelerate;
     [SerializeField] private Rigidbody rb;
