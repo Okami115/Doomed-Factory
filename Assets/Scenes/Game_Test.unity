@@ -3576,7 +3576,7 @@ PlayableDirector:
   - key: {fileID: 5891977264516273187, guid: dad586f81306c114390633219ab61a28, type: 2}
     value: {fileID: 1952061245}
   - key: {fileID: -6516955252160623140, guid: e14cb9ac6dfd5b647bd472ee74cb1534, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1268307270}
   - key: {fileID: -8252742272099150875, guid: e14cb9ac6dfd5b647bd472ee74cb1534, type: 2}
     value: {fileID: 542542559}
   - key: {fileID: -3435918551321958489, guid: e14cb9ac6dfd5b647bd472ee74cb1534, type: 2}
@@ -6199,7 +6199,7 @@ PlayableDirector:
   - key: {fileID: 5891977264516273187, guid: dad586f81306c114390633219ab61a28, type: 2}
     value: {fileID: 1145647643}
   - key: {fileID: -6501632887361327001, guid: eaf5ca9cb2917094095fb170a21af268, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1268307270}
   - key: {fileID: 5447590078405858542, guid: eaf5ca9cb2917094095fb170a21af268, type: 2}
     value: {fileID: 903548669}
   - key: {fileID: -4716209647762833247, guid: eaf5ca9cb2917094095fb170a21af268, type: 2}
@@ -12674,7 +12674,7 @@ PlayableDirector:
   - key: {fileID: -4716209647762833247, guid: eaf5ca9cb2917094095fb170a21af268, type: 2}
     value: {fileID: 1145647643}
   - key: {fileID: -7160369572138761466, guid: 16ea54bba6a27614084be9aa98b2a8f9, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1268307270}
   - key: {fileID: 9222227203333794791, guid: 16ea54bba6a27614084be9aa98b2a8f9, type: 2}
     value: {fileID: 1774191744}
   - key: {fileID: 8200096227684849469, guid: 16ea54bba6a27614084be9aa98b2a8f9, type: 2}
@@ -17050,6 +17050,11 @@ PrefabInstance:
 --- !u!4 &1268307269 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1118638854408008593, guid: af75c7e50c8b46242a0a922f5d164af2, type: 3}
+  m_PrefabInstance: {fileID: 1268307268}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1268307270 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8216547750829670843, guid: af75c7e50c8b46242a0a922f5d164af2, type: 3}
   m_PrefabInstance: {fileID: 1268307268}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1274797583
