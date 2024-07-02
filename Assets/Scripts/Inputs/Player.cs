@@ -71,6 +71,15 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""d96f0e65-f6e3-40d7-bb68-9d86d9031335"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -194,6 +203,17 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""action"": ""Camera"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bc3a4e84-a69e-4623-8e84-71c767e56121"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -207,6 +227,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
         m_World_Camera = m_World.FindAction("Camera", throwIfNotFound: true);
         m_World_Interact = m_World.FindAction("Interact", throwIfNotFound: true);
         m_World_Spect = m_World.FindAction("Spect", throwIfNotFound: true);
+        m_World_Pause = m_World.FindAction("Pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -273,6 +294,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
     private readonly InputAction m_World_Camera;
     private readonly InputAction m_World_Interact;
     private readonly InputAction m_World_Spect;
+    private readonly InputAction m_World_Pause;
     public struct WorldActions
     {
         private @Player m_Wrapper;
@@ -282,6 +304,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
         public InputAction @Camera => m_Wrapper.m_World_Camera;
         public InputAction @Interact => m_Wrapper.m_World_Interact;
         public InputAction @Spect => m_Wrapper.m_World_Spect;
+        public InputAction @Pause => m_Wrapper.m_World_Pause;
         public InputActionMap Get() { return m_Wrapper.m_World; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -306,6 +329,9 @@ public partial class @Player: IInputActionCollection2, IDisposable
             @Spect.started += instance.OnSpect;
             @Spect.performed += instance.OnSpect;
             @Spect.canceled += instance.OnSpect;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
         }
 
         private void UnregisterCallbacks(IWorldActions instance)
@@ -325,6 +351,9 @@ public partial class @Player: IInputActionCollection2, IDisposable
             @Spect.started -= instance.OnSpect;
             @Spect.performed -= instance.OnSpect;
             @Spect.canceled -= instance.OnSpect;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
         }
 
         public void RemoveCallbacks(IWorldActions instance)
@@ -349,5 +378,6 @@ public partial class @Player: IInputActionCollection2, IDisposable
         void OnCamera(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnSpect(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }

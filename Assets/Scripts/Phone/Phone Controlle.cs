@@ -11,6 +11,7 @@ public class PhoneControlle : MonoBehaviour
     [SerializeField] private bool LightOn;
     [SerializeField] private bool SpectOn;
     [SerializeField] private bool CameraOn;
+    [SerializeField] private bool PauseOn;
 
     public void OnLight()
     {
@@ -50,6 +51,17 @@ public class PhoneControlle : MonoBehaviour
         if (SpectOn)
             AkSoundEngine.PostEvent("Play_SFX_Player_Interact_Phone_SwitchScreen", gameObject);
         m_Animator.SetBool("Camera", CameraOn);
+    }
+
+    public void OnPause()
+    {
+        PauseOn = !PauseOn;
+        if (PauseOn)
+             Cursor.lockState = CursorLockMode.None;
+        else
+            Cursor.lockState = CursorLockMode.Locked;
+        
+        m_Animator.SetBool("Pause", PauseOn);
     }
 
     public void HidePhone()
