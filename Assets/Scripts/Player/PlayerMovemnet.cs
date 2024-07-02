@@ -104,6 +104,7 @@ public class PlayerMovemnet : MonoBehaviour
     public IEnumerator PlayStepsSound(float timeBetweenSteps)
     {
         corrutineRuning = true;
+        Debug.Log("Time To Step Sound : " + timeBetweenSteps);
         yield return new WaitForSeconds(timeBetweenSteps);
         AkSoundEngine.PostEvent("Play_Player_FootSteps", gameObject);
         Debug.Log("Play_Player_FootSteps");

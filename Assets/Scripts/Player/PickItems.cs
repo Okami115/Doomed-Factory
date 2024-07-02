@@ -7,6 +7,7 @@ public class PickItems : MonoBehaviour
 
     private RaycastHit hit;
     private IInteractable obj = null;
+    private IInteractable lastObj = null;
 
     private void Update()
     {
@@ -22,22 +23,41 @@ public class PickItems : MonoBehaviour
         {
             if (hit.transform.gameObject.TryGetComponent<IInteractable>(out obj))
             {
-                menssage.SetActive(true);
-                obj.ReadyToInteract(true);
+                if(lastObj != obj)
+                {
+                    if(lastObj != null)
+                    {
+                        lastObj.ReadyToInteract(false);
+                        lastObj = null;
+                    }
+
+                    menssage.SetActive(true);
+                    obj.ReadyToInteract(true);
+
+
+                    lastObj = obj;
+                }
             }
             else
             {
                 menssage.SetActive(false);
-                if (obj != null)
+
+                if (lastObj != null)
                 {
-                    obj.ReadyToInteract(false);
-                    obj = null;
+                    lastObj.ReadyToInteract(false);
+                    lastObj = null;
                 }
             }
         }
         else
         {
             menssage.SetActive(false);
+
+            if (lastObj != null)
+            {
+                lastObj.ReadyToInteract(false);
+                lastObj = null;
+            }
         }
     }
 }
