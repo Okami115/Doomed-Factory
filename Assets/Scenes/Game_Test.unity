@@ -16098,6 +16098,10 @@ PrefabInstance:
       propertyPath: timeBetweenSteps
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3656617896735769061, guid: af75c7e50c8b46242a0a922f5d164af2, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: b30ecf1ded3a3a44294778774a4ca09c, type: 2}
     - target: {fileID: 3731306637222630489, guid: af75c7e50c8b46242a0a922f5d164af2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 84.7
