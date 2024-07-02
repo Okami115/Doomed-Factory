@@ -24,6 +24,7 @@ public class PhoneControlle : MonoBehaviour
             AkSoundEngine.PostEvent("Play_SFX_Player_Interact_Phone_Light_On",gameObject);
         else
             AkSoundEngine.PostEvent("Play_SFX_Player_Interact_Phone_Light_Off",gameObject);
+          
         
         if(LightOn && SpectOn)
         {
@@ -47,8 +48,8 @@ public class PhoneControlle : MonoBehaviour
     public void OnCamera()
     {
         CameraOn = !CameraOn;
+        AkSoundEngine.PostEvent("Play_SFX_Player_Interact_Phone_SwitchScreen",gameObject);
         m_Animator.SetBool("Camera", CameraOn);
-
     }
 
     public void HidePhone()

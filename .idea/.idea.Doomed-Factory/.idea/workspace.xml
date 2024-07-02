@@ -6,15 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d93efe55-6d3e-4ca3-b934-6bc0f6d23f9a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/Menu/Camera_Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/Menu/Camera_Controller.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/Menu/Credits_Animation_Enter.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/Menu/Credits_Animation_Enter.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/Menu/Credits_Animation_Exit.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/Menu/Credits_Animation_Exit.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/Menu/Options_Animation_Enter.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/Menu/Options_Animation_Enter.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/Menu/Options_Animation_Exit.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/Menu/Options_Animation_Exit.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buttons/PlayButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buttons/PlayButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game_Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game_Test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Keys/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Keys/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Phone/Phone Controlle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Phone/Phone Controlle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovemnet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovemnet.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +115,7 @@
       <workItem from="1719025124853" duration="591000" />
       <workItem from="1719462306914" duration="601000" />
       <workItem from="1719778189644" duration="2532000" />
+      <workItem from="1719899931629" duration="660000" />
     </task>
     <servers />
   </component>

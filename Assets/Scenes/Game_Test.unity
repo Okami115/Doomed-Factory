@@ -1338,7 +1338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _doorKey: {fileID: 1548015710}
   doorTimeline: {fileID: 1002160870}
-  playerPhone: {fileID: 0}
+  playerPhone: {fileID: 1268307271}
 --- !u!65 &53137963
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16125,7 +16125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _doorKey: {fileID: 1952061244}
   doorTimeline: {fileID: 197803402}
-  playerPhone: {fileID: 0}
+  playerPhone: {fileID: 1268307271}
 --- !u!1 &1200566315
 GameObject:
   m_ObjectHideFlags: 0
@@ -17057,6 +17057,17 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 8216547750829670843, guid: af75c7e50c8b46242a0a922f5d164af2, type: 3}
   m_PrefabInstance: {fileID: 1268307268}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1268307271 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6378137093945486498, guid: af75c7e50c8b46242a0a922f5d164af2, type: 3}
+  m_PrefabInstance: {fileID: 1268307268}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ab5480f5717e6241bec6804f0fbfc08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1274797583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25478,7 +25489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _doorKey: {fileID: 1145647644}
   doorTimeline: {fileID: 413538929}
-  playerPhone: {fileID: 0}
+  playerPhone: {fileID: 1268307271}
 --- !u!65 &1950032833
 BoxCollider:
   m_ObjectHideFlags: 0

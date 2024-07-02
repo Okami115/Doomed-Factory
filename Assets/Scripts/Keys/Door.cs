@@ -21,6 +21,8 @@ public class Door : MonoBehaviour, IInteractable
                 isDoorOpen = true;
                 Destroy(this);
             }
+            else
+                AkSoundEngine.PostEvent("Play_SFX_Player_Interact_Door_Metal_Lock", gameObject);
         }
     }
 

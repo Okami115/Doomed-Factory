@@ -90,4 +90,5 @@ public class PlayerMovemnet : MonoBehaviour
             cameraTransform.localPosition = originalCameraPosition;
         }
     }   
+    
 }
