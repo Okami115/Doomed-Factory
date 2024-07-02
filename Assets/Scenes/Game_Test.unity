@@ -3822,6 +3822,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Phone Pos
       objectReference: {fileID: 0}
+    - target: {fileID: 7987181265236551327, guid: dc06d0aa14cc8564581dac9828511aa4, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8474420905884662868, guid: dc06d0aa14cc8564581dac9828511aa4, type: 3}
       propertyPath: m_IsActive
       value: 0
