@@ -6,7 +6,9 @@ using UnityEngine.Serialization;
 
 public class PlayerMovemnet : MonoBehaviour
 {
-    [Header("Walk Variable")]
+    [Header("Walk Variable")] [SerializeField]
+    private float timeBetweenSteps;
+
     [SerializeField] private float speed;
     [SerializeField] private float Desacelerate;
     [SerializeField] private Rigidbody rb;
@@ -16,16 +18,18 @@ public class PlayerMovemnet : MonoBehaviour
     private Vector3 movePlayer;
     private Vector3 movement;
 
-    [Header("Walk Animation")]
-    [SerializeField] private float amplitudeY; 
-    [SerializeField] private float amplitudeX; 
-    [SerializeField] private float frequencyY;   
+    [Header("Walk Animation")] [SerializeField]
+    private float amplitudeY;
+
+    [SerializeField] private float amplitudeX;
+    [SerializeField] private float frequencyY;
     [SerializeField] private float frequencyX;
-    
-    public Transform cameraTransform; 
+
+    public Transform cameraTransform;
 
     private Vector3 originalCameraPosition;
     private float elapsedTime = 0f;
+    private bool corrutineRuning = false;
 
     private void Start()
     {
@@ -33,15 +37,18 @@ public class PlayerMovemnet : MonoBehaviour
         {
             cameraTransform = Camera.main.transform;
         }
+
         originalCameraPosition = cameraTransform.localPosition;
         _inputsReader.OnPlayerMove += OnPlayerMove;
         _inputsReader.OnPlayerInteract += OnPlayerInteract;
     }
+
     private void OnDestroy()
     {
         _inputsReader.OnPlayerMove -= OnPlayerMove;
         _inputsReader.OnPlayerInteract -= OnPlayerInteract;
     }
+
     private void OnPlayerInteract()
     {
         _doorInteraction?.Invoke(playerKeys);
@@ -54,18 +61,18 @@ public class PlayerMovemnet : MonoBehaviour
 
     private void OnPlayerMove(Vector3 obj)
     {
-       // movement = obj;
+        // movement = obj;
     }
 
     private void Update()
     {
         float movimientoHorizontal = Input.GetAxis("Horizontal");
         float movimientoVertical = Input.GetAxis("Vertical");
-        
-        
+
+
         Vector3 movement = new Vector3(movimientoHorizontal, 0.0f, movimientoVertical);
         movement = Camera.main.transform.TransformDirection(movement);
-        movement.y = 0.0f; 
+        movement.y = 0.0f;
 
 
         if (Vector3.Distance(movement, Vector3.zero) > Vector3.kEpsilon)
@@ -89,6 +96,19 @@ public class PlayerMovemnet : MonoBehaviour
 
             cameraTransform.localPosition = originalCameraPosition;
         }
-    }   
-    
+        
+        if (Vector3.Distance(movement, Vector3.zero) > Vector3.kEpsilon)
+            if (!corrutineRuning)
+                StartCoroutine(PlayStepsSound(timeBetweenSteps));
+    }
+
+    public IEnumerator PlayStepsSound(float timeBetweenSteps)
+    {
+        corrutineRuning = true;
+        yield return new WaitForSeconds(timeBetweenSteps);
+        AkSoundEngine.PostEvent("Play_Player_FootSteps", gameObject);
+        Debug.Log("Play_Player_FootSteps");
+        yield return null;
+        corrutineRuning = false;
+    }
 }

@@ -2628,6 +2628,8 @@ GameObject:
   - component: {fileID: 177604226}
   - component: {fileID: 177604225}
   - component: {fileID: 177604224}
+  - component: {fileID: 177604228}
+  - component: {fileID: 177604227}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -2721,6 +2723,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177604222}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &177604227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177604222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d973aa81b9d370749885409d716bf0b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerObject: {fileID: 1059170547}
+--- !u!114 &177604228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177604222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc47411f65997a346907c51b78884eb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: d1bbb3b5
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 96688ed114a5fe840a88a3ce0ab2eab1, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!4 &181400054 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4803268990797150073, guid: 162b48e733c18c640b9dc5511ae1de58, type: 3}
@@ -13996,6 +14035,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7623195778715645435, guid: 811bf22db94faad418fb6fdfffe14569, type: 3}
   m_PrefabInstance: {fileID: 1053467283}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1059170547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1563799126150381147, guid: af75c7e50c8b46242a0a922f5d164af2, type: 3}
+  m_PrefabInstance: {fileID: 1268307268}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1063764116
 GameObject:
   m_ObjectHideFlags: 0
@@ -16994,6 +17038,10 @@ PrefabInstance:
       propertyPath: Desacelerate
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2797940782945853483, guid: af75c7e50c8b46242a0a922f5d164af2, type: 3}
+      propertyPath: timeBetweenSteps
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3731306637222630489, guid: af75c7e50c8b46242a0a922f5d164af2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 84.7
@@ -17062,7 +17110,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6378137093945486498, guid: af75c7e50c8b46242a0a922f5d164af2, type: 3}
   m_PrefabInstance: {fileID: 1268307268}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1059170547}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ab5480f5717e6241bec6804f0fbfc08, type: 3}
@@ -26017,6 +26065,8 @@ GameObject:
   - component: {fileID: 1983678483}
   - component: {fileID: 1983678482}
   - component: {fileID: 1983678486}
+  - component: {fileID: 1983678488}
+  - component: {fileID: 1983678487}
   m_Layer: 0
   m_Name: -----Ground
   m_TagString: Untagged
@@ -26140,6 +26190,43 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1983678487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983678481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc47411f65997a346907c51b78884eb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: d1bbb3b5
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9d61841cde30b1d48808c966f2ba4b0d, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!114 &1983678488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983678481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d973aa81b9d370749885409d716bf0b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerObject: {fileID: 1059170547}
 --- !u!1 &1987000228
 GameObject:
   m_ObjectHideFlags: 0
