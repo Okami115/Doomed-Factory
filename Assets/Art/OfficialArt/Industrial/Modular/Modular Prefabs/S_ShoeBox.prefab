@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2094886225227772654}
   - component: {fileID: 4204122724524197051}
   - component: {fileID: 8848817753820054888}
+  - component: {fileID: 788630489778773687}
   m_Layer: 0
   m_Name: S_ShoeBox
   m_TagString: Untagged
@@ -83,3 +84,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &788630489778773687
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149016714808055879}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 90.70382, y: 65.802216, z: 157.69754}
+  m_Center: {x: 0.000049591075, y: 0, z: 0.000007629395}
