@@ -7,16 +7,18 @@ using UnityEngine;
 public class PhoneApp : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer _spriteRenderer;
-    [SerializeField]  private GameObject appScreen;
+    [SerializeField]  private List<GameObject> appScreen;
     private Color defaultColor;
    
     public bool isSelected { get; private set; }
 
     private void OnEnable()
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
         defaultColor = _spriteRenderer.color;
-        appScreen.SetActive(false);
+        foreach (GameObject appObject in appScreen)
+        {
+            appObject.SetActive(false);
+        }
     }
     private void Update()
     {
@@ -27,8 +29,10 @@ public class PhoneApp : MonoBehaviour
     }
     public void AppInteraction(bool interact)
     {
-        appScreen.SetActive(interact);
-        Debug.Log("App Interaction");
+        foreach (GameObject appObject in appScreen)
+        {
+            appObject.SetActive(interact);
+        }
     }
     public void SelectApp(bool selection) => isSelected = selection;
 }

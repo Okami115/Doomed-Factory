@@ -7,19 +7,12 @@
     <list default="true" id="d93efe55-6d3e-4ca3-b934-6bc0f6d23f9a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Phone.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Phone.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Render_Textures/MinimapCamera_RT.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Render_Textures/MinimapCamera_RT.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Render_Textures/PhoneCamera_RT.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Render_Textures/PhoneCamera_RT.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/M02_pan.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/M02_pan.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Prefabs/Player/Phone_Pos_RW.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Prefabs/Player/Phone_Pos_RW.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Prefabs/Player/rn_image_picker_lib_temp_3a64968a-4fc3-409f-977b-cf7814cbdc2b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Prefabs/Player/rn_image_picker_lib_temp_3a64968a-4fc3-409f-977b-cf7814cbdc2b.jpg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game_Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game_Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inputs/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inputs/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inputs/Player.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inputs/Player.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputsReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputsReader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneApp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneApp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +131,7 @@
       <workItem from="1723870669344" duration="2248000" />
       <workItem from="1723952296947" duration="2804000" />
       <workItem from="1724020064956" duration="593000" />
-      <workItem from="1724020683295" duration="5457000" />
+      <workItem from="1724020683295" duration="7950000" />
     </task>
     <servers />
   </component>
