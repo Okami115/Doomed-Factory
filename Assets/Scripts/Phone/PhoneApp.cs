@@ -14,6 +14,7 @@ public class PhoneApp : MonoBehaviour
 
     private void OnEnable()
     {
+        _spriteRenderer.color = Color.white;
         defaultColor = _spriteRenderer.color;
         foreach (GameObject appObject in appScreen)
         {

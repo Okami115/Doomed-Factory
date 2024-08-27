@@ -48,6 +48,9 @@ public class PhoneController : MonoBehaviour
     }
     private void MouseScroll(float mouseY)
     {
+        if (!isActive)
+            return;
+        
         if (mouseY > 0)
         {
             currentSelectedApp++;
@@ -64,7 +67,7 @@ public class PhoneController : MonoBehaviour
     {
         int appsLenght = _apps.Count;
         
-        if (currentSelectedApp > appsLenght)
+        if (currentSelectedApp >= appsLenght)
             currentSelectedApp = appsLenght - 1;
         
         if (currentSelectedApp < 0)
