@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PhoneControlle : MonoBehaviour
 {
@@ -8,13 +10,22 @@ public class PhoneControlle : MonoBehaviour
 
     [SerializeField] private bool LightOn;
     [SerializeField] private bool SpectOn;
+    [SerializeField] private bool CameraOn;
+    [SerializeField] private bool PauseOn;
 
     public void OnLight()
     {
         LightOn = !LightOn;
         m_Animator.SetBool("Light", LightOn);
+        Debug.Log(LightOn);
 
-        if(LightOn && SpectOn)
+        if (LightOn)
+            AkSoundEngine.PostEvent("Play_SFX_Player_Interact_Phone_Light_On", gameObject);
+        else
+            AkSoundEngine.PostEvent("Play_SFX_Player_Interact_Phone_Light_Off", gameObject);
+
+
+        if (LightOn && SpectOn)
         {
             SpectOn = false;
             m_Animator.SetBool("Spect", SpectOn);
@@ -25,13 +36,44 @@ public class PhoneControlle : MonoBehaviour
     {
         SpectOn = !SpectOn;
         m_Animator.SetBool("Spect", SpectOn);
+
+        if (SpectOn && CameraOn)
+        {
+            CameraOn = !CameraOn;
+            m_Animator.SetBool("Camera", CameraOn);
+        }
+    }
+
+    public void OnCamera()
+    {
+        CameraOn = !CameraOn;
+
+        if (SpectOn)
+            AkSoundEngine.PostEvent("Play_SFX_Player_Interact_Phone_SwitchScreen", gameObject);
+        m_Animator.SetBool("Camera", CameraOn);
+    }
+
+    public void OnPause()
+    {
+        PauseOn = !PauseOn;
+        if (PauseOn)
+             Cursor.lockState = CursorLockMode.None;
+        else
+            Cursor.lockState = CursorLockMode.Locked;
+        
+        m_Animator.SetBool("Pause", PauseOn);
     }
 
     public void HidePhone()
     {
+        if (LightOn)
+            AkSoundEngine.PostEvent("Play_SFX_Player_Interact_Phone_Screen_Lock", gameObject);
+
         LightOn = false;
         SpectOn = false;
+        CameraOn = false;
         m_Animator.SetBool("Light", LightOn);
         m_Animator.SetBool("Spect", SpectOn);
+        m_Animator.SetBool("Camera", CameraOn);
     }
 }

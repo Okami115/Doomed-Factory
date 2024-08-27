@@ -20,14 +20,14 @@
 												<Property Name="LoopCount" Type="int16" Value="0"/>
 											</PropertyList>
 											<ChildrenList>
-												<MusicPlaylistItem Name="" ID="{306DBBCB-968D-478B-BBDB-DBFA218B97D5}" ShortID="829750209">
+												<MusicPlaylistItem Name="" ID="{1FE6C657-AE2B-47C1-9EC1-2F5496A2B828}" ShortID="872620585">
 													<PropertyList>
 														<Property Name="LoopCount" Type="int16" Value="0"/>
 														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Segment">
-															<ObjectRef Name="NIGHT DANCER" ID="{F9F75A63-5038-402B-8A3D-A802D0B429E2}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}"/>
+															<ObjectRef Name="GeneralEnviroment" ID="{FAEFD31E-7441-4D02-B0AF-EB5B924911EF}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}"/>
 														</Reference>
 													</ReferenceList>
 												</MusicPlaylistItem>
@@ -52,9 +52,9 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicSegment Name="NIGHT DANCER" ID="{F9F75A63-5038-402B-8A3D-A802D0B429E2}" ShortID="699662910">
+								<MusicSegment Name="GeneralEnviroment" ID="{FAEFD31E-7441-4D02-B0AF-EB5B924911EF}" ShortID="424681352">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="209176.979166667"/>
+										<Property Name="EndPosition" Type="Real64" Value="38684.3594080037"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -65,14 +65,21 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="NIGHT DANCER" ID="{ADD90542-A5EA-4DDA-A5E1-743B1895807A}" ShortID="1052882562">
+										<MusicTrack Name="horror-ambience-sound-7-vol-001-147601" ID="{E450C157-40FB-462C-BE7A-32DE07895C1A}" ShortID="859865883">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-22</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C38E60E3-3A6B-4B70-8891-C9DEFFF15D43}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{B8AB3BA8-CD81-4873-ADA5-19ACDEC37B37}">
+														<MusicTransition Name="Root" ID="{4EA4C05E-990A-4C44-BED8-7499E7E6AF0D}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -82,11 +89,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="NIGHT DANCER" ID="{CFA8FB86-7047-419E-B330-831C7401A672}">
+												<AudioFileSource Name="horror-ambience-sound-7-vol-001-147601" ID="{9E98DCB5-856A-423D-B446-192492979BF7}">
 													<Language>SFX</Language>
-													<AudioFile>NIGHT DANCER.wav</AudioFile>
+													<AudioFile>horror-ambience-sound-7-vol-001-147601.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="494921475"/>
+														<MediaID ID="348244579"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -94,18 +101,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{1C2EEE9D-65B2-4FAB-9F5A-9131C0560295}">
+															<MusicTrackSequence Name="" ID="{22004157-061B-4024-B633-F3D6BDC818D8}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="NIGHT DANCER" ID="{57D3E68F-E5DC-4A0B-BCBA-860AC627F357}">
+																				<MusicClip Name="horror-ambience-sound-7-vol-001-147601" ID="{F0C707DE-ED8A-48DF-B15A-FF8A5B537DA6}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="209176.979166667"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="37642.4489795918"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="NIGHT DANCER" ID="{CFA8FB86-7047-419E-B330-831C7401A672}"/>
+																					<AudioSourceRef Name="horror-ambience-sound-7-vol-001-147601" ID="{9E98DCB5-856A-423D-B446-192492979BF7}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -122,15 +129,15 @@
 										<ObjectList Name="Cues">
 											<Reference>
 												<Local>
-													<MusicCue Name="Entry Cue" ID="{25353508-51CF-4006-8D6C-FFAA127834EC}"/>
+													<MusicCue Name="Entry Cue" ID="{B69A6456-BB6A-4DE9-924E-29C06FEB5348}"/>
 												</Local>
 											</Reference>
 											<Reference>
 												<Local>
-													<MusicCue Name="Exit Cue" ID="{EC3C0F54-98DE-4145-BBAD-1015975F85A1}">
+													<MusicCue Name="Exit Cue" ID="{1F086422-28F7-4668-B1AB-CC593196C572}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="209176.979166667"/>
+															<Property Name="TimeMs" Type="Real64" Value="20235.6265759052"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
