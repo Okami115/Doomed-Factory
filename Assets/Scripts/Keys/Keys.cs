@@ -5,6 +5,7 @@ public class Keys : MonoBehaviour, IInteractable
 {
     public string name;
     public int id;
+    public Sprite KeyImage;
 
     private PlayerMovemnet _playerMovement;
     private bool isPlayerInRange;

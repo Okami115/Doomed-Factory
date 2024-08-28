@@ -58,6 +58,11 @@ public class PlayerMovemnet : MonoBehaviour
         playerKeys.Add(newKey);
     }
 
+    public List<Keys> GetKeys()
+    {
+        return playerKeys;
+    }
+
     private void OnPlayerMove(Vector3 obj)
     {
         // movement = obj;
