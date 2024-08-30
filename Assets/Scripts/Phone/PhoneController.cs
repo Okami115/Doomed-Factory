@@ -9,6 +9,8 @@ public class PhoneController : MonoBehaviour
     [SerializeField] private List<PhoneApp> _apps = new List<PhoneApp>();
     [SerializeField] private int currentSelectedApp = 0;
     [SerializeField] private bool isActive = false;
+    [SerializeField] private string AKPhonePositiveInteraction;
+    [SerializeField] private string AKPhoneNegativeInteraction;
 
     private void Start()
     {

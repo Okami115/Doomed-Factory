@@ -10,6 +10,8 @@ public class PhoneApp : MonoBehaviour
     [SerializeField] private List<GameObject> appScreen;
     private Color defaultColor;
 
+    public string AkSoundPositiveInteraction;
+    public string AkSoundNegativeInteraction;
     public bool isSelected { get; private set; }
     public bool isOpen { get; set; }
     public bool hasAppInteraction { get; set; }
@@ -43,7 +45,11 @@ public class PhoneApp : MonoBehaviour
 
     public void AppInteraction(bool interact)
     {
-        isOpen = true;
+        isOpen = interact;
+        if (interact)
+            AkSoundEngine.PostEvent(AkSoundPositiveInteraction,gameObject);
+        else
+            AkSoundEngine.PostEvent(AkSoundNegativeInteraction, gameObject);
         foreach (GameObject appObject in appScreen)
         {
             appObject.SetActive(interact);

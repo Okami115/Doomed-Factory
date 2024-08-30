@@ -6,14 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d93efe55-6d3e-4ca3-b934-6bc0f6d23f9a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Prefabs/Keys/Blue_Key.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Prefabs/Keys/Blue_Key.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Prefabs/Keys/Green_Key.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Prefabs/Keys/Green_Key.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Prefabs/Keys/Red_Key.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Prefabs/Keys/Red_Key.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Art_Tests/Sin título.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Art_Tests/Sin título.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Prefabs/Player/Phone_Pos_RW.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Prefabs/Player/Phone_Pos_RW.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game_Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game_Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Keys/Keys.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Keys/Keys.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneInventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneApp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneApp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +132,7 @@
       <workItem from="1724020683295" duration="8559000" />
       <workItem from="1724036335272" duration="23000" />
       <workItem from="1724798528096" duration="1445000" />
-      <workItem from="1725043211296" duration="7025000" />
+      <workItem from="1725043211296" duration="8068000" />
     </task>
     <servers />
   </component>
