@@ -72,7 +72,13 @@ public class PhoneInventory : PhoneApp
             {
                 _itemImage.sprite = inventoryKeys[currentItemIndex].KeyImage;
                 itemName.text = inventoryKeys[currentItemIndex].name;
-                itemDescription.text = inventoryKeys[currentItemIndex].id.ToString();
+                itemDescription.text = inventoryKeys[currentItemIndex].description;
+            }
+            else
+            {
+                _itemImage.sprite = null;
+                itemName.text = "Empty Inventory";
+                itemDescription.text = "";
             }
         }
     }

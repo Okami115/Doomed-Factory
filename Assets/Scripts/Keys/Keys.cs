@@ -1,10 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Sprite),typeof(string),typeof(string))]
 public class Keys : MonoBehaviour, IInteractable
 {
     public string name;
+    public string description;
     public int id;
+    
     public Sprite KeyImage;
 
     private PlayerMovemnet _playerMovement;
