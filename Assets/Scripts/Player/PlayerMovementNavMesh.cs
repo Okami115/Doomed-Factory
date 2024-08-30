@@ -7,6 +7,7 @@ using UnityEngine.AI;
 public class PlayerMovementNavMesh : MonoBehaviour
 {
     [SerializeField] private NavMeshAgent agent;
+    [SerializeField] private Transform target;
     Vector3 movement = Vector3.zero;
 
     private void Update()
@@ -15,27 +16,29 @@ public class PlayerMovementNavMesh : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            movement += Vector3.forward;
+            movement += transform.forward;
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            movement += Vector3.forward * -1;
+            movement += transform.forward * -1;
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            movement += Vector3.left;
+            movement += transform.right * -1;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            movement += Vector3.right;
+            movement += transform.right;
         }
 
-        movement = Camera.main.transform.TransformDirection(movement) + transform.position;
+        movement += transform.position + movement;
         movement.y = transform.position.y;
         agent.destination = movement;
+        Debug.Log($"AGENT :: {agent.destination}");
+        Debug.Log($"MOVEMENT :: {movement}");
     }
 
     private void OnDrawGizmos()
