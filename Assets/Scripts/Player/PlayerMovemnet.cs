@@ -65,8 +65,8 @@ public class PlayerMovemnet : MonoBehaviour
 
     private void Update()
     {
-        float movimientoHorizontal = Input.GetAxis("Horizontal");
-        float movimientoVertical = Input.GetAxis("Vertical");
+        float movimientoHorizontal = 0;
+        float movimientoVertical = 0;
 
 
         Vector3 movement = new Vector3(movimientoHorizontal, 0.0f, movimientoVertical);
@@ -76,7 +76,7 @@ public class PlayerMovemnet : MonoBehaviour
 
         if (Vector3.Distance(movement, Vector3.zero) > Vector3.kEpsilon)
         {
-            rb.AddForce(movement * speed);
+            //rb.AddForce(movement * speed);
 
             elapsedTime += Time.deltaTime;
 
