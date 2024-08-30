@@ -26,7 +26,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.28571427}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7664848999066330072}
@@ -62,8 +62,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.043632213, y: 0.04363221, z: 0.04363221}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5798063095227255226}
   - {fileID: 473647248369525328}
@@ -161,6 +161,8 @@ MonoBehaviour:
   - {fileID: 4329141815490865568}
   currentSelectedApp: 0
   isActive: 0
+  AKPhonePositiveInteraction: 
+  AKPhoneNegativeInteraction: 
 --- !u!1 &546866380453601231
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,6 +431,8 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 4010526548519116835}
   appScreen:
   - {fileID: 3154674498727447197}
+  AkSoundPositiveInteraction: 
+  AkSoundNegativeInteraction: 
   _player: {fileID: 0}
   _inputsReader: {fileID: 0}
   _itemImage: {fileID: 2992381560466630134}
@@ -579,6 +583,8 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 7659231216639117485}
   appScreen:
   - {fileID: 6032851290592454104}
+  AkSoundPositiveInteraction: 
+  AkSoundNegativeInteraction: 
 --- !u!212 &7659231216639117485
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1227,6 +1233,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 633674987113692090}
   appScreen: []
+  AkSoundPositiveInteraction: 
+  AkSoundNegativeInteraction: 
 --- !u!1 &3413359053716986653
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,6 +1737,8 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 5978736587369428574}
   appScreen:
   - {fileID: 3413359053716986653}
+  AkSoundPositiveInteraction: 
+  AkSoundNegativeInteraction: 
 --- !u!1 &6692687810440900206
 GameObject:
   m_ObjectHideFlags: 0
@@ -2548,6 +2558,8 @@ MonoBehaviour:
   - {fileID: 546866380453601231}
   - {fileID: 1725326311229649770}
   - {fileID: 2086042488037138873}
+  AkSoundPositiveInteraction: 
+  AkSoundNegativeInteraction: 
 --- !u!1001 &2334361903590785545
 PrefabInstance:
   m_ObjectHideFlags: 0

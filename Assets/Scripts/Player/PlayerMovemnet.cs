@@ -70,18 +70,16 @@ public class PlayerMovemnet : MonoBehaviour
 
     private void Update()
     {
-        float movimientoHorizontal = 0;
-        float movimientoVertical = 0;
-
+        float movimientoHorizontal = Input.GetAxis("Horizontal");
+        float movimientoVertical = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(movimientoHorizontal, 0.0f, movimientoVertical);
         movement = Camera.main.transform.TransformDirection(movement);
         movement.y = 0.0f;
 
-
         if (Vector3.Distance(movement, Vector3.zero) > Vector3.kEpsilon)
         {
-            //rb.AddForce(movement * speed);
+            rb.AddForce(movement * speed * Time.deltaTime);
 
             elapsedTime += Time.deltaTime;
 
@@ -100,7 +98,7 @@ public class PlayerMovemnet : MonoBehaviour
 
             cameraTransform.localPosition = originalCameraPosition;
         }
-        
+
         if (Vector3.Distance(movement, Vector3.zero) > Vector3.kEpsilon)
             if (!corrutineRuning)
                 StartCoroutine(PlayStepsSound(timeBetweenSteps));
