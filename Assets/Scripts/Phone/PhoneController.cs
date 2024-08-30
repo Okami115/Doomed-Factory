@@ -9,6 +9,8 @@ public class PhoneController : MonoBehaviour
     [SerializeField] private List<PhoneApp> _apps = new List<PhoneApp>();
     [SerializeField] private int currentSelectedApp = 0;
     [SerializeField] private bool isActive = false;
+    [SerializeField] private string AKPhonePositiveInteraction;
+    [SerializeField] private string AKPhoneNegativeInteraction;
 
     private void Start()
     {
@@ -20,8 +22,25 @@ public class PhoneController : MonoBehaviour
         _inputsReader.OnPlayerOpenPhone += UsePhone;
     }
 
+    private void OnDestroy()
+    {
+        _inputsReader.OnScroll -= MouseScroll;
+        _inputsReader.OnPlayerInteract -= OnOpenApp;
+        _inputsReader.OnPlayerExitApp -= OnCloseApp;
+        _inputsReader.OnPlayerOpenPhone -= UsePhone;
+    }
+
     private void UsePhone()
     {
+        int openApps = 0;
+        foreach (PhoneApp app in _apps)
+        {
+            if (app.isOpen)
+                openApps++;
+        }
+        if (openApps != 0)
+            return;
+        
         isActive = !isActive;
         gameObject.SetActive(isActive);
     }
@@ -30,24 +49,54 @@ public class PhoneController : MonoBehaviour
     {
         if (isActive)
         {
+            int openApps = 0;
             foreach (PhoneApp app in _apps)
             {
-                if (app.isSelected)
+                if (app.isOpen)
+                    openApps++;
+            }
+            
+            foreach (PhoneApp app in _apps)
+            {
+                if (app.isSelected && openApps == 0)
+                {
                     app.AppInteraction(true);
+                    app.isOpen = true;
+                    _inputsReader.OnScroll -= MouseScroll;
+                }
             }
         }
     }
 
     private void OnCloseApp()
     {
+        
         foreach (PhoneApp app in _apps)
         {
             if (app.isSelected)
+            {
                 app.AppInteraction(false);
+                app.isOpen = false;
+                _inputsReader.OnScroll += MouseScroll;
+            }
+
+            
         }
     }
     private void MouseScroll(float mouseY)
     {
+        int openApps = 0;
+        foreach (PhoneApp app in _apps)
+        {
+            if (app.isOpen)
+                openApps++;
+        }
+        
+        if (!isActive)
+            return;
+        if (openApps != 0)
+            return;
+
         if (mouseY > 0)
         {
             currentSelectedApp++;
@@ -64,7 +113,7 @@ public class PhoneController : MonoBehaviour
     {
         int appsLenght = _apps.Count;
         
-        if (currentSelectedApp > appsLenght)
+        if (currentSelectedApp >= appsLenght)
             currentSelectedApp = appsLenght - 1;
         
         if (currentSelectedApp < 0)
