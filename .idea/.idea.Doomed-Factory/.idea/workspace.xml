@@ -6,9 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="d93efe55-6d3e-4ca3-b934-6bc0f6d23f9a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Render_Textures/MinimapCamera_RT.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Render_Textures/MinimapCamera_RT.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Render_Textures/PhoneCamera_RT.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Render_Textures/PhoneCamera_RT.renderTexture" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game_Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game_Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Keys/Keys.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Keys/Keys.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovemnet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovemnet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneApp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneApp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneInventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +66,9 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\Aula 1\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Aula 1\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Aula 1\\AppData\\Local\\Symbols\\src"
+      "C:\\Users\\Usuario\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Usuario\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\Usuario\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
@@ -131,6 +137,7 @@
       <workItem from="1724020683295" duration="8559000" />
       <workItem from="1724036335272" duration="23000" />
       <workItem from="1724798528096" duration="1445000" />
+      <workItem from="1725043211296" duration="6321000" />
     </task>
     <servers />
   </component>
