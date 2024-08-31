@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d93efe55-6d3e-4ca3-b934-6bc0f6d23f9a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +130,7 @@
       <workItem from="1724798528096" duration="1445000" />
       <workItem from="1725043211296" duration="8789000" />
       <workItem from="1725076493848" duration="251000" />
+      <workItem from="1725077078751" duration="406000" />
     </task>
     <servers />
   </component>

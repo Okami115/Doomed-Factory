@@ -16,15 +16,24 @@ public class PhoneController : MonoBehaviour
     {
         gameObject.SetActive(isActive);
         
-        _inputsReader.OnScroll += MouseScroll;
         _inputsReader.OnPlayerInteract += OnOpenApp;
         _inputsReader.OnPlayerExitApp += OnCloseApp;
         _inputsReader.OnPlayerOpenPhone += UsePhone;
     }
 
-    private void OnDestroy()
+    private void OnEnable()
+    {
+        _inputsReader.OnScroll += MouseScroll;
+    }
+
+    private void OnDisable()
     {
         _inputsReader.OnScroll -= MouseScroll;
+    }
+
+    private void OnDestroy()
+    {
+
         _inputsReader.OnPlayerInteract -= OnOpenApp;
         _inputsReader.OnPlayerExitApp -= OnCloseApp;
         _inputsReader.OnPlayerOpenPhone -= UsePhone;
@@ -32,17 +41,15 @@ public class PhoneController : MonoBehaviour
 
     private void UsePhone()
     {
-        int openApps = 0;
-        foreach (PhoneApp app in _apps)
-        {
-            if (app.isOpen)
-                openApps++;
-        }
-        if (openApps != 0)
-            return;
-        
         isActive = !isActive;
         gameObject.SetActive(isActive);
+        foreach (PhoneApp app in _apps)
+        {
+            if (!isActive)
+            {
+                app.AppInteraction(isActive);
+            }
+        }
     }
 
     private void OnOpenApp()

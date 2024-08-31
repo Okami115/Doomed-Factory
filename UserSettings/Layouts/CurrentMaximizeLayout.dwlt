@@ -92,7 +92,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -169,8 +169,8 @@ MonoBehaviour:
     y: 0
     width: 226
     height: 364
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 5}
   m_Panes:
   - {fileID: 5}
@@ -985,7 +985,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 1148
+  controlID: 3681
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1131,7 +1131,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 0e850000
     m_LastClickedInstanceID: 34062
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000074db0200b0970000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
