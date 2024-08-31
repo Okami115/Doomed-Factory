@@ -16,7 +16,7 @@ public class PhoneController : MonoBehaviour
     {
         gameObject.SetActive(isActive);
         
-        _inputsReader.OnPlayerInteract += OnOpenApp;
+        _inputsReader.OnPlayerOpenApp += OnOpenApp;
         _inputsReader.OnPlayerExitApp += OnCloseApp;
         _inputsReader.OnPlayerOpenPhone += UsePhone;
     }

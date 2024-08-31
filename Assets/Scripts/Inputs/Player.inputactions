@@ -15,24 +15,6 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Light",
-                    "type": "Button",
-                    "id": "b188b8b2-3b0e-4ca3-afda-a3ed6abab4b5",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Camera",
-                    "type": "Button",
-                    "id": "666113d7-7978-4a82-b473-fd031ffc46f8",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Interact",
                     "type": "Button",
                     "id": "6d775e0b-a950-439c-84f4-5fafb06fbb7b",
@@ -42,18 +24,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ExitApp",
+                    "name": "OpenApp",
                     "type": "Button",
-                    "id": "557324df-e148-4667-92d1-586d0bc92b9d",
+                    "id": "e0fd515f-7eab-499d-8ff0-29625189871d",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Spect",
+                    "name": "ExitApp",
                     "type": "Button",
-                    "id": "b2457a41-b5f7-4205-a06f-3eeb978d6256",
+                    "id": "557324df-e148-4667-92d1-586d0bc92b9d",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -167,56 +149,12 @@
                 },
                 {
                     "name": "",
-                    "id": "48ba5723-9ed2-4fc1-aabb-1d9e0bd8e968",
-                    "path": "<Keyboard>/f",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Light",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "6ab0adaf-fb7e-418f-a986-23e38232868f",
-                    "path": "<Keyboard>/tab",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Spect",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "5995751a-280e-4561-887b-0ab4a85c128a",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Interact",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "efd5e38a-513e-42f2-bfb9-b46a5a9d4274",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Interact",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "85dab441-2e31-4709-9930-f651484a6f13",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -261,6 +199,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "OpenPhone",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b60070de-ed13-49f4-afb3-4e51f2fa92fb",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OpenApp",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
