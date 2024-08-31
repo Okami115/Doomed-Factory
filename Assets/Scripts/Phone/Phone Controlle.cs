@@ -16,7 +16,7 @@ public class PhoneControlle : MonoBehaviour
     public void OnLight()
     {
         LightOn = !LightOn;
-        m_Animator.SetBool("Light", LightOn);
+        //m_Animator.SetBool("Light", LightOn);
         Debug.Log(LightOn);
 
         if (LightOn)
@@ -28,19 +28,19 @@ public class PhoneControlle : MonoBehaviour
         if (LightOn && SpectOn)
         {
             SpectOn = false;
-            m_Animator.SetBool("Spect", SpectOn);
+            //m_Animator.SetBool("Spect", SpectOn);
         }
     }
 
     public void OnSpect()
     {
         SpectOn = !SpectOn;
-        m_Animator.SetBool("Spect", SpectOn);
+        //m_Animator.SetBool("Spect", SpectOn);
 
         if (SpectOn && CameraOn)
         {
             CameraOn = !CameraOn;
-            m_Animator.SetBool("Camera", CameraOn);
+            //m_Animator.SetBool("Camera", CameraOn);
         }
     }
 
@@ -50,7 +50,7 @@ public class PhoneControlle : MonoBehaviour
 
         if (SpectOn)
             AkSoundEngine.PostEvent("Play_SFX_Player_Interact_Phone_SwitchScreen", gameObject);
-        m_Animator.SetBool("Camera", CameraOn);
+        //m_Animator.SetBool("Camera", CameraOn);
     }
 
     public void OnPause()
@@ -61,7 +61,7 @@ public class PhoneControlle : MonoBehaviour
         else
             Cursor.lockState = CursorLockMode.Locked;
         
-        m_Animator.SetBool("Pause", PauseOn);
+       // m_Animator.SetBool("Pause", PauseOn);
     }
 
     public void HidePhone()
@@ -72,8 +72,8 @@ public class PhoneControlle : MonoBehaviour
         LightOn = false;
         SpectOn = false;
         CameraOn = false;
-        m_Animator.SetBool("Light", LightOn);
-        m_Animator.SetBool("Spect", SpectOn);
-        m_Animator.SetBool("Camera", CameraOn);
+        //m_Animator.SetBool("Light", LightOn);
+        //m_Animator.SetBool("Spect", SpectOn);
+        //m_Animator.SetBool("Camera", CameraOn);
     }
 }
