@@ -73,7 +73,7 @@ public class PhoneController : MonoBehaviour
         
         foreach (PhoneApp app in _apps)
         {
-            if (app.isSelected)
+            if (app.isOpen)
             {
                 app.AppInteraction(false);
                 app.isOpen = false;
