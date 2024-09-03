@@ -7322,15 +7322,15 @@ PrefabInstance:
       objectReference: {fileID: 2087158387}
     - target: {fileID: 929109118202394873, guid: c382ff27938cb614db711eea43d57659, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.8
+      value: 37.11579
       objectReference: {fileID: 0}
     - target: {fileID: 929109118202394873, guid: c382ff27938cb614db711eea43d57659, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1684208
+      value: -1.3684207
       objectReference: {fileID: 0}
     - target: {fileID: 929109118202394873, guid: c382ff27938cb614db711eea43d57659, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.3052626
+      value: 4.3789473
       objectReference: {fileID: 0}
     - target: {fileID: 936633794508699748, guid: c382ff27938cb614db711eea43d57659, type: 3}
       propertyPath: m_Mesh
@@ -7338,7 +7338,7 @@ PrefabInstance:
       objectReference: {fileID: 2073844189}
     - target: {fileID: 949298696122577765, guid: c382ff27938cb614db711eea43d57659, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 949298696122577765, guid: c382ff27938cb614db711eea43d57659, type: 3}
       propertyPath: m_StaticEditorFlags
