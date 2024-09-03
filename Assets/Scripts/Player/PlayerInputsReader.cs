@@ -9,6 +9,7 @@ public class PlayerInputsReader : MonoBehaviour
     public event Action OnPlayerOpenPhone;
     public event Action OnPlayerInteract;
     public event Action OnPlayerExitApp;
+    public event Action OnPlayerOpenApp;
     public event Action<float> OnScroll;
     
     public void OnMove(InputValue input)
@@ -20,6 +21,11 @@ public class PlayerInputsReader : MonoBehaviour
     public void OnInteract(InputValue input)
     {
         OnPlayerInteract?.Invoke();
+    }
+
+    public void OnOpenApp(InputValue input)
+    {
+        OnPlayerOpenApp?.Invoke();
     }
 
     public void OnExitApp(InputValue input)

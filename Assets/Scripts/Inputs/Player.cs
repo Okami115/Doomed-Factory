@@ -37,24 +37,6 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Light"",
-                    ""type"": ""Button"",
-                    ""id"": ""b188b8b2-3b0e-4ca3-afda-a3ed6abab4b5"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Camera"",
-                    ""type"": ""Button"",
-                    ""id"": ""666113d7-7978-4a82-b473-fd031ffc46f8"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""6d775e0b-a950-439c-84f4-5fafb06fbb7b"",
@@ -64,18 +46,18 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""ExitApp"",
+                    ""name"": ""OpenApp"",
                     ""type"": ""Button"",
-                    ""id"": ""557324df-e148-4667-92d1-586d0bc92b9d"",
+                    ""id"": ""e0fd515f-7eab-499d-8ff0-29625189871d"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Spect"",
+                    ""name"": ""ExitApp"",
                     ""type"": ""Button"",
-                    ""id"": ""b2457a41-b5f7-4205-a06f-3eeb978d6256"",
+                    ""id"": ""557324df-e148-4667-92d1-586d0bc92b9d"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -189,56 +171,12 @@ public partial class @Player: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""48ba5723-9ed2-4fc1-aabb-1d9e0bd8e968"",
-                    ""path"": ""<Keyboard>/f"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Light"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""6ab0adaf-fb7e-418f-a986-23e38232868f"",
-                    ""path"": ""<Keyboard>/tab"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Spect"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""5995751a-280e-4561-887b-0ab4a85c128a"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Interact"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""efd5e38a-513e-42f2-bfb9-b46a5a9d4274"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Interact"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""85dab441-2e31-4709-9930-f651484a6f13"",
-                    ""path"": ""<Keyboard>/e"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Camera"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -285,6 +223,17 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""action"": ""OpenPhone"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b60070de-ed13-49f4-afb3-4e51f2fa92fb"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OpenApp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -294,11 +243,9 @@ public partial class @Player: IInputActionCollection2, IDisposable
         // World
         m_World = asset.FindActionMap("World", throwIfNotFound: true);
         m_World_Move = m_World.FindAction("Move", throwIfNotFound: true);
-        m_World_Light = m_World.FindAction("Light", throwIfNotFound: true);
-        m_World_Camera = m_World.FindAction("Camera", throwIfNotFound: true);
         m_World_Interact = m_World.FindAction("Interact", throwIfNotFound: true);
+        m_World_OpenApp = m_World.FindAction("OpenApp", throwIfNotFound: true);
         m_World_ExitApp = m_World.FindAction("ExitApp", throwIfNotFound: true);
-        m_World_Spect = m_World.FindAction("Spect", throwIfNotFound: true);
         m_World_Pause = m_World.FindAction("Pause", throwIfNotFound: true);
         m_World_OpenPhone = m_World.FindAction("OpenPhone", throwIfNotFound: true);
         m_World_MouseScroll = m_World.FindAction("MouseScroll", throwIfNotFound: true);
@@ -364,11 +311,9 @@ public partial class @Player: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_World;
     private List<IWorldActions> m_WorldActionsCallbackInterfaces = new List<IWorldActions>();
     private readonly InputAction m_World_Move;
-    private readonly InputAction m_World_Light;
-    private readonly InputAction m_World_Camera;
     private readonly InputAction m_World_Interact;
+    private readonly InputAction m_World_OpenApp;
     private readonly InputAction m_World_ExitApp;
-    private readonly InputAction m_World_Spect;
     private readonly InputAction m_World_Pause;
     private readonly InputAction m_World_OpenPhone;
     private readonly InputAction m_World_MouseScroll;
@@ -377,11 +322,9 @@ public partial class @Player: IInputActionCollection2, IDisposable
         private @Player m_Wrapper;
         public WorldActions(@Player wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_World_Move;
-        public InputAction @Light => m_Wrapper.m_World_Light;
-        public InputAction @Camera => m_Wrapper.m_World_Camera;
         public InputAction @Interact => m_Wrapper.m_World_Interact;
+        public InputAction @OpenApp => m_Wrapper.m_World_OpenApp;
         public InputAction @ExitApp => m_Wrapper.m_World_ExitApp;
-        public InputAction @Spect => m_Wrapper.m_World_Spect;
         public InputAction @Pause => m_Wrapper.m_World_Pause;
         public InputAction @OpenPhone => m_Wrapper.m_World_OpenPhone;
         public InputAction @MouseScroll => m_Wrapper.m_World_MouseScroll;
@@ -397,21 +340,15 @@ public partial class @Player: IInputActionCollection2, IDisposable
             @Move.started += instance.OnMove;
             @Move.performed += instance.OnMove;
             @Move.canceled += instance.OnMove;
-            @Light.started += instance.OnLight;
-            @Light.performed += instance.OnLight;
-            @Light.canceled += instance.OnLight;
-            @Camera.started += instance.OnCamera;
-            @Camera.performed += instance.OnCamera;
-            @Camera.canceled += instance.OnCamera;
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
+            @OpenApp.started += instance.OnOpenApp;
+            @OpenApp.performed += instance.OnOpenApp;
+            @OpenApp.canceled += instance.OnOpenApp;
             @ExitApp.started += instance.OnExitApp;
             @ExitApp.performed += instance.OnExitApp;
             @ExitApp.canceled += instance.OnExitApp;
-            @Spect.started += instance.OnSpect;
-            @Spect.performed += instance.OnSpect;
-            @Spect.canceled += instance.OnSpect;
             @Pause.started += instance.OnPause;
             @Pause.performed += instance.OnPause;
             @Pause.canceled += instance.OnPause;
@@ -428,21 +365,15 @@ public partial class @Player: IInputActionCollection2, IDisposable
             @Move.started -= instance.OnMove;
             @Move.performed -= instance.OnMove;
             @Move.canceled -= instance.OnMove;
-            @Light.started -= instance.OnLight;
-            @Light.performed -= instance.OnLight;
-            @Light.canceled -= instance.OnLight;
-            @Camera.started -= instance.OnCamera;
-            @Camera.performed -= instance.OnCamera;
-            @Camera.canceled -= instance.OnCamera;
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
+            @OpenApp.started -= instance.OnOpenApp;
+            @OpenApp.performed -= instance.OnOpenApp;
+            @OpenApp.canceled -= instance.OnOpenApp;
             @ExitApp.started -= instance.OnExitApp;
             @ExitApp.performed -= instance.OnExitApp;
             @ExitApp.canceled -= instance.OnExitApp;
-            @Spect.started -= instance.OnSpect;
-            @Spect.performed -= instance.OnSpect;
-            @Spect.canceled -= instance.OnSpect;
             @Pause.started -= instance.OnPause;
             @Pause.performed -= instance.OnPause;
             @Pause.canceled -= instance.OnPause;
@@ -472,11 +403,9 @@ public partial class @Player: IInputActionCollection2, IDisposable
     public interface IWorldActions
     {
         void OnMove(InputAction.CallbackContext context);
-        void OnLight(InputAction.CallbackContext context);
-        void OnCamera(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnOpenApp(InputAction.CallbackContext context);
         void OnExitApp(InputAction.CallbackContext context);
-        void OnSpect(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
         void OnOpenPhone(InputAction.CallbackContext context);
         void OnMouseScroll(InputAction.CallbackContext context);
