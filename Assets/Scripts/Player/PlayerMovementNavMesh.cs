@@ -60,7 +60,7 @@ public class PlayerMovementNavMesh : MonoBehaviour
             agent.destination = transform.position;
             agent.isStopped = true;
             agent.velocity = Vector3.zero;
-            Debug.Log($"AGENT :: {agent.destination} == POS :: {transform.position}");
+           // Debug.Log($"AGENT :: {agent.destination} == POS :: {transform.position}");
         }
         else
         {

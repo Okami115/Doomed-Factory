@@ -47,9 +47,16 @@ public class PhoneApp : MonoBehaviour
     {
         isOpen = interact;
         if (interact)
-            AkSoundEngine.PostEvent(AkSoundPositiveInteraction,gameObject);
+        {
+            if (AkSoundPositiveInteraction != null)
+                AkSoundEngine.PostEvent(AkSoundPositiveInteraction, gameObject);
+        }
         else
-            AkSoundEngine.PostEvent(AkSoundNegativeInteraction, gameObject);
+        {
+            if (AkSoundNegativeInteraction != null)
+                AkSoundEngine.PostEvent(AkSoundNegativeInteraction, gameObject);
+        }
+
         foreach (GameObject appObject in appScreen)
         {
             appObject.SetActive(interact);
