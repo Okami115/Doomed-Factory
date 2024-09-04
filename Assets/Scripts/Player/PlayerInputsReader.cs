@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class PlayerInputsReader : MonoBehaviour
 {
     [SerializeField] private PlayerInput _input;
-    public event Action<Vector3> OnPlayerMove;
+    public event Action<Vector2> OnPlayerMove;
     public event Action OnPlayerOpenPhone;
     public event Action OnPlayerInteract;
     public event Action OnPlayerExitApp;
@@ -14,8 +14,7 @@ public class PlayerInputsReader : MonoBehaviour
     
     public void OnMove(InputValue input)
     {
-        OnPlayerMove?.Invoke(input.Get<Vector3>());
-        Debug.Log("OnPlayerMove");
+        OnPlayerMove?.Invoke(input.Get<Vector2>());
     }
 
     public void OnInteract(InputValue input)
