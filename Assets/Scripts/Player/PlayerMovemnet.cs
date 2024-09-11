@@ -38,13 +38,11 @@ public class PlayerMovemnet : MonoBehaviour
         }
 
         originalCameraPosition = cameraTransform.localPosition;
-        _inputsReader.OnPlayerMove += OnPlayerMove;
         _inputsReader.OnPlayerInteract += OnPlayerInteract;
     }
 
     private void OnDestroy()
     {
-        _inputsReader.OnPlayerMove -= OnPlayerMove;
         _inputsReader.OnPlayerInteract -= OnPlayerInteract;
     }
 
@@ -58,9 +56,9 @@ public class PlayerMovemnet : MonoBehaviour
         playerKeys.Add(newKey);
     }
 
-    private void OnPlayerMove(Vector3 obj)
+    public List<Keys> GetKeys()
     {
-        // movement = obj;
+        return playerKeys;
     }
 
     private void Update()
@@ -68,15 +66,13 @@ public class PlayerMovemnet : MonoBehaviour
         float movimientoHorizontal = Input.GetAxis("Horizontal");
         float movimientoVertical = Input.GetAxis("Vertical");
 
-
         Vector3 movement = new Vector3(movimientoHorizontal, 0.0f, movimientoVertical);
         movement = Camera.main.transform.TransformDirection(movement);
         movement.y = 0.0f;
 
-
         if (Vector3.Distance(movement, Vector3.zero) > Vector3.kEpsilon)
         {
-            rb.AddForce(movement * speed);
+            rb.AddForce(movement * speed * Time.deltaTime);
 
             elapsedTime += Time.deltaTime;
 
@@ -95,7 +91,7 @@ public class PlayerMovemnet : MonoBehaviour
 
             cameraTransform.localPosition = originalCameraPosition;
         }
-        
+
         if (Vector3.Distance(movement, Vector3.zero) > Vector3.kEpsilon)
             if (!corrutineRuning)
                 StartCoroutine(PlayStepsSound(timeBetweenSteps));
