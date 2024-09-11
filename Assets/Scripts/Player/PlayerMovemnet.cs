@@ -38,13 +38,11 @@ public class PlayerMovemnet : MonoBehaviour
         }
 
         originalCameraPosition = cameraTransform.localPosition;
-        _inputsReader.OnPlayerMove += OnPlayerMove;
         _inputsReader.OnPlayerInteract += OnPlayerInteract;
     }
 
     private void OnDestroy()
     {
-        _inputsReader.OnPlayerMove -= OnPlayerMove;
         _inputsReader.OnPlayerInteract -= OnPlayerInteract;
     }
 
@@ -61,11 +59,6 @@ public class PlayerMovemnet : MonoBehaviour
     public List<Keys> GetKeys()
     {
         return playerKeys;
-    }
-
-    private void OnPlayerMove(Vector3 obj)
-    {
-        // movement = obj;
     }
 
     private void Update()

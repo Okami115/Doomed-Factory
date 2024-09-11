@@ -23,6 +23,8 @@ public class PlayerMovementNavMesh : MonoBehaviour
         {
             cameraTransform = Camera.main.transform;
         }
+
+        originalCameraPosition = cameraTransform.localPosition;
     }
 
     private void Update()
