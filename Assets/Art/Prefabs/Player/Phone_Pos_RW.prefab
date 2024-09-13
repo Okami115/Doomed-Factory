@@ -431,8 +431,8 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 4010526548519116835}
   appScreen:
   - {fileID: 3154674498727447197}
-  AkSoundPositiveInteraction: 
-  AkSoundNegativeInteraction: 
+  AkSoundPositiveInteraction: Play_SFX_Player_Interact_Phone_SwitchScreen
+  AkSoundNegativeInteraction: Play_SFX_Player_Interact_Phone_SwitchScreen
   _player: {fileID: 0}
   _inputsReader: {fileID: 0}
   _itemImage: {fileID: 2992381560466630134}
@@ -691,8 +691,8 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 7659231216639117485}
   appScreen:
   - {fileID: 6032851290592454104}
-  AkSoundPositiveInteraction: 
-  AkSoundNegativeInteraction: 
+  AkSoundPositiveInteraction: Play_SFX_Player_Interact_Phone_SwitchScreen
+  AkSoundNegativeInteraction: Play_SFX_Player_Interact_Phone_SwitchScreen
 --- !u!212 &7659231216639117485
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1302,8 +1302,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 633674987113692090}
   appScreen: []
-  AkSoundPositiveInteraction: 
-  AkSoundNegativeInteraction: 
+  AkSoundPositiveInteraction: Play_SFX_Player_Interact_Phone_SwitchScreen
+  AkSoundNegativeInteraction: Play_SFX_Player_Interact_Phone_SwitchScreen
 --- !u!1 &3413359053716986653
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,7 +1321,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8273606557488442435
 Transform:
   m_ObjectHideFlags: 0
@@ -1330,13 +1330,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3413359053716986653}
   serializedVersion: 2
-  m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
-  m_LocalPosition: {x: -6.66, y: 6.87, z: -2.5}
+  m_LocalRotation: {x: 0.9659259, y: -0, z: 0.258819, w: 0}
+  m_LocalPosition: {x: -6.660034, y: 6.8701715, z: -2.499991}
   m_LocalScale: {x: 7.093354, y: 5.5020657, z: 131.08664}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8492551075355243274}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 180, y: -30, z: 0}
 --- !u!108 &4903198520193196156
 Light:
   m_ObjectHideFlags: 0
@@ -1829,8 +1829,8 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 1981102674722279212}
   appScreen:
   - {fileID: 3413359053716986653}
-  AkSoundPositiveInteraction: 
-  AkSoundNegativeInteraction: 
+  AkSoundPositiveInteraction: Play_SFX_Player_Interact_Phone_Light_On
+  AkSoundNegativeInteraction: Play_SFX_Player_Interact_Phone_Light_Off
 --- !u!1 &6692687810440900206
 GameObject:
   m_ObjectHideFlags: 0
@@ -2735,8 +2735,8 @@ MonoBehaviour:
   - {fileID: 546866380453601231}
   - {fileID: 1725326311229649770}
   - {fileID: 2086042488037138873}
-  AkSoundPositiveInteraction: 
-  AkSoundNegativeInteraction: 
+  AkSoundPositiveInteraction: Play_SFX_Player_Interact_Phone_SwitchScreen
+  AkSoundNegativeInteraction: Play_SFX_Player_Interact_Phone_SwitchScreen
 --- !u!1001 &6784383303047107766
 PrefabInstance:
   m_ObjectHideFlags: 0
