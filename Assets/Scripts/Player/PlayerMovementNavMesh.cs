@@ -10,6 +10,9 @@ public class PlayerMovementNavMesh : MonoBehaviour
     [SerializeField] private Transform target;
     Vector3 movement = Vector3.zero;
     private float elapsedTime;
+    [SerializeField] private float speedWalking;
+    [SerializeField] private float speedRunning;
+    [SerializeField] private float speedCrouching;
     [SerializeField] private float frequencyY;
     [SerializeField] private float amplitudeY;
     [SerializeField] private float frequencyX;
@@ -68,16 +71,16 @@ public class PlayerMovementNavMesh : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                agent.speed = 15;
+                agent.speed = speedRunning;
             }
             else
             {
-                agent.speed = 10;
+                agent.speed = speedRunning;
             }
 
             agent.isStopped = false;
             movement += transform.position + movement * 2;
-            movement.y = transform.position.y / 2;
+            movement.y = transform.position.y + 1;
             agent.destination = movement;
 
             elapsedTime += Time.deltaTime;
@@ -91,7 +94,7 @@ public class PlayerMovementNavMesh : MonoBehaviour
 
             if (Input.GetKey(KeyCode.LeftControl))
             {
-                agent.speed = 5;
+                agent.speed = speedCrouching;
                 Vector3 aux = new Vector3(cameraTransform.position.x, cameraTransform.position.y / 2, cameraTransform.position.z);
 
                 cameraTransform.position = aux;
