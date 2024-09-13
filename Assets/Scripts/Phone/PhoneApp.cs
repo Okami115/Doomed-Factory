@@ -6,9 +6,9 @@ using UnityEngine;
 [Serializable]
 public class PhoneApp : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer _spriteRenderer;
-    [SerializeField] private List<GameObject> appScreen;
-    private Color defaultColor;
+    [SerializeField] protected SpriteRenderer _spriteRenderer;
+    [SerializeField] protected List<GameObject> appScreen;
+    protected Color defaultColor;
 
     public string AkSoundPositiveInteraction;
     public string AkSoundNegativeInteraction;
