@@ -1,13 +1,10 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class PlayerMovementNavMesh : MonoBehaviour
 {
     [SerializeField] private NavMeshAgent agent;
-    [SerializeField] private Transform target;
+    [SerializeField] private Transform pivot;
     Vector3 movement = Vector3.zero;
     private float elapsedTime;
     [SerializeField] private float speedWalking;
@@ -65,7 +62,6 @@ public class PlayerMovementNavMesh : MonoBehaviour
             agent.destination = transform.position;
             agent.isStopped = true;
             agent.velocity = Vector3.zero;
-           // Debug.Log($"AGENT :: {agent.destination} == POS :: {transform.position}");
         }
         else
         {
@@ -75,12 +71,20 @@ public class PlayerMovementNavMesh : MonoBehaviour
             }
             else
             {
-                agent.speed = speedRunning;
+                agent.speed = speedWalking;
             }
 
             agent.isStopped = false;
-            movement += transform.position + movement * 2;
-            movement.y = transform.position.y + 1;
+
+            movement += transform.position + movement;
+            movement.y = pivot.position.y;
+
+            RaycastHit hit;
+            if (Physics.Raycast(movement, Vector3.down, out hit))
+            {
+                movement.y = hit.point.y + 1;
+
+            }
             agent.destination = movement;
 
             elapsedTime += Time.deltaTime;
@@ -106,6 +110,6 @@ public class PlayerMovementNavMesh : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawLine(transform.position, movement);
+        Gizmos.DrawLine(pivot.position, movement);
     }
 }
