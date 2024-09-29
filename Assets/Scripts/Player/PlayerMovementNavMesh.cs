@@ -6,14 +6,26 @@ using UnityEngine.AI;
 
 public class PlayerMovementNavMesh : MonoBehaviour
 {
+    [Header("Init Variables")]
     [SerializeField] private NavMeshAgent agent;
-    [SerializeField] private Transform target;
-    Vector3 movement = Vector3.zero;
-    private float elapsedTime;
+
+    [Header("Movement Variables")]
+    [SerializeField] private float RunSpeed;
+    [SerializeField] private float WalkSpeed;
+    [SerializeField] private float CrouchSpeed;
+    [SerializeField] private Transform pivot;
+
+    [Header("Camera Animate Variables")]
     [SerializeField] private float frequencyY;
     [SerializeField] private float amplitudeY;
     [SerializeField] private float frequencyX;
     [SerializeField] private float amplitudeX;
+
+    [Header("Debug Variables")]
+    [SerializeField] private Transform target;
+
+    Vector3 movement = Vector3.zero;
+    private float elapsedTime;
     private Vector3 originalCameraPosition;
     private Transform cameraTransform;
 
@@ -62,22 +74,30 @@ public class PlayerMovementNavMesh : MonoBehaviour
             agent.destination = transform.position;
             agent.isStopped = true;
             agent.velocity = Vector3.zero;
-            // Debug.Log($"AGENT :: {agent.destination} == POS :: {transform.position}");
         }
         else
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                agent.speed = 15;
+                agent.speed = RunSpeed;
             }
             else
             {
-                agent.speed = 10;
+                agent.speed = WalkSpeed;
             }
 
             agent.isStopped = false;
-            movement += transform.position + movement * 2;
-            movement.y = transform.position.y / 2;
+            movement += transform.position + (movement.normalized / 100);
+
+            movement.y = pivot.position.y;
+
+            RaycastHit hit;
+            if (Physics.Raycast(movement, Vector3.down, out hit))
+            {
+                movement.y = hit.point.y + 0.1f;
+
+            }
+
             agent.destination = movement;
 
             elapsedTime += Time.deltaTime;
@@ -91,8 +111,8 @@ public class PlayerMovementNavMesh : MonoBehaviour
 
             if (Input.GetKey(KeyCode.LeftControl))
             {
-                agent.speed = 5;
-                Vector3 aux = new Vector3(cameraTransform.position.x, cameraTransform.position.y / 2, cameraTransform.position.z);
+                agent.speed = CrouchSpeed;
+                Vector3 aux = new Vector3(cameraTransform.position.x, cameraTransform.position.y - 1, cameraTransform.position.z);
 
                 cameraTransform.position = aux;
             }
@@ -103,6 +123,6 @@ public class PlayerMovementNavMesh : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawLine(transform.position, movement);
+        Gizmos.DrawLine(pivot.position, movement);
     }
 }
