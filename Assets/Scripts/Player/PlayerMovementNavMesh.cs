@@ -3,17 +3,26 @@ using UnityEngine.AI;
 
 public class PlayerMovementNavMesh : MonoBehaviour
 {
+    [Header("Init Variables")]
     [SerializeField] private NavMeshAgent agent;
+
+    [Header("Movement Variables")]
+    [SerializeField] private float RunSpeed;
+    [SerializeField] private float WalkSpeed;
+    [SerializeField] private float CrouchSpeed;
     [SerializeField] private Transform pivot;
-    Vector3 movement = Vector3.zero;
-    private float elapsedTime;
-    [SerializeField] private float speedWalking;
-    [SerializeField] private float speedRunning;
-    [SerializeField] private float speedCrouching;
+
+    [Header("Camera Animate Variables")]
     [SerializeField] private float frequencyY;
     [SerializeField] private float amplitudeY;
     [SerializeField] private float frequencyX;
     [SerializeField] private float amplitudeX;
+
+    [Header("Debug Variables")]
+    [SerializeField] private Transform target;
+
+    Vector3 movement = Vector3.zero;
+    private float elapsedTime;
     private Vector3 originalCameraPosition;
     private Transform cameraTransform;
 
@@ -67,24 +76,25 @@ public class PlayerMovementNavMesh : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                agent.speed = speedRunning;
+                agent.speed = RunSpeed;
             }
             else
             {
-                agent.speed = speedWalking;
+                agent.speed = WalkSpeed;
             }
 
             agent.isStopped = false;
+            movement += transform.position + (movement.normalized / 100);
 
-            movement += transform.position + movement;
             movement.y = pivot.position.y;
 
             RaycastHit hit;
             if (Physics.Raycast(movement, Vector3.down, out hit))
             {
-                movement.y = hit.point.y + 1;
+                movement.y = hit.point.y + 0.1f;
 
             }
+
             agent.destination = movement;
 
             elapsedTime += Time.deltaTime;
@@ -98,8 +108,8 @@ public class PlayerMovementNavMesh : MonoBehaviour
 
             if (Input.GetKey(KeyCode.LeftControl))
             {
-                agent.speed = speedCrouching;
-                Vector3 aux = new Vector3(cameraTransform.position.x, cameraTransform.position.y / 2, cameraTransform.position.z);
+                agent.speed = CrouchSpeed;
+                Vector3 aux = new Vector3(cameraTransform.position.x, cameraTransform.position.y - 1, cameraTransform.position.z);
 
                 cameraTransform.position = aux;
             }
