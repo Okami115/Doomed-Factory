@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<SwitchGroups>
+				<SwitchGroup Id="3262912638" Name="Player_Footsteps_Material">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete"/>
+						<Switch Id="2473969246" Name="Metal"/>
+						<Switch Id="2654748154" Name="Water"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="1391712453" Type="User" Language="SFX" Hash="{B27155F0-1F65-0057-991B-191B5040F887}">
+			<ShortName>InGameSoundBank</ShortName>
+			<Path>InGameSoundBank.bnk</Path>
+			<Media>
+				<File Id="17706389" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Concrete_Walk_DEMO-004.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Concrete_Walk_DEMO-004_818F3B66.wem</CachePath>
+				</File>
+				<File Id="35266308" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Concrete_Walk_DEMO-009.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Concrete_Walk_DEMO-009_818F3B66.wem</CachePath>
+				</File>
+				<File Id="85581193" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Concrete_Walk_DEMO-003.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Concrete_Walk_DEMO-003_818F3B66.wem</CachePath>
+				</File>
+				<File Id="148017773" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Metal_Walk_DEMO-010.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Metal_Walk_DEMO-010_818F3B66.wem</CachePath>
+				</File>
+				<File Id="181072394" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Interact_Door_Metal_Lock_DEMO.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Interact_Door_Metal_Lock_DEMO_818F3B66.wem</CachePath>
+				</File>
+				<File Id="228849478" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Concrete_Walk_DEMO-008.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Concrete_Walk_DEMO-008_818F3B66.wem</CachePath>
+				</File>
+				<File Id="281638350" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Interact_Phone_Screen_Lock_DEMO.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Interact_Phone_Screen_Lock_DEMO_818F3B66.wem</CachePath>
+				</File>
+				<File Id="284394758" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-016.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-016_818F3B66.wem</CachePath>
+				</File>
+				<File Id="298861187" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Interact_Phone_Light_On_DEMO.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Interact_Phone_Light_On_DEMO_818F3B66.wem</CachePath>
+				</File>
+				<File Id="313172559" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Metal_Walk_DEMO-002.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Metal_Walk_DEMO-002_818F3B66.wem</CachePath>
+				</File>
+				<File Id="315214646" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Metal_Walk_DEMO-001.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Metal_Walk_DEMO-001_818F3B66.wem</CachePath>
+				</File>
+				<File Id="337633743" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Metal_Walk_DEMO-003.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Metal_Walk_DEMO-003_818F3B66.wem</CachePath>
+				</File>
+				<File Id="344401073" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Metal_Walk_DEMO-009.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Metal_Walk_DEMO-009_818F3B66.wem</CachePath>
+				</File>
+				<File Id="348244579" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>horror-ambience-sound-7-vol-001-147601.wav</ShortName>
+					<CachePath>SFX/horror-ambience-sound-7-vol-001-147601_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="357532581" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Metal_Walk_DEMO-004.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Metal_Walk_DEMO-004_818F3B66.wem</CachePath>
+				</File>
+				<File Id="366548279" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-017.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-017_818F3B66.wem</CachePath>
+				</File>
+				<File Id="368422430" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Interact_Phone_SwitchScreen_DEMO.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Interact_Phone_SwitchScreen_DEMO_818F3B66.wem</CachePath>
+				</File>
+				<File Id="435524527" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Interact_Door_Wood_Lock_DEMO.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Interact_Door_Wood_Lock_DEMO_818F3B66.wem</CachePath>
+				</File>
+				<File Id="506047927" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-013.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-013_818F3B66.wem</CachePath>
+				</File>
+				<File Id="509183541" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Interact_Phone_Screen_Unlock_DEMO.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Interact_Phone_Screen_Unlock_DEMO_818F3B66.wem</CachePath>
+				</File>
+				<File Id="519477548" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-020.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-020_818F3B66.wem</CachePath>
+				</File>
+				<File Id="550848481" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Interact_Door_Metal_Unlock_DEMO.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Interact_Door_Metal_Unlock_DEMO_818F3B66.wem</CachePath>
+				</File>
+				<File Id="557551372" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Concrete_Walk_DEMO-001.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Concrete_Walk_DEMO-001_818F3B66.wem</CachePath>
+				</File>
+				<File Id="563347142" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Concrete_Walk_DEMO-002.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Concrete_Walk_DEMO-002_818F3B66.wem</CachePath>
+				</File>
+				<File Id="620116365" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Concrete_Walk_DEMO-005.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Concrete_Walk_DEMO-005_818F3B66.wem</CachePath>
+				</File>
+				<File Id="645205886" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Metal_Walk_DEMO-008.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Metal_Walk_DEMO-008_818F3B66.wem</CachePath>
+				</File>
+				<File Id="662077017" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Concrete_Walk_DEMO-010.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Concrete_Walk_DEMO-010_818F3B66.wem</CachePath>
+				</File>
+				<File Id="664536157" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Interact_Phone_Light_Off_DEMO.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Interact_Phone_Light_Off_DEMO_818F3B66.wem</CachePath>
+				</File>
+				<File Id="697044925" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Interact_Phone_Screen_Fail_DEMO.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Interact_Phone_Screen_Fail_DEMO_818F3B66.wem</CachePath>
+				</File>
+				<File Id="739226946" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-018.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-018_818F3B66.wem</CachePath>
+				</File>
+				<File Id="771714606" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-014.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-014_818F3B66.wem</CachePath>
+				</File>
+				<File Id="785014167" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-015.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-015_818F3B66.wem</CachePath>
+				</File>
+				<File Id="862633659" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Metal_Walk_DEMO-005.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Metal_Walk_DEMO-005_818F3B66.wem</CachePath>
+				</File>
+				<File Id="863979365" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Interact_Phone_Light_Fail_DEMO.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Interact_Phone_Light_Fail_DEMO_818F3B66.wem</CachePath>
+				</File>
+				<File Id="876843248" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Concrete_Walk_DEMO-006.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Concrete_Walk_DEMO-006_818F3B66.wem</CachePath>
+				</File>
+				<File Id="900225347" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-012.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-012_818F3B66.wem</CachePath>
+				</File>
+				<File Id="915529305" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Concrete_Walk_DEMO-007.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Concrete_Walk_DEMO-007_818F3B66.wem</CachePath>
+				</File>
+				<File Id="919983926" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Interact_Key_PickUp_DEMO.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Interact_Key_PickUp_DEMO_818F3B66.wem</CachePath>
+				</File>
+				<File Id="931942173" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Interact_Door_Wood_Unlock_DEMO.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Interact_Door_Wood_Unlock_DEMO_818F3B66.wem</CachePath>
+				</File>
+				<File Id="932873400" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Metal_Walk_DEMO-006.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Metal_Walk_DEMO-006_818F3B66.wem</CachePath>
+				</File>
+				<File Id="977924793" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Metal_Walk_DEMO-007.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Metal_Walk_DEMO-007_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1019531812" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-011.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-011_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1071738769" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-019.wav</ShortName>
+					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-019_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3051613610" Name="Play_DefaultEnviroment" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="348244579"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="885077343" Name="Play_KeyPickUp" DurationType="OneShot" DurationMin="1.9038959" DurationMax="1.9038959">
+					<MediaRefs>
+						<MediaRef Id="919983926"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="98439365" Name="Play_Player_FootSteps" DurationType="OneShot" DurationMin="0.36138323" DurationMax="0.6521413">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3262912638" Id="841620460" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="17706389"/>
+								<MediaRef Id="35266308"/>
+								<MediaRef Id="85581193"/>
+								<MediaRef Id="228849478"/>
+								<MediaRef Id="557551372"/>
+								<MediaRef Id="563347142"/>
+								<MediaRef Id="620116365"/>
+								<MediaRef Id="662077017"/>
+								<MediaRef Id="876843248"/>
+								<MediaRef Id="915529305"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3262912638" Id="2473969246"/>
+							<MediaRefs>
+								<MediaRef Id="148017773"/>
+								<MediaRef Id="313172559"/>
+								<MediaRef Id="315214646"/>
+								<MediaRef Id="337633743"/>
+								<MediaRef Id="344401073"/>
+								<MediaRef Id="357532581"/>
+								<MediaRef Id="645205886"/>
+								<MediaRef Id="862633659"/>
+								<MediaRef Id="932873400"/>
+								<MediaRef Id="977924793"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3262912638" Id="2654748154"/>
+							<MediaRefs>
+								<MediaRef Id="284394758"/>
+								<MediaRef Id="366548279"/>
+								<MediaRef Id="506047927"/>
+								<MediaRef Id="519477548"/>
+								<MediaRef Id="739226946"/>
+								<MediaRef Id="771714606"/>
+								<MediaRef Id="785014167"/>
+								<MediaRef Id="900225347"/>
+								<MediaRef Id="1019531812"/>
+								<MediaRef Id="1071738769"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3136413185" Name="Play_SFX_Player_Interact_Door_Metal_Lock" DurationType="OneShot" DurationMin="1.9038959" DurationMax="1.9038959">
+					<MediaRefs>
+						<MediaRef Id="181072394"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1657049032" Name="Play_SFX_Player_Interact_Door_Metal_Unlock" DurationType="OneShot" DurationMin="1.9038959" DurationMax="1.9038959">
+					<MediaRefs>
+						<MediaRef Id="550848481"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1936894595" Name="Play_SFX_Player_Interact_Door_Wood_Lock" DurationType="OneShot" DurationMin="1.9038959" DurationMax="1.9038959">
+					<MediaRefs>
+						<MediaRef Id="435524527"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="199723134" Name="Play_SFX_Player_Interact_Door_Wood_Unlock" DurationType="OneShot" DurationMin="1.9038959" DurationMax="1.9038959">
+					<MediaRefs>
+						<MediaRef Id="931942173"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2920634929" Name="Play_SFX_Player_Interact_Phone_Light_Fail" DurationType="OneShot" DurationMin="3.4700625" DurationMax="3.4700625">
+					<MediaRefs>
+						<MediaRef Id="863979365"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1974193772" Name="Play_SFX_Player_Interact_Phone_Light_Off" DurationType="OneShot" DurationMin="3.4700625" DurationMax="3.4700625">
+					<MediaRefs>
+						<MediaRef Id="664536157"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2178443270" Name="Play_SFX_Player_Interact_Phone_Light_On" DurationType="OneShot" DurationMin="3.4700625" DurationMax="3.4700625">
+					<MediaRefs>
+						<MediaRef Id="298861187"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3834016641" Name="Play_SFX_Player_Interact_Phone_Screen_Fail" DurationType="OneShot" DurationMin="3.4700625" DurationMax="3.4700625">
+					<MediaRefs>
+						<MediaRef Id="697044925"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="577666544" Name="Play_SFX_Player_Interact_Phone_Screen_Lock" DurationType="OneShot" DurationMin="3.4700625" DurationMax="3.4700625">
+					<MediaRefs>
+						<MediaRef Id="281638350"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3588694021" Name="Play_SFX_Player_Interact_Phone_Screen_Unlock" DurationType="OneShot" DurationMin="3.4700625" DurationMax="3.4700625">
+					<MediaRefs>
+						<MediaRef Id="509183541"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1036060318" Name="Play_SFX_Player_Interact_Phone_SwitchScreen" DurationType="OneShot" DurationMin="3.4700625" DurationMax="3.4700625">
+					<MediaRefs>
+						<MediaRef Id="368422430"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="3262912638" Name="Player_Footsteps_Material">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete"/>
+						<Switch Id="2473969246" Name="Metal"/>
+						<Switch Id="2654748154" Name="Water"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{31DD4813-8C3C-DA6C-5041-39C4CD570692}</FileHash>
+</SoundBanksInfo>

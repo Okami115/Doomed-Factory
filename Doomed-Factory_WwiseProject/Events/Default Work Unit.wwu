@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8E671A8F-41FD-47FC-A878-E80FA3E3391E}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{8E671A8F-41FD-47FC-A878-E80FA3E3391E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Player_Movement_Events" ID="{494BD544-DAB1-453D-98A3-3B8328A16E11}" ShortID="656804589">
+					<ChildrenList>
+						<Event Name="Play_Player_FootSteps" ID="{9D7C1A95-8C75-4C80-8846-23AAB0A224AF}">
+							<ChildrenList>
+								<Action Name="" ID="{FBD7DC98-9B43-4636-9B2B-4D044863ECDC}" ShortID="1054489928">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{6DD5EB3C-909B-4F0D-A2C8-B4937D36AFD1}" WorkUnitID="{F3627F8F-7E7B-415A-819B-9F7E7826558C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Enciroment_Music" ID="{B843EC44-BD0A-43A6-AFAD-D37345CFD807}" ShortID="122321823">
+					<ChildrenList>
+						<Event Name="Play_DefaultEnviroment" ID="{5089C7F8-A1C5-4779-AC3F-9E7B1AF7A5F9}">
+							<ChildrenList>
+								<Action Name="" ID="{040822DD-6B8C-43DB-8EA1-9CF9A7B16858}" ShortID="273699369">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Musica" ID="{DA2492C1-6001-4ADB-924F-E3F0C667899C}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Player_Interect_Events" ID="{B68D8EE2-F520-4874-A195-D8757CEABDCE}" ShortID="693670751">
+					<ChildrenList>
+						<Event Name="Play_KeyPickUp" ID="{187F1B43-7067-456A-B3C6-DF130EE096B5}">
+							<ChildrenList>
+								<Action Name="" ID="{45F777CB-BC44-4C29-9AC1-23C4622F5DA2}" ShortID="249672586">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Player_Interact_Key_PickUp" ID="{13814148-91DF-4969-8095-D4128A07233B}" WorkUnitID="{F3627F8F-7E7B-415A-819B-9F7E7826558C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Folder Name="Phone" ID="{E1C13846-C5DF-4F3A-924C-762E277502C0}" ShortID="920896347">
+							<ChildrenList>
+								<Event Name="Play_SFX_Player_Interact_Phone_Light_On" ID="{84AAB39A-A7C2-44EC-811F-14317E36BF32}">
+									<ChildrenList>
+										<Action Name="" ID="{01EBEB7B-FDE5-4109-B71B-B42EA1F230BF}" ShortID="268202921">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Player_Interact_Phone_Light_On" ID="{A7416F5F-B102-491F-8098-16C9B3F26911}" WorkUnitID="{F3627F8F-7E7B-415A-819B-9F7E7826558C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Player_Interact_Phone_Screen_Fail" ID="{CA819376-AD67-4016-AC47-694A94806AFC}">
+									<ChildrenList>
+										<Action Name="" ID="{32A57189-D79E-4F0E-B37F-D5D18B7A0F86}" ShortID="565452161">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Player_Interact_Phone_Screen_Fail" ID="{121D376C-FE9C-4E50-9C01-0A0E15D5AC85}" WorkUnitID="{F3627F8F-7E7B-415A-819B-9F7E7826558C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Player_Interact_Phone_SwitchScreen" ID="{7A7E43F1-35FB-4B5B-AFE3-B65CBE1C6192}">
+									<ChildrenList>
+										<Action Name="" ID="{DAC9A0C5-03E0-403A-BABE-515D055D9D5C}" ShortID="335084896">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Player_Interact_Phone_SwitchScreen" ID="{1729B288-C0AF-428D-ACCC-C740D27C4C05}" WorkUnitID="{F3627F8F-7E7B-415A-819B-9F7E7826558C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Player_Interact_Phone_Screen_Lock" ID="{B63B9521-88F6-43B2-9333-1DBBAD507411}">
+									<ChildrenList>
+										<Action Name="" ID="{998BFE49-0C88-44EF-B9DF-1F90A28CE650}" ShortID="845021860">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Player_Interact_Phone_Screen_Lock" ID="{B139F871-328A-4D9B-87BA-84A3A38FFD5F}" WorkUnitID="{F3627F8F-7E7B-415A-819B-9F7E7826558C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Player_Interact_Phone_Screen_Unlock" ID="{760B8A18-44E6-4084-A57D-1284ECB70854}">
+									<ChildrenList>
+										<Action Name="" ID="{B69155AD-88B4-4EAE-991C-C09AD050DC98}" ShortID="633479107">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Player_Interact_Phone_Screen_Unlock" ID="{5117649C-C27B-409C-84B6-8263A1C5A6A7}" WorkUnitID="{F3627F8F-7E7B-415A-819B-9F7E7826558C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Player_Interact_Phone_Light_Off" ID="{955D4950-374C-4CDB-ADF2-1A1D7F1A31C8}">
+									<ChildrenList>
+										<Action Name="" ID="{07DDBBD8-D66B-4FBE-BDBD-D56F26E38670}" ShortID="594504114">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Player_Interact_Phone_Light_Off" ID="{AFCBA4B0-F899-4484-940F-1B13F8858839}" WorkUnitID="{F3627F8F-7E7B-415A-819B-9F7E7826558C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Player_Interact_Phone_Light_Fail" ID="{72ED99F6-4E1A-4AD1-A2F3-2BB14F4C9FC1}">
+									<ChildrenList>
+										<Action Name="" ID="{6CFB2529-7D3B-4697-8855-38265DD58043}" ShortID="120829333">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Player_Interact_Phone_Light_Fail" ID="{35900AF0-9B28-41A5-BDF3-5CA23FE6BE88}" WorkUnitID="{F3627F8F-7E7B-415A-819B-9F7E7826558C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Doors" ID="{56688868-5CD0-458A-A7EB-20882F0EC983}" ShortID="165991012">
+							<ChildrenList>
+								<Event Name="Play_SFX_Player_Interact_Door_Wood_Lock" ID="{EA90731C-90F0-41B1-97BF-00FCA1702F3E}">
+									<ChildrenList>
+										<Action Name="" ID="{7B1A194C-4AE2-40E1-8598-7408922477E1}" ShortID="781036321">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Player_Interact_Door_Wood_Lock" ID="{2DF5AE55-CEF1-4A6D-93C8-F48C3146FA0F}" WorkUnitID="{F3627F8F-7E7B-415A-819B-9F7E7826558C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Player_Interact_Door_Metal_Unlock" ID="{E0A11042-A9BA-440D-8861-7936DE13E5DD}">
+									<ChildrenList>
+										<Action Name="" ID="{353C7A7E-E4DC-40DE-9F3C-9D10104CA131}" ShortID="364117453">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Player_Interact_Door_Metal_Unlock" ID="{234ADA6E-3B8E-4408-AE23-282DCA386E6D}" WorkUnitID="{F3627F8F-7E7B-415A-819B-9F7E7826558C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Player_Interact_Door_Wood_Unlock" ID="{A3B4095C-F9B5-432C-89E9-26AE522E895D}">
+									<ChildrenList>
+										<Action Name="" ID="{90E893D5-CF98-4CB2-9721-4A0F3F65088A}" ShortID="570341831">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Player_Interact_Door_Wood_Unlock" ID="{0DAC61F7-5979-4EBF-AD3F-37D9B28D7FE5}" WorkUnitID="{F3627F8F-7E7B-415A-819B-9F7E7826558C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Player_Interact_Door_Metal_Lock" ID="{6C78237D-A300-4B76-9506-B755F95BBC3C}">
+									<ChildrenList>
+										<Action Name="" ID="{65552415-7BF0-4554-945C-B2529C9EF5D7}" ShortID="453834008">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Player_Interact_Door_Metal_Lock" ID="{157B34E5-8D3E-4616-8DAC-6CB6B17E6A0A}" WorkUnitID="{F3627F8F-7E7B-415A-819B-9F7E7826558C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

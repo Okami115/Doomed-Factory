@@ -1,12 +1,41 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Keys : MonoBehaviour
+[RequireComponent(typeof(Sprite),typeof(string),typeof(string))]
+public class Keys : MonoBehaviour, IInteractable
 {
-    private void OnTriggerEnter(Collider other)
+    public string name;
+    public string description;
+    public int id;
+    
+    public Sprite KeyImage;
+
+    private PlayerMovemnet _playerMovement;
+    private bool isPlayerInRange;
+    private bool alreadyPicked;
+
+    private void Start()
     {
-        if (other.tag == "Player")
-            Destroy(gameObject);
+        _playerMovement = FindAnyObjectByType<PlayerMovemnet>();
+    }
+
+    public void ReadyToInteract(bool ans)
+    {
+        isPlayerInRange = ans;
+    }
+
+    public void Interact(List<Keys> keysList)
+    {
+        if (_playerMovement != null && isPlayerInRange)
+        {
+            _playerMovement.AddKey(this);
+            transform.position = new Vector3(-10, -10, -10);
+
+            if (!alreadyPicked)
+            {
+                alreadyPicked = !alreadyPicked;
+                AkSoundEngine.PostEvent("Play_KeyPickUp", gameObject);
+            }
+        }
     }
 }
