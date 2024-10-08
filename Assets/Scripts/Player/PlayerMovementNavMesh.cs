@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -5,6 +6,9 @@ public class PlayerMovementNavMesh : MonoBehaviour
 {
     [Header("Init Variables")]
     [SerializeField] private NavMeshAgent agent;
+    [SerializeField] private PlayerInputsReader _inputsReader;
+    [SerializeField] private KeysEventChannel _doorInteraction;
+    [SerializeField] private List<Keys> playerKeys;
 
     [Header("Movement Variables")]
     [SerializeField] private float RunSpeed;
@@ -34,6 +38,27 @@ public class PlayerMovementNavMesh : MonoBehaviour
         }
 
         originalCameraPosition = cameraTransform.localPosition;
+        _inputsReader.OnPlayerInteract += OnPlayerInteract;
+    }
+
+    private void OnDestroy()
+    {
+        _inputsReader.OnPlayerInteract -= OnPlayerInteract;
+    }
+
+    private void OnPlayerInteract()
+    {
+        _doorInteraction?.Invoke(playerKeys);
+    }
+
+    public void AddKey(Keys newKey)
+    {
+        playerKeys.Add(newKey);
+    }
+
+    public List<Keys> GetKeys()
+    {
+        return playerKeys;
     }
 
     private void Update()

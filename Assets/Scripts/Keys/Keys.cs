@@ -10,13 +10,13 @@ public class Keys : MonoBehaviour, IInteractable
     
     public Sprite KeyImage;
 
-    private PlayerMovemnet _playerMovement;
+    private PlayerMovementNavMesh _playerMovement;
     private bool isPlayerInRange;
     private bool alreadyPicked;
 
     private void Start()
     {
-        _playerMovement = FindAnyObjectByType<PlayerMovemnet>();
+        _playerMovement = FindAnyObjectByType<PlayerMovementNavMesh>();
     }
 
     public void ReadyToInteract(bool ans)

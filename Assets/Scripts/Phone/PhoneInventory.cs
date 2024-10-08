@@ -1,14 +1,11 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
-using UnityEngine.UI;
 
 public class PhoneInventory : PhoneApp
 {
-    [SerializeField] private PlayerMovemnet _player;
+    [SerializeField] private PlayerMovementNavMesh _player;
     [SerializeField] private PlayerInputsReader _inputsReader;
     [SerializeField] private SpriteRenderer _itemImage;
     [SerializeField] private List<Keys> inventoryKeys;

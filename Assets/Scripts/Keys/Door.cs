@@ -6,8 +6,7 @@ using UnityEngine.Playables;
 public class Door : MonoBehaviour, IInteractable
 {
     [SerializeField] private Keys _doorKey;
-    [SerializeField] private PlayableDirector doorTimeline;
-    [SerializeField] private PhoneControlle playerPhone;
+    [SerializeField] private Animator doorTimeline;
     [SerializeField] private float waitTime;
     
     private bool isPlayerInRange;
@@ -18,10 +17,9 @@ public class Door : MonoBehaviour, IInteractable
     {
         if (isPlayerInRange && !isDoorOpen)
         {
-            if (keysList.Contains(_doorKey))
+            if (keysList.Contains(_doorKey) || _doorKey == null)
             {
-                playerPhone.HidePhone();
-                doorTimeline.Play();
+                doorTimeline.SetTrigger("OnOpenDoor");
                 
                 if (!corrutineRuning)
                     StartCoroutine(PlayOpenSound(waitTime));
