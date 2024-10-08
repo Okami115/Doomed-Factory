@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d93efe55-6d3e-4ca3-b934-6bc0f6d23f9a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Phone.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Phone.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Prefabs/Player/Phone_Pos_RW.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Prefabs/Player/Phone_Pos_RW.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Black.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/White.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/White.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/M02_pan.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/M02_pan.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelDesign.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelDesign.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IInteractable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,13 +61,6 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Usuario\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Usuario\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Usuario\\AppData\\Local\\Symbols\\src"
-    ]
   }
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -134,6 +133,7 @@
       <workItem from="1725077078751" duration="849000" />
       <workItem from="1725408479594" duration="1546000" />
       <workItem from="1726253837890" duration="848000" />
+      <workItem from="1728427982915" duration="1882000" />
     </task>
     <servers />
   </component>
@@ -149,6 +149,7 @@
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XDebuggerManager">
