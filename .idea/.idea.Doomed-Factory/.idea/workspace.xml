@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d93efe55-6d3e-4ca3-b934-6bc0f6d23f9a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Black.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/White.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/White.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/M02_pan.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/M02_pan.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/OfficialArt/Industrial/Breaker_AC.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/OfficialArt/Industrial/Breaker_AC.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/OfficialArt/Industrial/S_NewElectricPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/OfficialArt/Industrial/S_NewElectricPanel.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelDesign.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelDesign.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IInteractable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelDesign2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelDesign2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Puzzle/BreakerAnim.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Puzzle/BreakerAnim.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Puzzle/BreakerAnim_Reverse.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Puzzle/BreakerAnim_Reverse.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Puzzle/Circuit_breaker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Puzzle/Circuit_breaker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Puzzle/Elec_PuzzleManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Puzzle/Elec_PuzzleManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +137,7 @@
       <workItem from="1725077078751" duration="849000" />
       <workItem from="1725408479594" duration="1546000" />
       <workItem from="1726253837890" duration="848000" />
-      <workItem from="1728427982915" duration="1882000" />
+      <workItem from="1728427982915" duration="5910000" />
     </task>
     <servers />
   </component>

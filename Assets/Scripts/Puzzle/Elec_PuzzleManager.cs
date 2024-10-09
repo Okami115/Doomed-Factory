@@ -1,13 +1,16 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class Elec_PuzzleManager : MonoBehaviour
 {
     public static Elec_PuzzleManager Instance { get; private set; }
-    [SerializeField] private int maxEnergyRequired = 10;
+    public bool isPuzzleActive = false;
+    public PlayerInputsReader _playerInputsReader;
+    public event Action OnpuzzleFinished;
+    [SerializeField] private int maxEnergyRequired = 7;
     [SerializeField] private int currentEnergy = 0;
+    [SerializeField] private List<Light> lights = new List<Light>();
 
     private void Awake()
     {
@@ -21,20 +24,31 @@ public class Elec_PuzzleManager : MonoBehaviour
         {
             Instance = this;
         }
+        isPuzzleActive = true;
     }
 
     public void AddEnergy(int energy)
     {
         currentEnergy += energy;
+        Debug.Log("currentEnergy : " + currentEnergy);
         CheckEnergy();
-        Debug.Log("currentEnergy + " + currentEnergy);
     }
 
     public void CheckEnergy()
     {
         if (currentEnergy == maxEnergyRequired)
         {
-            Debug.Log("Elec_PuzzleManager.CheckEnergy");
+            isPuzzleActive = false;
+            Debug.Log( "OnpuzzleFinished.Invoke()");
+            OnpuzzleFinished?.Invoke();
+        }
+
+        for (int i = 0; i < lights.Count; i++)
+        {
+            if (i < currentEnergy)
+                lights[i].color = Color.green;
+            else
+                lights[i].color = Color.red;
         }
     }
 }
