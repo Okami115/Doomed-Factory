@@ -17,8 +17,6 @@ public class PhoneInventory : PhoneApp
 
     private void OnEnable()
     {
-        _spriteRenderer.color = Color.white;
-        defaultColor = _spriteRenderer.color;
         hasAppInteraction = true;
         inventoryKeys = _player.GetKeys();
         if (hasAppInteraction)
