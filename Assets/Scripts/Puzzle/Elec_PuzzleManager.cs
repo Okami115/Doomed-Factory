@@ -12,7 +12,7 @@ public class Elec_PuzzleManager : MonoBehaviour
     [SerializeField] private int currentEnergy = 0;
     [SerializeField] private List<Light> lights = new List<Light>();
 
-    private void Awake()
+    private void Start()
     {
         // If there is an instance, and it's not me, delete myself.
 
@@ -24,6 +24,9 @@ public class Elec_PuzzleManager : MonoBehaviour
         {
             Instance = this;
         }
+
+        if (_playerInputsReader == null)
+            _playerInputsReader = FindObjectOfType<PlayerInputsReader>();
         isPuzzleActive = true;
     }
 
