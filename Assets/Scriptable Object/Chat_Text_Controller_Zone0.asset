@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b81a307a22e6b4f41982357281efe08b, type: 3}
+  m_Name: Chat_Text_Controller_Zone0
+  m_EditorClassIdentifier: 
+  ChatTexts:
+  - 'Okami : hola'
+  - 'Okami : hola 2'
+  - 'Okami : hola 3'
+  - 'Okami : hola 4'
+  - 'Okami : hola 5'
+  - 'Okami : hola 6'
