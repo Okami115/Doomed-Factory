@@ -9,6 +9,9 @@ public class PhoneApp : MonoBehaviour
     [SerializeField] protected SpriteRenderer _spriteRenderer;
     [SerializeField] protected List<GameObject> appScreen;
     [SerializeField] protected GameObject selectionFrame;
+    [SerializeField] protected String animationTrigger;
+    [SerializeField] protected Animator phone_animator;
+    [SerializeField] protected bool hasAnimation;
 
     public string AkSoundPositiveInteraction;
     public string AkSoundNegativeInteraction;
@@ -56,6 +59,8 @@ public class PhoneApp : MonoBehaviour
         foreach (GameObject appObject in appScreen)
         {
             appObject.SetActive(interact);
+            if (hasAnimation)
+                phone_animator.SetBool(animationTrigger, interact);
         }
     }
 

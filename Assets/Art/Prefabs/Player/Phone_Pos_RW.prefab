@@ -302,7 +302,7 @@ Animator:
   m_GameObject: {fileID: 279244383729380002}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 87f325127c8085241b2b5e2ae92efae9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 24f807d10a39a4e49b89c9fd86949b52, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -688,6 +688,9 @@ MonoBehaviour:
   appScreen:
   - {fileID: 3154674498727447197}
   selectionFrame: {fileID: 1900040324391018107}
+  animationTrigger: Inventory
+  phone_animator: {fileID: 538072287480811077}
+  hasAnimation: 1
   AkSoundPositiveInteraction: Play_SFX_Player_Interact_Phone_SwitchScreen
   AkSoundNegativeInteraction: Play_SFX_Player_Interact_Phone_SwitchScreen
   _player: {fileID: 0}
@@ -950,6 +953,9 @@ MonoBehaviour:
   appScreen:
   - {fileID: 6032851290592454104}
   selectionFrame: {fileID: 2624410060911826523}
+  animationTrigger: 
+  phone_animator: {fileID: 0}
+  hasAnimation: 0
   AkSoundPositiveInteraction: Play_SFX_Player_Interact_Phone_SwitchScreen
   AkSoundNegativeInteraction: Play_SFX_Player_Interact_Phone_SwitchScreen
 --- !u!212 &7659231216639117485
@@ -1992,6 +1998,9 @@ MonoBehaviour:
   appScreen:
   - {fileID: 4382785989334732591}
   selectionFrame: {fileID: 6739764582513672199}
+  animationTrigger: Chat
+  phone_animator: {fileID: 538072287480811077}
+  hasAnimation: 1
   AkSoundPositiveInteraction: Play_SFX_Player_Interact_Phone_SwitchScreen
   AkSoundNegativeInteraction: Play_SFX_Player_Interact_Phone_SwitchScreen
   messages:
@@ -2788,6 +2797,9 @@ MonoBehaviour:
   - {fileID: 3413359053716986653}
   - {fileID: 462337941343417580}
   selectionFrame: {fileID: 7709673831421045002}
+  animationTrigger: 
+  phone_animator: {fileID: 0}
+  hasAnimation: 0
   AkSoundPositiveInteraction: Play_SFX_Player_Interact_Phone_Light_On
   AkSoundNegativeInteraction: Play_SFX_Player_Interact_Phone_Light_Off
 --- !u!1 &6357418263887556043
@@ -4032,6 +4044,9 @@ MonoBehaviour:
   - {fileID: 1725326311229649770}
   - {fileID: 2086042488037138873}
   selectionFrame: {fileID: 3959678422588448649}
+  animationTrigger: Camera
+  phone_animator: {fileID: 538072287480811077}
+  hasAnimation: 1
   AkSoundPositiveInteraction: Play_SFX_Player_Interact_Phone_SwitchScreen
   AkSoundNegativeInteraction: Play_SFX_Player_Interact_Phone_SwitchScreen
 --- !u!1001 &2501808504185112134
