@@ -9,6 +9,7 @@ public class PlayerMovementNavMesh : MonoBehaviour
     [SerializeField] private PlayerInputsReader _inputsReader;
     [SerializeField] private KeysEventChannel _doorInteraction;
     [SerializeField] private List<Keys> playerKeys;
+    [SerializeField] private CamaraMovement cam;
 
     [Header("Movement Variables")]
     [SerializeField] private float RunSpeed;
@@ -29,6 +30,7 @@ public class PlayerMovementNavMesh : MonoBehaviour
     private float elapsedTime;
     private Vector3 originalCameraPosition;
     private Transform cameraTransform;
+    public bool isTPOn = false;
 
     private void Start()
     {
@@ -140,11 +142,25 @@ public class PlayerMovementNavMesh : MonoBehaviour
             }
         }
 
+        if(isTPOn)
+        {
+            TPPlayer();
+            isTPOn=false;
+        }
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawLine(pivot.position, movement);
+    }
+
+    public void TPPlayer()
+    {
+        transform.position = target.position;
+        transform.rotation = target.rotation;
+        agent.destination = transform.position;
+        movement = Vector3.zero;
+        cam.yRotation = 0;
     }
 }
