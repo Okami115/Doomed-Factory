@@ -8,7 +8,10 @@ public class PhoneApp : MonoBehaviour
 {
     [SerializeField] protected SpriteRenderer _spriteRenderer;
     [SerializeField] protected List<GameObject> appScreen;
-    protected Color defaultColor;
+    [SerializeField] protected GameObject selectionFrame;
+    [SerializeField] protected String animationTrigger;
+    [SerializeField] protected Animator phone_animator;
+    [SerializeField] protected bool hasAnimation;
 
     public string AkSoundPositiveInteraction;
     public string AkSoundNegativeInteraction;
@@ -19,8 +22,7 @@ public class PhoneApp : MonoBehaviour
     private void OnEnable()
     {
         Debug.Log(gameObject.name);
-        _spriteRenderer.color = Color.white;
-        defaultColor = _spriteRenderer.color;
+        selectionFrame.SetActive(false);
         foreach (GameObject appObject in appScreen)
         {
             appObject.SetActive(false);
@@ -35,12 +37,9 @@ public class PhoneApp : MonoBehaviour
     protected void CheckSelection()
     {
         if (isSelected)
-        {
-            _spriteRenderer.color = Color.green;
-        }
-
+            selectionFrame.SetActive(true);
         else
-            _spriteRenderer.color = defaultColor;
+            selectionFrame.SetActive(false);
     }
 
     public void AppInteraction(bool interact)
@@ -60,6 +59,8 @@ public class PhoneApp : MonoBehaviour
         foreach (GameObject appObject in appScreen)
         {
             appObject.SetActive(interact);
+            if (hasAnimation)
+                phone_animator.SetBool(animationTrigger, interact);
         }
     }
 
