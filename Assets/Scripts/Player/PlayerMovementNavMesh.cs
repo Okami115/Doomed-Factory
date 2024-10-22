@@ -157,9 +157,7 @@ public class PlayerMovementNavMesh : MonoBehaviour
 
     public void TPPlayer()
     {
-        transform.position = target.position;
-        transform.rotation = target.rotation;
-        agent.destination = transform.position;
+        agent.Warp(target.position);
         movement = Vector3.zero;
         cam.yRotation = 0;
     }
