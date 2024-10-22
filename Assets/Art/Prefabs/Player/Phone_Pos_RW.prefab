@@ -711,7 +711,7 @@ GameObject:
   - component: {fileID: 1666350035437066207}
   - component: {fileID: 6231954693656969536}
   - component: {fileID: 419120312351912563}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Camera Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -740,18 +740,18 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725326311229649770}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.8414171, b: 0.5990566, a: 1}
-  m_Intensity: 5000
-  m_Range: 40
-  m_SpotAngle: 140
-  m_InnerSpotAngle: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 20
+  m_Range: 25
+  m_SpotAngle: 100
+  m_InnerSpotAngle: 25
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 2
     m_Resolution: 3
     m_CustomResolution: -1
     m_Strength: 1
@@ -784,7 +784,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -1123,7 +1123,7 @@ Transform:
   m_GameObject: {fileID: 2086042488037138873}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 4.9, y: 5.28, z: 10.3}
+  m_LocalPosition: {x: 4.9, y: 5.3, z: -4.9}
   m_LocalScale: {x: 4.1904764, y: 1.7616887, z: 4.9670224}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1160,7 +1160,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.1
   far clip plane: 1000
   field of view: 120
   orthographic: 0
@@ -2058,8 +2058,8 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 20
   m_Range: 25
-  m_SpotAngle: 50
-  m_InnerSpotAngle: 15
+  m_SpotAngle: 100
+  m_InnerSpotAngle: 25
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
