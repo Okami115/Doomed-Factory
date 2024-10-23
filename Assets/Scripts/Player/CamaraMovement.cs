@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class CamaraMovement : MonoBehaviour
 {
@@ -6,7 +7,7 @@ public class CamaraMovement : MonoBehaviour
     [SerializeField] private Transform camera;
 
     private float xRotation = 0;
-    private float yRotation = 0;
+    public float yRotation = 0;
 
     private void Start()
     {
@@ -22,6 +23,11 @@ public class CamaraMovement : MonoBehaviour
 
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+
+        if (Input.GetKey(KeyCode.J))
+        {
+            yRotation = 0;
+        }
 
         transform.rotation = Quaternion.Euler(0, yRotation, 0);
         camera.rotation = Quaternion.Euler(xRotation, yRotation, 0);

@@ -5,6 +5,7 @@ using UnityEngine.Playables;
 
 public class Door : MonoBehaviour, IInteractable
 {
+    [Header("Door Settings")]
     [SerializeField] private Keys _doorKey;
     [SerializeField] private Animator doorTimeline;
     [SerializeField] private float waitTime;
