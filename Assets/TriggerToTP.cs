@@ -1,11 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TriggerToTP : MonoBehaviour
 {
     int counter = 0;
     [SerializeField] private PlayerMovementNavMesh player;
+    [SerializeField] private Image background;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -14,6 +14,7 @@ public class TriggerToTP : MonoBehaviour
         if((counter % 2) == 0)
         {
             player.isTPOn = true;
+            background.color = new Color(0, 0, 0, 255);
         }
     }
 }
