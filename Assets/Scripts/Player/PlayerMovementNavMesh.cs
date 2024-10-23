@@ -1,6 +1,8 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class PlayerMovementNavMesh : MonoBehaviour
 {
@@ -22,6 +24,8 @@ public class PlayerMovementNavMesh : MonoBehaviour
     [SerializeField] private float amplitudeY;
     [SerializeField] private float frequencyX;
     [SerializeField] private float amplitudeX;
+    [SerializeField] private Image background;
+    [SerializeField] private float multiplierTrancition;
 
     [Header("Debug Variables")]
     [SerializeField] private Transform target;
@@ -160,5 +164,26 @@ public class PlayerMovementNavMesh : MonoBehaviour
         agent.Warp(target.position);
         movement = Vector3.zero;
         cam.yRotation = 0;
+        StartCoroutine(FadeBackground());
+    }
+
+    public IEnumerator FadeBackground()
+    {
+        Color bgColor = background.color;
+
+        while (bgColor.a > 0)
+        {
+            float newAlpha = bgColor.a - (Time.deltaTime * multiplierTrancition);
+
+            newAlpha = Mathf.Clamp01(newAlpha);
+
+            background.color = new Color(bgColor.r, bgColor.g, bgColor.b, newAlpha);
+
+            bgColor = background.color;
+
+            yield return null;
+        }
+
+        background.color = new Color(bgColor.r, bgColor.g, bgColor.b, 0);
     }
 }
