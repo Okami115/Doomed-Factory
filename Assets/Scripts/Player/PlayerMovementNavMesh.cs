@@ -11,7 +11,6 @@ public class PlayerMovementNavMesh : MonoBehaviour
     [SerializeField] private PlayerInputsReader _inputsReader;
     [SerializeField] private KeysEventChannel _doorInteraction;
     [SerializeField] private List<Keys> playerKeys;
-    [SerializeField] private CamaraMovement cam;
 
     [Header("Movement Variables")]
     [SerializeField] private float RunSpeed;
@@ -20,12 +19,15 @@ public class PlayerMovementNavMesh : MonoBehaviour
     [SerializeField] private Transform pivot;
 
     [Header("Camera Animate Variables")]
+    [SerializeField] private CamaraMovement cam;
     [SerializeField] private float frequencyY;
     [SerializeField] private float amplitudeY;
     [SerializeField] private float frequencyX;
     [SerializeField] private float amplitudeX;
     [SerializeField] private Image background;
     [SerializeField] private float multiplierTrancition;
+    [SerializeField] private Transform cameraTransform;
+    [SerializeField] private Transform cameraTransformCrouch;
 
     [Header("Debug Variables")]
     [SerializeField] private Transform target;
@@ -33,16 +35,10 @@ public class PlayerMovementNavMesh : MonoBehaviour
     Vector3 movement = Vector3.zero;
     private float elapsedTime;
     private Vector3 originalCameraPosition;
-    private Transform cameraTransform;
     public bool isTPOn = false;
 
     private void Start()
     {
-        if (cameraTransform == null)
-        {
-            cameraTransform = Camera.main.transform;
-        }
-
         originalCameraPosition = cameraTransform.localPosition;
         _inputsReader.OnPlayerInteract += OnPlayerInteract;
     }
@@ -102,6 +98,7 @@ public class PlayerMovementNavMesh : MonoBehaviour
             agent.destination = transform.position;
             agent.isStopped = true;
             agent.velocity = Vector3.zero;
+            cameraTransform.localPosition = originalCameraPosition;
         }
         else
         {
@@ -137,13 +134,12 @@ public class PlayerMovementNavMesh : MonoBehaviour
             newCameraPosition.x += oscillationX * agent.velocity.magnitude;
             cameraTransform.localPosition = newCameraPosition;
 
-            if (Input.GetKey(KeyCode.LeftControl))
-            {
-                agent.speed = CrouchSpeed;
-                Vector3 aux = new Vector3(cameraTransform.position.x, cameraTransform.position.y - 1, cameraTransform.position.z);
+        }
 
-                cameraTransform.position = aux;
-            }
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            agent.speed = CrouchSpeed;
+            cameraTransform.position = cameraTransformCrouch.position;
         }
 
         if(isTPOn)

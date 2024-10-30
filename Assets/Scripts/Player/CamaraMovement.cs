@@ -3,9 +3,15 @@ using static UnityEngine.GraphicsBuffer;
 
 public class CamaraMovement : MonoBehaviour
 {
+    [Header("Cam Varibles")]
     [SerializeField] private float SpeedRotation;
     [SerializeField] private Transform camera;
 
+    [Header("Clamp Variables")]
+    [SerializeField] private float clampToUp;
+    [SerializeField] private float clampToDown;
+
+    [Space]
     private float xRotation = 0;
     public float yRotation = 0;
 
@@ -22,7 +28,7 @@ public class CamaraMovement : MonoBehaviour
         yRotation += mouseX;
 
         xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        xRotation = Mathf.Clamp(xRotation, clampToDown, clampToUp);
 
         if (Input.GetKey(KeyCode.J))
         {
