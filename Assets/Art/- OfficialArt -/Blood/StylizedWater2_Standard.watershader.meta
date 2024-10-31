@@ -1,0 +1,35 @@
+fileFormatVersion: 2
+guid: 3ecede225e2dc4a49a3e9de6eaa7a05f
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 531a3ff0802e4acbaef16e2b9d97fd66, type: 3}
+  template: {instanceID: 0}
+  settings:
+    shaderName: Standard
+    hidden: 0
+    type: 0
+    autoIntegration: 1
+    fogIntegration: 1
+    lightCookies: 0
+    customIncludeDirectives:
+    - enabled: 1
+      type: 0
+      value: float _MyParameter;
+    - enabled: 0
+      type: 3
+      value: QUAD_NORMAL_SAMPLES
+    - enabled: 0
+      type: 3
+      value: PIXELIZE_UV
+    - enabled: 0
+      type: 3
+      value: INTERSECTION_REFRACTION
+    - enabled: 0
+      type: 3
+      value: DIRECTIONAL_CAUSTICS
+  dependencies: []
