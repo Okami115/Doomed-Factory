@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7173924058514516028}
   - component: {fileID: 8598468307495292099}
   - component: {fileID: 4871574232479611944}
-  - component: {fileID: 978636752974621835}
+  - component: {fileID: 5377041530997797532}
   m_Layer: 0
   m_Name: Blue_Key
   m_TagString: Untagged
@@ -94,7 +94,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &978636752974621835
+--- !u!114 &5377041530997797532
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
