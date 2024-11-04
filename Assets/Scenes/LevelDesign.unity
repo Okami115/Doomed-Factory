@@ -90745,6 +90745,10 @@ PrefabInstance:
       value: S_ControlRoomMats02 (14)
       objectReference: {fileID: 0}
     - target: {fileID: 1480929991609727082, guid: 1a66072cdf067d94e8b558ac9f693eae, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480929991609727082, guid: 1a66072cdf067d94e8b558ac9f693eae, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -90803,7 +90807,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1480929991609727082, guid: 1a66072cdf067d94e8b558ac9f693eae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1461157260}
+    - targetCorrespondingSourceObject: {fileID: 1480929991609727082, guid: 1a66072cdf067d94e8b558ac9f693eae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1461157259}
   m_SourcePrefab: {fileID: 100100000, guid: 1a66072cdf067d94e8b558ac9f693eae, type: 3}
 --- !u!1001 &607086122
 PrefabInstance:
@@ -199508,6 +199518,56 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460859640}
   m_Mesh: {fileID: -1334540618580122913, guid: 7fc349216cc494442a81d6ca14715baf, type: 3}
+--- !u!1 &1461157256 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1480929991609727082, guid: 1a66072cdf067d94e8b558ac9f693eae, type: 3}
+  m_PrefabInstance: {fileID: 605760799}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1461157259
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461157256}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.2117797, y: 0.00035720822, z: 0.20901038}
+  m_Center: {x: 0.10125495, y: 0.00017866371, z: 0.09828415}
+--- !u!114 &1461157260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461157256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc47411f65997a346907c51b78884eb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9d61841cde30b1d48808c966f2ba4b0d, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &1462216783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -279456,6 +279516,14 @@ PrefabInstance:
       propertyPath: background
       value: 
       objectReference: {fileID: 1588903864}
+    - target: {fileID: 4320218066187854845, guid: 4f305e15569fd0743832c5bfeba43eeb, type: 3}
+      propertyPath: LoopDisableObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4320218066187854845, guid: 4f305e15569fd0743832c5bfeba43eeb, type: 3}
+      propertyPath: LoopDisableObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 1461157256}
     - target: {fileID: 4787634632674603284, guid: 4f305e15569fd0743832c5bfeba43eeb, type: 3}
       propertyPath: m_Name
       value: Portal Door
