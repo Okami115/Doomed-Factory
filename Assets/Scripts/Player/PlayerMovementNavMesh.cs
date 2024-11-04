@@ -17,6 +17,7 @@ public class PlayerMovementNavMesh : MonoBehaviour
     [SerializeField] private float WalkSpeed;
     [SerializeField] private float CrouchSpeed;
     [SerializeField] private Transform pivot;
+    private bool _movementCorrutineRuning = false;
 
     [Header("Camera Animate Variables")]
     [SerializeField] private CamaraMovement cam;
@@ -102,14 +103,20 @@ public class PlayerMovementNavMesh : MonoBehaviour
         }
         else
         {
+            float footstepsDelay = 0.0f;
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 agent.speed = RunSpeed;
+                footstepsDelay = 0.4f;
             }
             else
             {
                 agent.speed = WalkSpeed;
+                footstepsDelay = 0.5f;
             }
+            
+            if (!_movementCorrutineRuning)
+                StartCoroutine(PlayWalkSound( footstepsDelay));
 
             agent.isStopped = false;
             movement += transform.position + (movement.normalized / 100);
@@ -181,5 +188,13 @@ public class PlayerMovementNavMesh : MonoBehaviour
         }
 
         background.color = new Color(bgColor.r, bgColor.g, bgColor.b, 0);
+    }
+    public IEnumerator PlayWalkSound(float waitTime)
+    {
+        _movementCorrutineRuning = true;
+        yield return new WaitForSeconds(waitTime);
+        AkSoundEngine.PostEvent("Play_Player_FootSteps", gameObject);
+        yield return null;
+        _movementCorrutineRuning = false;
     }
 }
