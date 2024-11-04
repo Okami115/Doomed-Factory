@@ -20287,6 +20287,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a66072cdf067d94e8b558ac9f693eae, type: 3}
+--- !u!1 &143742089 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1217287529784800271, guid: 62c262f1fcbf1e04e90e2274ac9c28af, type: 3}
+  m_PrefabInstance: {fileID: 1653449768}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &144822846
 GameObject:
   m_ObjectHideFlags: 0
@@ -105029,6 +105034,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1994949652010872501, guid: 62c262f1fcbf1e04e90e2274ac9c28af, type: 3}
   m_PrefabInstance: {fileID: 1653449768}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &701253256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143742089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43ac072595cf1d4ebc32428123fc6c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lights: []
+  startflashing: 0
+  minFlickTime: 0
+  maxFlickTime: 0
+  flickTime: 0
 --- !u!1 &701430705
 GameObject:
   m_ObjectHideFlags: 0
@@ -222389,7 +222411,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1217287529784800271, guid: 62c262f1fcbf1e04e90e2274ac9c28af, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 701253256}
   m_SourcePrefab: {fileID: 100100000, guid: 62c262f1fcbf1e04e90e2274ac9c28af, type: 3}
 --- !u!4 &1654110495 stripped
 Transform:
@@ -266565,6 +266590,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2051455048}
   - component: {fileID: 2051455050}
+  - component: {fileID: 2051455051}
   - component: {fileID: 2051455049}
   m_Layer: 0
   m_Name: Spot Light (18)
@@ -266674,6 +266700,25 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &2051455051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051455047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43ac072595cf1d4ebc32428123fc6c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lights:
+  - {fileID: 2051455050}
+  - {fileID: 1396549715}
+  startflashing: 0
+  minFlickTime: 0.1
+  maxFlickTime: 3
+  flickTime: 0
 --- !u!1 &2051576000
 GameObject:
   m_ObjectHideFlags: 0
