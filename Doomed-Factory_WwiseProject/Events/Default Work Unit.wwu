@@ -177,6 +177,46 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="LightBulb_Sfx" ID="{37C46076-415E-4760-8E5A-E9A80C62099A}" ShortID="726528957">
+					<ChildrenList>
+						<Event Name="Stop_LighBulb_Hum" ID="{E6A5EFC9-91B0-49AC-A42A-880E9CB1D5CD}">
+							<ChildrenList>
+								<Action Name="" ID="{E93254A4-4D2E-48D7-A3F5-D32B2A359797}" ShortID="346593681">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LighBulb_Hum" ID="{78C455FF-4C5C-450A-818E-38AA9C09581F}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_LighBulb_Hum" ID="{EDAC86B5-B861-4148-AD5E-EF6FC5FFB97F}">
+							<ChildrenList>
+								<Action Name="" ID="{1171B75D-3B0D-40CE-B304-338D80F73B38}" ShortID="772614622">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LighBulb_Hum" ID="{78C455FF-4C5C-450A-818E-38AA9C09581F}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_LighBulb_Drop" ID="{C673AC03-1653-446A-B2B2-AD33ED422AFA}">
+							<ChildrenList>
+								<Action Name="" ID="{DD228C80-9436-4570-972C-B3555DAA2413}" ShortID="630915939">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LighBulb_Drop" ID="{53B4EAD3-8A2F-47EA-A98B-BD010AFB4E0E}" WorkUnitID="{F3627F8F-7E7B-415A-819B-9F7E7826558C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

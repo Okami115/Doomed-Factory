@@ -12,6 +12,13 @@
 						<Folder Name="Movement" ID="{FC472E96-3FC4-47CA-89C1-65B56DB1CCA8}" ShortID="331499291">
 							<ChildrenList>
 								<SwitchContainer Name="Footsteps" ID="{6DD5EB3C-909B-4F0D-A2C8-B4937D36AFD1}" ShortID="47477457">
+									<PropertyList>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CCCA1668-3107-4C89-9A4E-106F1E3411AC}"/>
@@ -986,6 +993,13 @@
 								<Folder Name="Doors" ID="{D2FC8BF9-62DD-4A15-BE6D-DCF9C2BBDE49}" ShortID="82951101">
 									<ChildrenList>
 										<Sound Name="SFX_Player_Interact_Door_Wood_Lock" ID="{2DF5AE55-CEF1-4A6D-93C8-F48C3146FA0F}" ShortID="1041726279">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CCCA1668-3107-4C89-9A4E-106F1E3411AC}"/>
@@ -1008,6 +1022,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_Player_Interact_Door_Wood_Unlock" ID="{0DAC61F7-5979-4EBF-AD3F-37D9B28D7FE5}" ShortID="328414789">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CCCA1668-3107-4C89-9A4E-106F1E3411AC}"/>
@@ -1030,6 +1051,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_Player_Interact_Door_Metal_Unlock" ID="{234ADA6E-3B8E-4408-AE23-282DCA386E6D}" ShortID="461101324">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CCCA1668-3107-4C89-9A4E-106F1E3411AC}"/>
@@ -1052,6 +1080,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_Player_Interact_Door_Metal_Lock" ID="{157B34E5-8D3E-4616-8DAC-6CB6B17E6A0A}" ShortID="1032244109">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CCCA1668-3107-4C89-9A4E-106F1E3411AC}"/>
@@ -1113,6 +1148,160 @@
 										</Sound>
 									</ChildrenList>
 								</Folder>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Enviroment_SFX" ID="{E2FD8A07-23D7-42F6-9858-B2D41436E787}" ShortID="545271826">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="3"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Folder Name="LighBulb" ID="{EFA3086D-F86A-444F-B125-42F5628B4FDA}" ShortID="181649465">
+							<ChildrenList>
+								<RandomSequenceContainer Name="LighBulb_Drop" ID="{53B4EAD3-8A2F-47EA-A98B-BD010AFB4E0E}" ShortID="244615901">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="CellPhone_Sound" ID="{66FCFA38-8684-4244-9CFB-0B2D8198046E}" WorkUnitID="{22BC8651-B549-4413-B943-62D9DF36EA65}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CCCA1668-3107-4C89-9A4E-106F1E3411AC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C38E60E3-3A6B-4B70-8891-C9DEFFF15D43}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="LighBulb_Drop_1" ID="{29E0D3D1-3C86-4634-B2CC-CC3BC6E3B874}" ShortID="163997184">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CCCA1668-3107-4C89-9A4E-106F1E3411AC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C38E60E3-3A6B-4B70-8891-C9DEFFF15D43}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Audio Input" ID="{C3941C58-E7F9-4EDF-BAB1-646A4A2C1C24}" ShortID="1023050775" PluginName="Wwise Audio Input" CompanyID="0" PluginID="200">
+													<Language>SFX</Language>
+												</SourcePlugin>
+												<AudioFileSource Name="fluorescent-bulb-drop_empty-room_02-102477" ID="{4EDF17F5-77AB-42D7-9744-1032FDADDED6}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.289554655870445"/>
+														<Property Name="LoopEnd" Type="Real64" Value="2.09927125506073"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>fluorescent-bulb-drop_empty-room_02-102477.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="627535572"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="fluorescent-bulb-drop_empty-room_02-102477" ID="{4EDF17F5-77AB-42D7-9744-1032FDADDED6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="LighBulb_Drop_2" ID="{AB9C595E-DD45-4D7E-BB2B-66F5E91BB9DE}" ShortID="650349825">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CCCA1668-3107-4C89-9A4E-106F1E3411AC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C38E60E3-3A6B-4B70-8891-C9DEFFF15D43}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="fluorescent-bulb-drop_empty-room_03-81350" ID="{6A9CBC88-3E34-4D35-AF3A-14B60B0DB7CC}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.475724696356275"/>
+														<Property Name="LoopEnd" Type="Real64" Value="2.19361943319838"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>fluorescent-bulb-drop_empty-room_03-81350.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="748434214"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="fluorescent-bulb-drop_empty-room_03-81350" ID="{6A9CBC88-3E34-4D35-AF3A-14B60B0DB7CC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="LighBulb_Drop_3" ID="{48A3E12A-D20E-4326-8DF8-DEEF193833E5}" ShortID="112492816">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CCCA1668-3107-4C89-9A4E-106F1E3411AC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C38E60E3-3A6B-4B70-8891-C9DEFFF15D43}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="fluorescent-bulb-drop_empty-room-81349" ID="{D9F639EF-A86A-47E9-B694-6115966FB343}">
+													<Language>SFX</Language>
+													<AudioFile>fluorescent-bulb-drop_empty-room-81349.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1044115190"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="fluorescent-bulb-drop_empty-room-81349" ID="{D9F639EF-A86A-47E9-B694-6115966FB343}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="LighBulb_Drop_4" ID="{FC1F520C-5C76-405B-8E00-32A449E808C2}" ShortID="338858319">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CCCA1668-3107-4C89-9A4E-106F1E3411AC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C38E60E3-3A6B-4B70-8891-C9DEFFF15D43}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="lightbulb-shattering_1-2-89954" ID="{BD73AB8A-D8B0-46FD-BC05-41C6107255D8}">
+													<Language>SFX</Language>
+													<AudioFile>lightbulb-shattering_1-2-89954.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1050264288"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="lightbulb-shattering_1-2-89954" ID="{BD73AB8A-D8B0-46FD-BC05-41C6107255D8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="LighBulb_Drop_5" ID="{B66928E5-E90F-400B-A774-AFE38092C138}" ShortID="376038509">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CCCA1668-3107-4C89-9A4E-106F1E3411AC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C38E60E3-3A6B-4B70-8891-C9DEFFF15D43}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="fluorescent-lightbulb-break-37391" ID="{3670D414-A747-4CE6-8887-F235D661E960}">
+													<Language>SFX</Language>
+													<AudioFile>fluorescent-lightbulb-break-37391.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="691388806"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="fluorescent-lightbulb-break-37391" ID="{3670D414-A747-4CE6-8887-F235D661E960}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

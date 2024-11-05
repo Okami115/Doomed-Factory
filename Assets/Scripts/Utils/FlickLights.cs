@@ -24,13 +24,35 @@ public class FlickLights : MonoBehaviour
     public IEnumerator Flickeringlight()
     {
         _startflashingCorrutine = true;
+        bool lightEnabled = false;
         flickTime = Random.Range(minFlickTime, maxFlickTime);
         yield return new WaitForSeconds(flickTime);
         foreach (Light _light in _lights)
         {
             _light.enabled = !_light.enabled;
+            lightEnabled = _light.enabled;
         }
+
+        if (lightEnabled)
+            AkSoundEngine.PostEvent("Play_LighBulb_Hum", gameObject);
+        else
+            AkSoundEngine.PostEvent("Stop_LighBulb_Hum", gameObject);
         yield return null;
         _startflashingCorrutine = false;
+    }
+
+    public void TurnLights(bool value)
+    { 
+        foreach (Light _light in _lights)
+            _light.enabled = value;
+    }
+
+    public void ExplodeLights()
+    {
+        AkSoundEngine.PostEvent("Play_LighBulb_Drop", gameObject);
+        foreach (Light _light in _lights)
+        {
+            _light.enabled = false;
+        }
     }
 }

@@ -1,18 +1,13 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SoundTrigger : MonoBehaviour
 {
-
-    private void OnCollisionEnter(Collision other)
-    {
-        Debug.LogError("OnCollisionEnter");
-    }
+    [SerializeField] private UnityEvent _unityEvent;
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.LogError("OnTriggerEnter");
+        _unityEvent?.Invoke();
     }
 }

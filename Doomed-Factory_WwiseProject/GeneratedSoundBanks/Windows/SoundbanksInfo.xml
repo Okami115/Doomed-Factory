@@ -31,7 +31,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1391712453" Type="User" Language="SFX" Hash="{B27155F0-1F65-0057-991B-191B5040F887}">
+		<SoundBank Id="1391712453" Type="User" Language="SFX" Hash="{B28FDE05-76A9-FDF0-2856-50B39336AAD9}">
 			<ShortName>InGameSoundBank</ShortName>
 			<Path>InGameSoundBank.bnk</Path>
 			<Media>
@@ -131,6 +131,10 @@
 					<ShortName>SFX_Player_Footsteps_Concrete_Walk_DEMO-002.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Footsteps_Concrete_Walk_DEMO-002_818F3B66.wem</CachePath>
 				</File>
+				<File Id="610006166" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>light-hum-84720.wav</ShortName>
+					<CachePath>SFX/light-hum-84720_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="620116365" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Footsteps_Concrete_Walk_DEMO-005.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Footsteps_Concrete_Walk_DEMO-005_818F3B66.wem</CachePath>
@@ -217,6 +221,11 @@
 				<Event Id="885077343" Name="Play_KeyPickUp" DurationType="OneShot" DurationMin="1.9038959" DurationMax="1.9038959">
 					<MediaRefs>
 						<MediaRef Id="919983926"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3012732428" Name="Play_LighBulb_Hum" MaxAttenuation="10" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="610006166"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="98439365" Name="Play_Player_FootSteps" DurationType="OneShot" DurationMin="0.36138323" DurationMax="0.6521413">
@@ -323,6 +332,11 @@
 						<MediaRef Id="368422430"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3931005282" Name="Stop_LighBulb_Hum" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="610006166"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 			<SwitchGroups>
 				<SwitchGroup Id="3262912638" Name="Player_Footsteps_Material">
@@ -335,5 +349,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{31DD4813-8C3C-DA6C-5041-39C4CD570692}</FileHash>
+	<FileHash>{4BD35C33-74BB-E2A9-9C71-F994D547D3A7}</FileHash>
 </SoundBanksInfo>

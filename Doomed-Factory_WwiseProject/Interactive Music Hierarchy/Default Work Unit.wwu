@@ -4,6 +4,10 @@
 		<WorkUnit Name="Default Work Unit" ID="{886C60AC-E95F-46B5-BF37-087E88AD411A}" PersistMode="Standalone">
 			<ChildrenList>
 				<Folder Name="Enviroment_Music" ID="{24993570-A919-4A4E-974B-2A6018524E1D}" ShortID="702047670">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<MusicPlaylistContainer Name="Musica" ID="{DA2492C1-6001-4ADB-924F-E3F0C667899C}" ShortID="391853742">
 							<ReferenceList>
@@ -146,6 +150,158 @@
 									</ObjectLists>
 								</MusicSegment>
 							</ChildrenList>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="LighBulb_Hum" ID="{78C455FF-4C5C-450A-818E-38AA9C09581F}" ShortID="250203756">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="10"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="CellPhone_Sound" ID="{66FCFA38-8684-4244-9CFB-0B2D8198046E}" WorkUnitID="{22BC8651-B549-4413-B943-62D9DF36EA65}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CCCA1668-3107-4C89-9A4E-106F1E3411AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C38E60E3-3A6B-4B70-8891-C9DEFFF15D43}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{E2044CA8-BB46-4EDC-A7D9-3BEA903FA44E}" ShortID="1016595049">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{A3648115-0DC5-4323-B5FD-376BC3F5E5D3}" ShortID="321880167">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="light-hum-84720" ID="{C833D751-C76C-480B-A4DA-4AC763440B63}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{500EBA78-EF32-4E21-8A8E-64393BD9EEDF}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{0388876A-5D4E-49C5-B15E-136268A188C1}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="light-hum-84720" ID="{C833D751-C76C-480B-A4DA-4AC763440B63}" ShortID="933546426">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CCCA1668-3107-4C89-9A4E-106F1E3411AC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C38E60E3-3A6B-4B70-8891-C9DEFFF15D43}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="light-hum-84720" ID="{FB5448E2-B7D7-4BBC-9CD1-2BA11505C463}" ShortID="691859527">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C38E60E3-3A6B-4B70-8891-C9DEFFF15D43}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{21D3E5F5-E18E-4D5D-819B-D5D6C7F2F4CA}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="light-hum-84720" ID="{5A496C99-434A-44BD-B072-9C637349C1FE}">
+													<Language>SFX</Language>
+													<AudioFile>light-hum-84720.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="610006166"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{EB889942-6F0E-4480-B337-86217649A185}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="light-hum-84720" ID="{4CAF1EFA-B6EC-48ED-9082-8C55F4D463B2}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="1272"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="light-hum-84720" ID="{5A496C99-434A-44BD-B072-9C637349C1FE}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{EAA3F0D5-E8AA-4E06-ADF3-67B4888EE8AF}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="86.7579908675799"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{E925D6F4-5009-4F94-ACCE-E9115FBCDCDF}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="1272"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{D77FD3A2-EB2C-430A-B2DF-14A31AD1A194}"/>
+							</PositioningInfo>
 						</MusicPlaylistContainer>
 					</ChildrenList>
 				</Folder>
