@@ -42,7 +42,7 @@ public class FlickLights : MonoBehaviour
     }
 
     public void TurnLights(bool value)
-    { 
+    {
         foreach (Light _light in _lights)
             _light.enabled = value;
     }
@@ -52,7 +52,8 @@ public class FlickLights : MonoBehaviour
         AkSoundEngine.PostEvent("Play_LighBulb_Drop", gameObject);
         foreach (Light _light in _lights)
         {
-            _light.enabled = false;
+            if (_light.enabled)
+                _light.enabled = false;
         }
     }
 }

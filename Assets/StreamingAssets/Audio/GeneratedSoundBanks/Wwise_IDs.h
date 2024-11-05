@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_DEFAULTENVIROMENT = 3051613610U;
         static const AkUniqueID PLAY_KEYPICKUP = 885077343U;
+        static const AkUniqueID PLAY_LIGHBULB_DROP = 729854429U;
         static const AkUniqueID PLAY_LIGHBULB_HUM = 3012732428U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS = 98439365U;
         static const AkUniqueID PLAY_SFX_PLAYER_INTERACT_DOOR_METAL_LOCK = 3136413185U;
@@ -50,7 +51,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID INGAMESOUNDBANK = 1391712453U;
+        static const AkUniqueID SOUNDBANK = 1661994096U;
     } // namespace BANKS
 
     namespace BUSSES

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="Project" SchemaVersion="119" WwiseVersion="v2023.1.4" WwiseBuild="8496">
+<WwiseDocument Type="Project" SchemaVersion="119" WwiseVersion="v2023.1.1" WwiseBuild="8417">
 	<ProjectInfo>
 		<Project Name="Doomed-Factory_WwiseProject" ID="{AA11AE46-6B52-410D-94EA-CE30995480D1}">
 			<Platforms>
@@ -11425,6 +11425,9 @@
 					</ObsOccCurve>
 				</ObsOccCurves>
 			</EnvironmentalSettings>
+			<LogCentralIgnoreList>
+				<IgnoreItem MessageId="WritingInfoFileFailed"/>
+			</LogCentralIgnoreList>
 			<DefaultConversion Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}"/>
 			<PhysicalFolderList>
 				<PhysicalFolder Path="Actor-Mixer Hierarchy">
