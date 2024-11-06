@@ -127,7 +127,6 @@ public class PlayerMovementNavMesh : MonoBehaviour
             if (Physics.Raycast(movement, Vector3.down, out hit))
             {
                 movement.y = hit.point.y + 0.1f;
-
             }
 
             agent.destination = movement;
