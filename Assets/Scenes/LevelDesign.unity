@@ -73228,7 +73228,6 @@ MonoBehaviour:
   startflashing: 0
   minFlickTime: 0
   maxFlickTime: 0
-  flickTime: 0
 --- !u!1 &701430705
 GameObject:
   m_ObjectHideFlags: 0
@@ -79083,7 +79082,6 @@ MonoBehaviour:
   startflashing: 0
   minFlickTime: 1
   maxFlickTime: 3
-  flickTime: 0
 --- !u!1 &771658053
 GameObject:
   m_ObjectHideFlags: 0
@@ -158141,7 +158139,6 @@ MonoBehaviour:
   startflashing: 1
   minFlickTime: 0.1
   maxFlickTime: 1
-  flickTime: 0
 --- !u!1 &1650736603
 GameObject:
   m_ObjectHideFlags: 0
@@ -196992,10 +196989,9 @@ MonoBehaviour:
   _lights:
   - {fileID: 2051455050}
   - {fileID: 1396549715}
-  startflashing: 1
+  startflashing: 0
   minFlickTime: 0.1
   maxFlickTime: 3
-  flickTime: 0
 --- !u!1 &2051576000
 GameObject:
   m_ObjectHideFlags: 0
@@ -198731,7 +198727,6 @@ MonoBehaviour:
   startflashing: 0
   minFlickTime: 0.1
   maxFlickTime: 3
-  flickTime: 0
 --- !u!1 &2066259911
 GameObject:
   m_ObjectHideFlags: 0

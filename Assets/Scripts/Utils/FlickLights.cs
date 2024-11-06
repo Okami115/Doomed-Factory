@@ -9,8 +9,11 @@ public class FlickLights : MonoBehaviour
     [SerializeField] private bool startflashing;
     [SerializeField] private float minFlickTime;
     [SerializeField] private float maxFlickTime;
-    [SerializeField] private float flickTime;
+    private float flickTime;
     private bool _startflashingCorrutine = false;
+    private bool lightEnabled = true;
+
+
 
     public void SetStartFlashing(bool value) => startflashing = value;
 
@@ -19,6 +22,11 @@ public class FlickLights : MonoBehaviour
         if (startflashing)
             if (!_startflashingCorrutine)
                 StartCoroutine(Flickeringlight());
+        if (lightEnabled) 
+        {
+            lightEnabled = false;
+            AkSoundEngine.PostEvent("Play_LighBulb_Hum", gameObject);
+        }
     }
 
     public IEnumerator Flickeringlight()
