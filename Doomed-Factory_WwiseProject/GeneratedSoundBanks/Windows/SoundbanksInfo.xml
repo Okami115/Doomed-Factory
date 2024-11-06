@@ -31,9 +31,9 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1391712453" Type="User" Language="SFX" Hash="{B28FDE05-76A9-FDF0-2856-50B39336AAD9}">
-			<ShortName>InGameSoundBank</ShortName>
-			<Path>InGameSoundBank.bnk</Path>
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{18E85D02-8E46-1F3E-5903-5FDC680C862E}">
+			<ShortName>SoundBank</ShortName>
+			<Path>SoundBank.bnk</Path>
 			<Media>
 				<File Id="17706389" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Footsteps_Concrete_Walk_DEMO-004.wav</ShortName>
@@ -58,6 +58,10 @@
 				<File Id="228849478" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Footsteps_Concrete_Walk_DEMO-008.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Footsteps_Concrete_Walk_DEMO-008_818F3B66.wem</CachePath>
+				</File>
+				<File Id="276111761" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mixkit-creepy-radio-frequency-2558.wav</ShortName>
+					<CachePath>SFX/mixkit-creepy-radio-frequency-2558_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="281638350" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Interact_Phone_Screen_Lock_DEMO.wav</ShortName>
@@ -119,6 +123,10 @@
 					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-020.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-020_818F3B66.wem</CachePath>
 				</File>
+				<File Id="539844870" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mixkit-light-rain-loop-2393.wav</ShortName>
+					<CachePath>SFX/mixkit-light-rain-loop-2393_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="550848481" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Interact_Door_Metal_Unlock_DEMO.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Interact_Door_Metal_Unlock_DEMO_818F3B66.wem</CachePath>
@@ -139,6 +147,10 @@
 					<ShortName>SFX_Player_Footsteps_Concrete_Walk_DEMO-005.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Footsteps_Concrete_Walk_DEMO-005_818F3B66.wem</CachePath>
 				</File>
+				<File Id="627535572" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>fluorescent-bulb-drop_empty-room_02-102477.wav</ShortName>
+					<CachePath>SFX/fluorescent-bulb-drop_empty-room_02-102477_818F3B66.wem</CachePath>
+				</File>
 				<File Id="645205886" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Footsteps_Metal_Walk_DEMO-008.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Footsteps_Metal_Walk_DEMO-008_818F3B66.wem</CachePath>
@@ -151,6 +163,10 @@
 					<ShortName>SFX_Player_Interact_Phone_Light_Off_DEMO.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Interact_Phone_Light_Off_DEMO_818F3B66.wem</CachePath>
 				</File>
+				<File Id="691388806" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>fluorescent-lightbulb-break-37391.wav</ShortName>
+					<CachePath>SFX/fluorescent-lightbulb-break-37391_818F3B66.wem</CachePath>
+				</File>
 				<File Id="697044925" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Interact_Phone_Screen_Fail_DEMO.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Interact_Phone_Screen_Fail_DEMO_818F3B66.wem</CachePath>
@@ -159,6 +175,10 @@
 					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-018.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-018_818F3B66.wem</CachePath>
 				</File>
+				<File Id="748434214" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>fluorescent-bulb-drop_empty-room_03-81350.wav</ShortName>
+					<CachePath>SFX/fluorescent-bulb-drop_empty-room_03-81350_818F3B66.wem</CachePath>
+				</File>
 				<File Id="771714606" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-014.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-014_818F3B66.wem</CachePath>
@@ -166,6 +186,10 @@
 				<File Id="785014167" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-015.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-015_818F3B66.wem</CachePath>
+				</File>
+				<File Id="800914227" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mixkit-rain-and-thunder-storm-2390.wav</ShortName>
+					<CachePath>SFX/mixkit-rain-and-thunder-storm-2390_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="862633659" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Footsteps_Metal_Walk_DEMO-005.wav</ShortName>
@@ -207,6 +231,14 @@
 					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-011.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-011_818F3B66.wem</CachePath>
 				</File>
+				<File Id="1044115190" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>fluorescent-bulb-drop_empty-room-81349.wav</ShortName>
+					<CachePath>SFX/fluorescent-bulb-drop_empty-room-81349_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1050264288" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>lightbulb-shattering_1-2-89954.wav</ShortName>
+					<CachePath>SFX/lightbulb-shattering_1-2-89954_818F3B66.wem</CachePath>
+				</File>
 				<File Id="1071738769" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-019.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-019_818F3B66.wem</CachePath>
@@ -221,6 +253,15 @@
 				<Event Id="885077343" Name="Play_KeyPickUp" DurationType="OneShot" DurationMin="1.9038959" DurationMax="1.9038959">
 					<MediaRefs>
 						<MediaRef Id="919983926"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="729854429" Name="Play_LighBulb_Drop" MaxAttenuation="10" DurationType="OneShot" DurationMin="2.376" DurationMax="7.152">
+					<MediaRefs>
+						<MediaRef Id="627535572"/>
+						<MediaRef Id="691388806"/>
+						<MediaRef Id="748434214"/>
+						<MediaRef Id="1044115190"/>
+						<MediaRef Id="1050264288"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3012732428" Name="Play_LighBulb_Hum" MaxAttenuation="10" DurationType="Infinite">
@@ -277,6 +318,17 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="2695146928" Name="Play_RadioGlitch" MaxAttenuation="10" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="276111761"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2838936948" Name="Play_Rain" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="539844870"/>
+						<MediaRef Id="800914227"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3136413185" Name="Play_SFX_Player_Interact_Door_Metal_Lock" DurationType="OneShot" DurationMin="1.9038959" DurationMax="1.9038959">
 					<MediaRefs>
 						<MediaRef Id="181072394"/>
@@ -332,11 +384,8 @@
 						<MediaRef Id="368422430"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3931005282" Name="Stop_LighBulb_Hum" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<MediaRefs>
-						<MediaRef Id="610006166"/>
-					</MediaRefs>
-				</Event>
+				<Event Id="3931005282" Name="Stop_LighBulb_Hum" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="253903194" Name="Stop_RadioGlitch" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<SwitchGroups>
 				<SwitchGroup Id="3262912638" Name="Player_Footsteps_Material">
@@ -349,5 +398,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4BD35C33-74BB-E2A9-9C71-F994D547D3A7}</FileHash>
+	<FileHash>{24BC0E3F-6C57-0497-7500-A3ADB2DA783B}</FileHash>
 </SoundBanksInfo>
