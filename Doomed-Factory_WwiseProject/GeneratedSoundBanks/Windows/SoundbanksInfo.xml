@@ -31,7 +31,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{43FE2E37-0A3D-01A5-A912-050FE8ED21DF}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{FEEE81A4-405F-FD93-334E-6F2D2927B57C}">
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
 			<Media>
@@ -187,6 +187,10 @@
 					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-014.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-014_818F3B66.wem</CachePath>
 				</File>
+				<File Id="776724318" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Scooby Doo laugh.wav</ShortName>
+					<CachePath>SFX/Scooby Doo laugh_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="785014167" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-015.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-015_818F3B66.wem</CachePath>
@@ -338,6 +342,11 @@
 						<MediaRef Id="800914227"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2992258660" Name="Play_ScoobyLaugh" MaxAttenuation="100" DurationType="OneShot" DurationMin="1.5209166" DurationMax="1.5209166">
+					<MediaRefs>
+						<MediaRef Id="776724318"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3136413185" Name="Play_SFX_Player_Interact_Door_Metal_Lock" DurationType="OneShot" DurationMin="1.9038959" DurationMax="1.9038959">
 					<MediaRefs>
 						<MediaRef Id="181072394"/>
@@ -396,6 +405,7 @@
 				<Event Id="3319673256" Name="Stop_Heartbeat" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3931005282" Name="Stop_LighBulb_Hum" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="253903194" Name="Stop_RadioGlitch" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3206237490" Name="Stop_Rain" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<SwitchGroups>
 				<SwitchGroup Id="3262912638" Name="Player_Footsteps_Material">
@@ -408,5 +418,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FA3DD890-920B-6CE1-1975-74BF3D43333C}</FileHash>
+	<FileHash>{9773FD81-4BF5-E840-D88D-0AB07CD17748}</FileHash>
 </SoundBanksInfo>

@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 public class FlickLights : MonoBehaviour
 {
@@ -14,6 +16,12 @@ public class FlickLights : MonoBehaviour
     private bool lightEnabled = true;
     private bool alreadyPlayed = false;
 
+    private void OnEnable()
+    {
+        alreadyPlayed = false;
+        lightEnabled = true;
+        gameObject.SetActive(true);
+    }
 
     public void SetStartFlashing(bool value) => startflashing = value;
 
@@ -29,8 +37,6 @@ public class FlickLights : MonoBehaviour
                 AkSoundEngine.PostEvent("Play_LighBulb_Hum", gameObject);
                 alreadyPlayed = true;
             }
-
-           
         }
         else
             AkSoundEngine.PostEvent("Stop_LighBulb_Hum", gameObject);
@@ -63,6 +69,7 @@ public class FlickLights : MonoBehaviour
             _light.enabled = value;
             lightEnabled = value;
         }
+
         if (lightEnabled)
             alreadyPlayed = false;
     }
@@ -72,11 +79,8 @@ public class FlickLights : MonoBehaviour
         AkSoundEngine.PostEvent("Play_LighBulb_Drop", gameObject);
         AkSoundEngine.PostEvent("Stop_LighBulb_Hum", gameObject);
         alreadyPlayed = false;
+        lightEnabled = false;
         startflashing = false;
-        foreach (Light _light in _lights)
-        {
-            if (_light.enabled)
-                _light.enabled = false;
-        }
+        gameObject.SetActive(false);
     }
 }

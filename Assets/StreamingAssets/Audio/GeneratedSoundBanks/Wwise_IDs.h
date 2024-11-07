@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS = 98439365U;
         static const AkUniqueID PLAY_RADIOGLITCH = 2695146928U;
         static const AkUniqueID PLAY_RAIN = 2838936948U;
+        static const AkUniqueID PLAY_SCOOBYLAUGH = 2992258660U;
         static const AkUniqueID PLAY_SFX_PLAYER_INTERACT_DOOR_METAL_LOCK = 3136413185U;
         static const AkUniqueID PLAY_SFX_PLAYER_INTERACT_DOOR_METAL_UNLOCK = 1657049032U;
         static const AkUniqueID PLAY_SFX_PLAYER_INTERACT_DOOR_WOOD_LOCK = 1936894595U;
@@ -35,6 +36,7 @@ namespace AK
         static const AkUniqueID STOP_HEARTBEAT = 3319673256U;
         static const AkUniqueID STOP_LIGHBULB_HUM = 3931005282U;
         static const AkUniqueID STOP_RADIOGLITCH = 253903194U;
+        static const AkUniqueID STOP_RAIN = 3206237490U;
     } // namespace EVENTS
 
     namespace SWITCHES

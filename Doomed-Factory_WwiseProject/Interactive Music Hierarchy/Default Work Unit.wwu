@@ -70,13 +70,6 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="horror-ambience-sound-7-vol-001-147601" ID="{E450C157-40FB-462C-BE7A-32DE07895C1A}" ShortID="859865883">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-22</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C38E60E3-3A6B-4B70-8891-C9DEFFF15D43}"/>
@@ -179,7 +172,7 @@
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="10"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-25</Value>
+										<Value>-30</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -967,6 +960,181 @@
 							<PositioningInfo>
 								<Panner Name="" ID="{B0C34AD0-10DC-4705-BAE0-5CA0BCD75E35}"/>
 							</PositioningInfo>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Scooby" ID="{D4F5FC51-4648-4254-98BE-5FEC21A7A57F}" ShortID="73693886">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="60"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="SFX" ID="{7E77C722-2766-4B7D-A970-68323983922E}" WorkUnitID="{22BC8651-B549-4413-B943-62D9DF36EA65}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CCCA1668-3107-4C89-9A4E-106F1E3411AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C38E60E3-3A6B-4B70-8891-C9DEFFF15D43}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{2D17AEBF-C4FC-4830-9EE5-56A40662DA30}" ShortID="876432138">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{C26C6A93-BAE7-42F2-8909-E9B2083E5220}" ShortID="852218867">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="ScoobyLaugh" ID="{A5B2E8C9-D3F9-43CC-B3E9-737B510871E2}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{372C96C3-1A46-45A6-A9FD-676205B63B67}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{DAE7B96E-4FF7-4466-9E19-0C5DEEA5B602}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="ScoobyLaugh" ID="{A5B2E8C9-D3F9-43CC-B3E9-737B510871E2}" ShortID="829487674">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CCCA1668-3107-4C89-9A4E-106F1E3411AC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C38E60E3-3A6B-4B70-8891-C9DEFFF15D43}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Scooby Doo laugh" ID="{FAFB212A-995F-4E59-98A4-D989009A5BBF}" ShortID="573623396">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C38E60E3-3A6B-4B70-8891-C9DEFFF15D43}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{5A189BEC-5750-49A6-93F6-FCF74E6B2273}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Scooby Doo laugh" ID="{0337872D-976F-4C93-AA9C-6136E26810AE}">
+													<Language>SFX</Language>
+													<AudioFile>Scooby Doo laugh.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="776724318"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{D864C018-7E42-41B2-A17B-65AFE82CE08B}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Scooby Doo laugh" ID="{DF6C8FEE-6E09-4573-BE3F-3E41613E9CC0}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="1520.91666666667"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Scooby Doo laugh" ID="{0337872D-976F-4C93-AA9C-6136E26810AE}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{B2C1B82C-4EF3-4F71-B43B-6F4477AAF458}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>-96.3</YPos>
+																										<Flags>5</Flags>
+																										<SegmentShape>Log2</SegmentShape>
+																									</Point>
+																									<Point>
+																										<XPos>0.36297</XPos>
+																										<YPos>-0</YPos>
+																										<Flags>0</Flags>
+																										<SegmentShape>Exp2</SegmentShape>
+																									</Point>
+																									<Point>
+																										<XPos>1.09751</XPos>
+																										<YPos>-17.84303</YPos>
+																										<Flags>0</Flags>
+																										<SegmentShape>Log2</SegmentShape>
+																									</Point>
+																									<Point>
+																										<XPos>1.19468</XPos>
+																										<YPos>-25.81298</YPos>
+																										<Flags>0</Flags>
+																										<SegmentShape>Exp2</SegmentShape>
+																									</Point>
+																									<Point>
+																										<XPos>1.52091666666667</XPos>
+																										<YPos>-96.3</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{22177D87-5F43-45B3-B0F4-56F803281962}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{9121063A-A70A-4DF4-807A-80C2BEAA27F6}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="1512.79382337137"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
 						</MusicPlaylistContainer>
 					</ChildrenList>
 				</Folder>
