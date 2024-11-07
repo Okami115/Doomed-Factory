@@ -257,6 +257,31 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_Heartbeat" ID="{22BEA667-6A31-4C6B-A137-4EE5F1BFA416}">
+					<ChildrenList>
+						<Action Name="" ID="{196C973E-F434-484B-B812-EDCCAE559592}" ShortID="391738940">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Heartbeat" ID="{67700A2A-69B5-4273-8D0A-08E8DF4345C4}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Heartbeat" ID="{8AF76058-6D34-4101-82AE-CA55487A6BF5}">
+					<ChildrenList>
+						<Action Name="" ID="{31684F92-9E4B-48DB-9CB2-574FC25A48E8}" ShortID="521465452">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Heartbeat" ID="{67700A2A-69B5-4273-8D0A-08E8DF4345C4}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

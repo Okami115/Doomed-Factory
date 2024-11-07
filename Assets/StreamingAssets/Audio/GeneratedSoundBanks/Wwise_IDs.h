@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_DEFAULTENVIROMENT = 3051613610U;
+        static const AkUniqueID PLAY_HEARTBEAT = 3765695918U;
         static const AkUniqueID PLAY_KEYPICKUP = 885077343U;
         static const AkUniqueID PLAY_LIGHBULB_DROP = 729854429U;
         static const AkUniqueID PLAY_LIGHBULB_HUM = 3012732428U;
@@ -31,6 +32,7 @@ namespace AK
         static const AkUniqueID PLAY_SFX_PLAYER_INTERACT_PHONE_SCREEN_LOCK = 577666544U;
         static const AkUniqueID PLAY_SFX_PLAYER_INTERACT_PHONE_SCREEN_UNLOCK = 3588694021U;
         static const AkUniqueID PLAY_SFX_PLAYER_INTERACT_PHONE_SWITCHSCREEN = 1036060318U;
+        static const AkUniqueID STOP_HEARTBEAT = 3319673256U;
         static const AkUniqueID STOP_LIGHBULB_HUM = 3931005282U;
         static const AkUniqueID STOP_RADIOGLITCH = 253903194U;
     } // namespace EVENTS

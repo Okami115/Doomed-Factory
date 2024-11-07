@@ -159385,6 +159385,10 @@ PrefabInstance:
       propertyPath: background
       value: 
       objectReference: {fileID: 1588903864}
+    - target: {fileID: 4320218066187854845, guid: 4f305e15569fd0743832c5bfeba43eeb, type: 3}
+      propertyPath: _loopSoundName
+      value: Play_Heartbeat
+      objectReference: {fileID: 0}
     - target: {fileID: 4787634632674603284, guid: 4f305e15569fd0743832c5bfeba43eeb, type: 3}
       propertyPath: m_Name
       value: Portal Door
