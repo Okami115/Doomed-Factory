@@ -12,7 +12,7 @@ public class FlickLights : MonoBehaviour
     private float flickTime;
     private bool _startflashingCorrutine = false;
     private bool lightEnabled = true;
-
+    private bool alreadyPlayed = false;
 
 
     public void SetStartFlashing(bool value) => startflashing = value;
@@ -22,11 +22,18 @@ public class FlickLights : MonoBehaviour
         if (startflashing)
             if (!_startflashingCorrutine)
                 StartCoroutine(Flickeringlight());
-        if (lightEnabled) 
+        if (lightEnabled)
         {
-            lightEnabled = false;
-            AkSoundEngine.PostEvent("Play_LighBulb_Hum", gameObject);
+            if (!alreadyPlayed)
+            {
+                AkSoundEngine.PostEvent("Play_LighBulb_Hum", gameObject);
+                alreadyPlayed = true;
+            }
+
+           
         }
+        else
+            AkSoundEngine.PostEvent("Stop_LighBulb_Hum", gameObject);
     }
 
     public IEnumerator Flickeringlight()
@@ -52,12 +59,20 @@ public class FlickLights : MonoBehaviour
     public void TurnLights(bool value)
     {
         foreach (Light _light in _lights)
+        {
             _light.enabled = value;
+            lightEnabled = value;
+        }
+        if (lightEnabled)
+            alreadyPlayed = false;
     }
 
     public void ExplodeLights()
     {
         AkSoundEngine.PostEvent("Play_LighBulb_Drop", gameObject);
+        AkSoundEngine.PostEvent("Stop_LighBulb_Hum", gameObject);
+        alreadyPlayed = false;
+        startflashing = false;
         foreach (Light _light in _lights)
         {
             if (_light.enabled)

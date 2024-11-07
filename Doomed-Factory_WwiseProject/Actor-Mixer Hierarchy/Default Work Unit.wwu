@@ -1163,6 +1163,7 @@
 								<RandomSequenceContainer Name="LighBulb_Drop" ID="{53B4EAD3-8A2F-47EA-A98B-BD010AFB4E0E}" ShortID="244615901">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1301,6 +1302,9 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{8C25ED87-C2B7-48BF-80FA-A24C89C0ABC0}"/>
+									</PositioningInfo>
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
