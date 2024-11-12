@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ public class TriggerToTP : MonoBehaviour
     [SerializeField] private Image background;
     [SerializeField] private GameObject Loop;
     [SerializeField] private List<GameObject> LoopDisableObjects = new List<GameObject>();
+    [SerializeField] private string _loopSoundName;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -28,6 +30,7 @@ public class TriggerToTP : MonoBehaviour
 
             player.isTPOn = true;
             background.color = new Color(0, 0, 0, 255);
+            AkSoundEngine.PostEvent(_loopSoundName, gameObject);
             Destroy(this.gameObject);
         }
     }

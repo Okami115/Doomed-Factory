@@ -31,6 +31,56 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Rain" ID="{8C9EC73D-FF1C-41BC-B671-C98D03C088B2}">
+							<ChildrenList>
+								<Action Name="" ID="{6A57AAB5-3B40-4C07-9ACE-50429E65A421}" ShortID="364293059">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Rain" ID="{D43A5F02-73E6-4270-83EC-FEFF09BEDFC8}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Heartbeat" ID="{8AF76058-6D34-4101-82AE-CA55487A6BF5}">
+							<ChildrenList>
+								<Action Name="" ID="{31684F92-9E4B-48DB-9CB2-574FC25A48E8}" ShortID="521465452">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Heartbeat" ID="{67700A2A-69B5-4273-8D0A-08E8DF4345C4}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Rain" ID="{991711BA-D286-4C76-83AC-C1CE6220A555}">
+							<ChildrenList>
+								<Action Name="" ID="{072AC76F-6467-4C33-B708-533F5B3B286E}" ShortID="1033343842">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Rain" ID="{D43A5F02-73E6-4270-83EC-FEFF09BEDFC8}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Heartbeat" ID="{22BEA667-6A31-4C6B-A137-4EE5F1BFA416}">
+							<ChildrenList>
+								<Action Name="" ID="{196C973E-F434-484B-B812-EDCCAE559592}" ShortID="391738940">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Heartbeat" ID="{67700A2A-69B5-4273-8D0A-08E8DF4345C4}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Player_Interect_Events" ID="{B68D8EE2-F520-4874-A195-D8757CEABDCE}" ShortID="693670751">
@@ -217,6 +267,46 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Radio" ID="{938FC070-122F-43EF-875A-9E9F1C1D045A}" ShortID="963071112">
+					<ChildrenList>
+						<Event Name="Play_RadioGlitch" ID="{CF61A9A3-12E7-4A46-AC92-3EE7A8F2D9E0}">
+							<ChildrenList>
+								<Action Name="" ID="{711BE4AF-AE8F-4420-A943-C59E83653C2A}" ShortID="573553965">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RadioGlitch" ID="{7D4D16D7-5B82-45A0-AEBB-9087AB218772}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_RadioGlitch" ID="{22BBF863-6A22-430A-88C6-09DDDB738F8E}">
+							<ChildrenList>
+								<Action Name="" ID="{02B559C7-9685-43E4-B5F1-05544884A7FC}" ShortID="749522261">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RadioGlitch" ID="{7D4D16D7-5B82-45A0-AEBB-9087AB218772}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Play_ScoobyLaugh" ID="{C8D06B57-0563-4C62-B021-416E01C18590}">
+					<ChildrenList>
+						<Action Name="" ID="{374B3D7C-82E4-4323-9F95-657D51DC7D49}" ShortID="636226709">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Scooby" ID="{D4F5FC51-4648-4254-98BE-5FEC21A7A57F}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

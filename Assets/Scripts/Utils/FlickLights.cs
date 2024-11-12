@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 public class FlickLights : MonoBehaviour
 {
@@ -9,8 +11,17 @@ public class FlickLights : MonoBehaviour
     [SerializeField] private bool startflashing;
     [SerializeField] private float minFlickTime;
     [SerializeField] private float maxFlickTime;
-    [SerializeField] private float flickTime;
+    private float flickTime;
     private bool _startflashingCorrutine = false;
+    private bool lightEnabled = true;
+    private bool alreadyPlayed = false;
+
+    private void OnEnable()
+    {
+        alreadyPlayed = false;
+        lightEnabled = true;
+        gameObject.SetActive(true);
+    }
 
     public void SetStartFlashing(bool value) => startflashing = value;
 
@@ -19,6 +30,16 @@ public class FlickLights : MonoBehaviour
         if (startflashing)
             if (!_startflashingCorrutine)
                 StartCoroutine(Flickeringlight());
+        if (lightEnabled)
+        {
+            if (!alreadyPlayed)
+            {
+                AkSoundEngine.PostEvent("Play_LighBulb_Hum", gameObject);
+                alreadyPlayed = true;
+            }
+        }
+        else
+            AkSoundEngine.PostEvent("Stop_LighBulb_Hum", gameObject);
     }
 
     public IEnumerator Flickeringlight()
@@ -44,16 +65,22 @@ public class FlickLights : MonoBehaviour
     public void TurnLights(bool value)
     {
         foreach (Light _light in _lights)
+        {
             _light.enabled = value;
+            lightEnabled = value;
+        }
+
+        if (lightEnabled)
+            alreadyPlayed = false;
     }
 
     public void ExplodeLights()
     {
         AkSoundEngine.PostEvent("Play_LighBulb_Drop", gameObject);
-        foreach (Light _light in _lights)
-        {
-            if (_light.enabled)
-                _light.enabled = false;
-        }
+        AkSoundEngine.PostEvent("Stop_LighBulb_Hum", gameObject);
+        alreadyPlayed = false;
+        lightEnabled = false;
+        startflashing = false;
+        gameObject.SetActive(false);
     }
 }

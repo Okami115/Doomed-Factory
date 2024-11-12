@@ -7,6 +7,7 @@ public class KeyDebug : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         SceneManager.LoadScene(0);
+        AkSoundEngine.StopAll();
         UnityEngine.Cursor.lockState = CursorLockMode.Confined;
     }
 }
