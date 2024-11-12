@@ -64744,6 +64744,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1731917212}
     - target: {fileID: 8366475736004735710, guid: b86787d5d3a13c34baad7ee7704d7ec3, type: 3}
+      propertyPath: rigidbody
+      value: 
+      objectReference: {fileID: 2110143878}
+    - target: {fileID: 8366475736004735710, guid: b86787d5d3a13c34baad7ee7704d7ec3, type: 3}
       propertyPath: background
       value: 
       objectReference: {fileID: 1588903864}
@@ -204400,6 +204404,11 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!54 &2110143878 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 3239881688796286523, guid: b86787d5d3a13c34baad7ee7704d7ec3, type: 3}
+  m_PrefabInstance: {fileID: 619387035}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2111234174
 GameObject:
   m_ObjectHideFlags: 0

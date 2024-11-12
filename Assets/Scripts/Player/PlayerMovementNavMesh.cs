@@ -17,6 +17,7 @@ public class PlayerMovementNavMesh : MonoBehaviour
     [SerializeField] private float WalkSpeed;
     [SerializeField] private float CrouchSpeed;
     [SerializeField] private Transform pivot;
+    [SerializeField] private Rigidbody rigidbody;
     private bool _movementCorrutineRuning = false;
 
     [Header("Camera Animate Variables")]
@@ -99,6 +100,7 @@ public class PlayerMovementNavMesh : MonoBehaviour
             agent.destination = transform.position;
             agent.isStopped = true;
             agent.velocity = Vector3.zero;
+            rigidbody.velocity = Vector3.zero;
             cameraTransform.localPosition = originalCameraPosition;
         }
         else
