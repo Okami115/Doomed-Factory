@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3192363082466308847}
   - component: {fileID: 8797545600576068748}
   - component: {fileID: 91433198816588303}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,6 +68,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _doorKey: {fileID: 0}
+  menssage:
+  - {fileID: 0}
+  - {fileID: 0}
   doorTimeline: {fileID: 1106780084698455444}
   waitTime: 0
 --- !u!114 &91433198816588303
@@ -108,15 +111,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 32918c84a5167f34eb7feea8dab006ec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 469.506
+      value: 428.74
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32918c84a5167f34eb7feea8dab006ec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -17.205828
+      value: -10.228073
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32918c84a5167f34eb7feea8dab006ec, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -19.009
+      value: -27.277859
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32918c84a5167f34eb7feea8dab006ec, type: 3}
       propertyPath: m_LocalRotation.w
@@ -170,9 +173,21 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: cf59fe8cd27a47e4387a37515c12e2ce, type: 2}
+    - target: {fileID: 702481544806240308, guid: 32918c84a5167f34eb7feea8dab006ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 32918c84a5167f34eb7feea8dab006ec, type: 3}
       propertyPath: m_Name
       value: Key Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32918c84a5167f34eb7feea8dab006ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418760703753836963, guid: 32918c84a5167f34eb7feea8dab006ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

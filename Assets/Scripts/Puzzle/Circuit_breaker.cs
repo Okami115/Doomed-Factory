@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Circuit_breaker : MonoBehaviour,IInteractable
@@ -10,6 +11,7 @@ public class Circuit_breaker : MonoBehaviour,IInteractable
     public int BreakerValue;
     private bool isPlayerInRange;
     private bool isBreakerActive;
+    [SerializeField] private List<GameObject> menssage;
 
     private void OnEnable()
     {
@@ -49,6 +51,11 @@ public class Circuit_breaker : MonoBehaviour,IInteractable
     {
         isPlayerInRange = ans;
         
+    }
+
+    public GameObject GetMsg()
+    {
+        return menssage[0];
     }
 
     public void Update()

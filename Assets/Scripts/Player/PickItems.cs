@@ -21,7 +21,8 @@ public class PickItems : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, rangeToActivate))
         {
-            if (hit.transform.gameObject.TryGetComponent<IInteractable>(out obj))
+            hit.transform.gameObject.TryGetComponent<IInteractable>(out obj);
+            if (obj != null)
             {
                 if(lastObj != obj)
                 {
@@ -31,8 +32,9 @@ public class PickItems : MonoBehaviour
                         lastObj = null;
                     }
 
-                    menssage.SetActive(true);
+                    obj.GetMsg().SetActive(true);
                     obj.ReadyToInteract(true);
+                    menssage = obj.GetMsg();
 
 
                     lastObj = obj;

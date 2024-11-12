@@ -7,7 +7,7 @@ public class Keys : MonoBehaviour, IInteractable
     public string name;
     public string description;
     public int id;
-    
+    [SerializeField] private List<GameObject> menssage;
     public Sprite KeyImage;
 
     private PlayerMovementNavMesh _playerMovement;
@@ -22,6 +22,11 @@ public class Keys : MonoBehaviour, IInteractable
     public void ReadyToInteract(bool ans)
     {
         isPlayerInRange = ans;
+    }
+
+    public GameObject GetMsg()
+    {
+        return menssage[0];
     }
 
     public void Interact(List<Keys> keysList)

@@ -5,33 +5,41 @@ using UnityEngine.Playables;
 
 public class Door : MonoBehaviour, IInteractable
 {
-    [Header("Door Settings")]
-    [SerializeField] private Keys _doorKey;
+    [Header("Door Settings")] [SerializeField]
+    private Keys _doorKey;
+
+    [SerializeField] private List<GameObject> menssage;
     [SerializeField] private Animator doorTimeline;
     [SerializeField] private float waitTime;
-    
+
     private bool isPlayerInRange;
     private bool isDoorOpen;
     private bool corrutineRuning = false;
+    private bool hasKey = false;
 
     public void Interact(List<Keys> keysList)
     {
+        if (keysList.Contains(_doorKey))
+            hasKey = true;
+        else
+            hasKey = false;
+
         if (isPlayerInRange && !isDoorOpen)
         {
             if (keysList.Contains(_doorKey) || _doorKey == null)
             {
                 doorTimeline.SetTrigger("OnOpenDoor");
-                
+
                 if (!corrutineRuning)
                     StartCoroutine(PlayOpenSound(waitTime));
-                
+
                 isDoorOpen = true;
             }
             else
                 AkSoundEngine.PostEvent("Play_SFX_Player_Interact_Door_Metal_Lock", gameObject);
         }
     }
-    
+
     public IEnumerator PlayOpenSound(float waitTime)
     {
         corrutineRuning = true;
@@ -45,5 +53,19 @@ public class Door : MonoBehaviour, IInteractable
     public void ReadyToInteract(bool ans)
     {
         isPlayerInRange = ans;
+    }
+
+    public GameObject GetMsg()
+    {
+        if (!hasKey)
+        {
+            menssage[1].SetActive(false);
+            return menssage[0];
+        }
+        else
+        {
+            menssage[0].SetActive(false);
+            return menssage[1];
+        }
     }
 }
