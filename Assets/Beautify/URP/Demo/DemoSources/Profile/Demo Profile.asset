@@ -254,7 +254,7 @@ MonoBehaviour:
     dimension: 1
   bloomIntensity:
     m_OverrideState: 1
-    m_Value: 0.88
+    m_Value: 0.1
   bloomThreshold:
     m_OverrideState: 0
     m_Value: 0.75
@@ -515,7 +515,7 @@ MonoBehaviour:
     m_Value: 0.01
   lensDirtIntensity:
     m_OverrideState: 1
-    m_Value: 1.21
+    m_Value: 0.57
   lensDirtThreshold:
     m_OverrideState: 1
     m_Value: 0.482
