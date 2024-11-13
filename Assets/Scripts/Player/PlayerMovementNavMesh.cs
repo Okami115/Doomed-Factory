@@ -11,6 +11,7 @@ public class PlayerMovementNavMesh : MonoBehaviour
     [SerializeField] private PlayerInputsReader _inputsReader;
     [SerializeField] private KeysEventChannel _doorInteraction;
     [SerializeField] private List<Keys> playerKeys;
+    [SerializeField] private LayerMask ignoreLayer;
 
     [Header("Movement Variables")]
     [SerializeField] private float RunSpeed;
@@ -126,7 +127,7 @@ public class PlayerMovementNavMesh : MonoBehaviour
             movement.y = pivot.position.y;
 
             RaycastHit hit;
-            if (Physics.Raycast(movement, Vector3.down, out hit))
+            if (Physics.Raycast(movement, Vector3.down, out hit, Mathf.Infinity, ~ignoreLayer))
             {
                 movement.y = hit.point.y + 0.1f;
             }

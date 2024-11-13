@@ -7,6 +7,7 @@ public class AutoFixLightIntencity : MonoBehaviour
     [SerializeField] private float muliplier;
     [SerializeField] private float maxDistance;
     [SerializeField] private Transform pivote;
+    [SerializeField] private LayerMask ignoreLayer;
 
     private Light light;
     private RaycastHit hit;
@@ -19,9 +20,11 @@ public class AutoFixLightIntencity : MonoBehaviour
 
     void Update()
     {
-        if (Physics.Raycast(pivote.position, pivote.forward * maxDistance, out hit))
+        if (Physics.Raycast(pivote.position, pivote.forward, out hit, Mathf.Infinity, ~ignoreLayer))
         {
-            light.intensity = Mathf.Lerp(light.intensity ,Vector3.Distance(pivote.position, hit.point) / muliplier, 0.1f);
+            float targetIntensity = Vector3.Distance(pivote.position, hit.point) / muliplier;
+            light.intensity = Mathf.Lerp(light.intensity, targetIntensity, 0.1f);
         }
     }
+
 }
