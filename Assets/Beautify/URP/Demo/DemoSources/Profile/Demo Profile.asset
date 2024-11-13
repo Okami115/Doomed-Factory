@@ -167,7 +167,7 @@ MonoBehaviour:
     m_Value: 0
   sharpenIntensity:
     m_OverrideState: 1
-    m_Value: 8.8
+    m_Value: 13.1
   sharpenDepthThreshold:
     m_OverrideState: 1
     m_Value: 0.0337
@@ -220,13 +220,13 @@ MonoBehaviour:
     m_Value: 1
   saturate:
     m_OverrideState: 1
-    m_Value: 0.22
+    m_Value: 0.7
   brightness:
     m_OverrideState: 1
     m_Value: 0.9
   contrast:
     m_OverrideState: 1
-    m_Value: 1.2
+    m_Value: 1.147
   daltonize:
     m_OverrideState: 0
     m_Value: 0
@@ -238,7 +238,7 @@ MonoBehaviour:
     m_Value: {r: 0.43244928, g: 0.8113208, b: 0.45689258, a: 0}
   colorTemp:
     m_OverrideState: 1
-    m_Value: 5277
+    m_Value: 2861
   colorTempBlend:
     m_OverrideState: 1
     m_Value: 0.8
@@ -253,8 +253,8 @@ MonoBehaviour:
     m_Value: {fileID: 0}
     dimension: 1
   bloomIntensity:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 0.88
   bloomThreshold:
     m_OverrideState: 0
     m_Value: 0.75
@@ -515,7 +515,7 @@ MonoBehaviour:
     m_Value: 0.01
   lensDirtIntensity:
     m_OverrideState: 1
-    m_Value: 0.6
+    m_Value: 1.21
   lensDirtThreshold:
     m_OverrideState: 1
     m_Value: 0.482
