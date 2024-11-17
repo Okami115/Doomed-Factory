@@ -41607,7 +41607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1708301572153863812, guid: 62c262f1fcbf1e04e90e2274ac9c28af, type: 3}
       propertyPath: startflashing
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1920952834825796044, guid: 62c262f1fcbf1e04e90e2274ac9c28af, type: 3}
       propertyPath: m_StaticEditorFlags
