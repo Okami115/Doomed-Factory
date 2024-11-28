@@ -12,7 +12,7 @@ public class TriggerToTP : MonoBehaviour
     [SerializeField] private List<GameObject> LoopDisableObjects = new List<GameObject>();
     [SerializeField] private string _loopSoundName;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
         counter++;
 
