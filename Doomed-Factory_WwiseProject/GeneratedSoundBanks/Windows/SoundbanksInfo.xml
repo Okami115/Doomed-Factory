@@ -31,7 +31,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{FEEE81A4-405F-FD93-334E-6F2D2927B57C}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{755ADC35-006B-4510-6AA6-31C98900F65C}">
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
 			<Media>
@@ -187,10 +187,6 @@
 					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-014.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-014_818F3B66.wem</CachePath>
 				</File>
-				<File Id="776724318" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Scooby Doo laugh.wav</ShortName>
-					<CachePath>SFX/Scooby Doo laugh_FBC78EF0.wem</CachePath>
-				</File>
 				<File Id="785014167" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-015.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Footsteps_Water_Walk_DEMO-015_818F3B66.wem</CachePath>
@@ -234,6 +230,10 @@
 				<File Id="977924793" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Footsteps_Metal_Walk_DEMO-007.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Footsteps_Metal_Walk_DEMO-007_818F3B66.wem</CachePath>
+				</File>
+				<File Id="979376530" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EvilLaughter_4_10stDown.wav</ShortName>
+					<CachePath>SFX/EvilLaughter_4_10stDown_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="1019531812" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Footsteps_Water_Walk_DEMO-011.wav</ShortName>
@@ -342,9 +342,9 @@
 						<MediaRef Id="800914227"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2992258660" Name="Play_ScoobyLaugh" MaxAttenuation="100" DurationType="OneShot" DurationMin="1.5209166" DurationMax="1.5209166">
+				<Event Id="2992258660" Name="Play_ScoobyLaugh" MaxAttenuation="100" DurationType="OneShot" DurationMin="7.5900416" DurationMax="7.5900416">
 					<MediaRefs>
-						<MediaRef Id="776724318"/>
+						<MediaRef Id="979376530"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3136413185" Name="Play_SFX_Player_Interact_Door_Metal_Lock" DurationType="OneShot" DurationMin="1.9038959" DurationMax="1.9038959">
@@ -418,5 +418,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9773FD81-4BF5-E840-D88D-0AB07CD17748}</FileHash>
+	<FileHash>{202399FE-B5CD-0BAD-D76B-1C30B2C4E0D8}</FileHash>
 </SoundBanksInfo>

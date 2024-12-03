@@ -14,9 +14,9 @@ public class PlayerMovementNavMesh : MonoBehaviour
     [SerializeField] private LayerMask ignoreLayer;
 
     [Header("Movement Variables")]
-    [SerializeField] private float RunSpeed;
+    //[SerializeField] private float RunSpeed;
     [SerializeField] private float WalkSpeed;
-    [SerializeField] private float CrouchSpeed;
+    //[SerializeField] private float CrouchSpeed;
     [SerializeField] private Transform pivot;
     [SerializeField] private Rigidbody rigidbody;
     private bool _movementCorrutineRuning = false;
@@ -30,7 +30,7 @@ public class PlayerMovementNavMesh : MonoBehaviour
     [SerializeField] private Image background;
     [SerializeField] private float multiplierTrancition;
     [SerializeField] private Transform cameraTransform;
-    [SerializeField] private Transform cameraTransformCrouch;
+    //[SerializeField] private Transform cameraTransformCrouch;
 
     [Header("Debug Variables")]
     [SerializeField] private Transform target;
@@ -106,18 +106,18 @@ public class PlayerMovementNavMesh : MonoBehaviour
         }
         else
         {
-            float footstepsDelay = 0.0f;
+            float footstepsDelay = 0.5f;
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                agent.speed = RunSpeed;
-                footstepsDelay = 0.4f;
+                //agent.speed = RunSpeed;
+                //footstepsDelay = 0.4f;
             }
             else
             {
                 agent.speed = WalkSpeed;
                 footstepsDelay = 0.5f;
             }
-            
+
             if (!_movementCorrutineRuning)
                 StartCoroutine(PlayWalkSound( footstepsDelay));
 
@@ -147,11 +147,11 @@ public class PlayerMovementNavMesh : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftControl))
         {
-            agent.speed = CrouchSpeed;
-            cameraTransform.position = cameraTransformCrouch.position;
+            //    agent.speed = CrouchSpeed;
+            //    cameraTransform.position = cameraTransformCrouch.position;
         }
 
-        if(isTPOn)
+        if (isTPOn)
         {
             TPPlayer();
             isTPOn=false;

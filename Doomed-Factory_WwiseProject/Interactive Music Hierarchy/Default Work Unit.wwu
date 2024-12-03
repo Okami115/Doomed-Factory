@@ -892,7 +892,7 @@
 																									</Point>
 																									<Point>
 																										<XPos>8.21463</XPos>
-																										<YPos>-0</YPos>
+																										<YPos>0</YPos>
 																										<Flags>0</Flags>
 																										<SegmentShape>Exp1</SegmentShape>
 																									</Point>
@@ -980,13 +980,13 @@
 									<Custom>
 										<MusicPlaylistItem Name="" ID="{2D17AEBF-C4FC-4830-9EE5-56A40662DA30}" ShortID="876432138">
 											<ChildrenList>
-												<MusicPlaylistItem Name="" ID="{C26C6A93-BAE7-42F2-8909-E9B2083E5220}" ShortID="852218867">
+												<MusicPlaylistItem Name="" ID="{C2D6BFD6-40E5-4B6B-8A9B-597925AA8F10}" ShortID="531858063">
 													<PropertyList>
 														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Segment">
-															<ObjectRef Name="ScoobyLaugh" ID="{A5B2E8C9-D3F9-43CC-B3E9-737B510871E2}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}"/>
+															<ObjectRef Name="EvilLaughter_4_10stDown" ID="{481545D2-D9F4-4831-81C7-2EABE8D2CFC3}" WorkUnitID="{886C60AC-E95F-46B5-BF37-087E88AD411A}"/>
 														</Reference>
 													</ReferenceList>
 												</MusicPlaylistItem>
@@ -1011,7 +1011,10 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicSegment Name="ScoobyLaugh" ID="{A5B2E8C9-D3F9-43CC-B3E9-737B510871E2}" ShortID="829487674">
+								<MusicSegment Name="EvilLaughter_4_10stDown" ID="{481545D2-D9F4-4831-81C7-2EABE8D2CFC3}" ShortID="602621857">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="7590.04166666667"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CCCA1668-3107-4C89-9A4E-106F1E3411AC}"/>
@@ -1021,14 +1024,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="Scooby Doo laugh" ID="{FAFB212A-995F-4E59-98A4-D989009A5BBF}" ShortID="573623396">
+										<MusicTrack Name="EvilLaughter_4_10stDown" ID="{A2553DA1-DD6F-4F0B-9280-4F16E15D6906}" ShortID="907245009">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C38E60E3-3A6B-4B70-8891-C9DEFFF15D43}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{5A189BEC-5750-49A6-93F6-FCF74E6B2273}">
+														<MusicTransition Name="Root" ID="{2D175024-D733-4491-A50C-3F71CCCE0677}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -1038,11 +1041,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Scooby Doo laugh" ID="{0337872D-976F-4C93-AA9C-6136E26810AE}">
+												<AudioFileSource Name="EvilLaughter_4_10stDown" ID="{AA0539B8-9F8A-471D-A7A3-59D073A9F005}">
 													<Language>SFX</Language>
-													<AudioFile>Scooby Doo laugh.wav</AudioFile>
+													<AudioFile>EvilLaughter_4_10stDown.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="776724318"/>
+														<MediaID ID="979376530"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1050,58 +1053,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{D864C018-7E42-41B2-A17B-65AFE82CE08B}">
+															<MusicTrackSequence Name="" ID="{AF5A66A2-EAD9-4B4B-B562-D92E15D94E1A}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="Scooby Doo laugh" ID="{DF6C8FEE-6E09-4573-BE3F-3E41613E9CC0}">
+																				<MusicClip Name="EvilLaughter_4_10stDown" ID="{1C8D7974-FDEC-4611-8AD0-D67E0E3377B5}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="1520.91666666667"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="7590.04166666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="Scooby Doo laugh" ID="{0337872D-976F-4C93-AA9C-6136E26810AE}"/>
-																					<PropertyCurveList>
-																						<PropertyCurve PropertyName="Volume">
-																							<Curve Name="" ID="{B2C1B82C-4EF3-4F71-B43B-6F4477AAF458}">
-																								<PropertyList>
-																									<Property Name="Flags" Type="int32" Value="3"/>
-																								</PropertyList>
-																								<PointList>
-																									<Point>
-																										<XPos>0</XPos>
-																										<YPos>-96.3</YPos>
-																										<Flags>5</Flags>
-																										<SegmentShape>Log2</SegmentShape>
-																									</Point>
-																									<Point>
-																										<XPos>0.36297</XPos>
-																										<YPos>-0</YPos>
-																										<Flags>0</Flags>
-																										<SegmentShape>Exp2</SegmentShape>
-																									</Point>
-																									<Point>
-																										<XPos>1.09751</XPos>
-																										<YPos>-17.84303</YPos>
-																										<Flags>0</Flags>
-																										<SegmentShape>Log2</SegmentShape>
-																									</Point>
-																									<Point>
-																										<XPos>1.19468</XPos>
-																										<YPos>-25.81298</YPos>
-																										<Flags>0</Flags>
-																										<SegmentShape>Exp2</SegmentShape>
-																									</Point>
-																									<Point>
-																										<XPos>1.52091666666667</XPos>
-																										<YPos>-96.3</YPos>
-																										<Flags>37</Flags>
-																									</Point>
-																								</PointList>
-																							</Curve>
-																						</PropertyCurve>
-																					</PropertyCurveList>
+																					<AudioSourceRef Name="EvilLaughter_4_10stDown" ID="{AA0539B8-9F8A-471D-A7A3-59D073A9F005}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -1118,15 +1081,15 @@
 										<ObjectList Name="Cues">
 											<Reference>
 												<Local>
-													<MusicCue Name="Entry Cue" ID="{22177D87-5F43-45B3-B0F4-56F803281962}"/>
+													<MusicCue Name="Entry Cue" ID="{A9310251-E38B-48DD-A12F-0C1E429243E2}"/>
 												</Local>
 											</Reference>
 											<Reference>
 												<Local>
-													<MusicCue Name="Exit Cue" ID="{9121063A-A70A-4DF4-807A-80C2BEAA27F6}">
+													<MusicCue Name="Exit Cue" ID="{C677DC76-34DE-47A6-AA2E-25E702A5915D}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="1512.79382337137"/>
+															<Property Name="TimeMs" Type="Real64" Value="7590.04166666667"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>

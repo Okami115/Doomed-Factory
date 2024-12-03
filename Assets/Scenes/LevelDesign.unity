@@ -60531,6 +60531,10 @@ PrefabInstance:
       value: S_Lamp_low (48)
       objectReference: {fileID: 0}
     - target: {fileID: 1217287529784800271, guid: 62c262f1fcbf1e04e90e2274ac9c28af, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1217287529784800271, guid: 62c262f1fcbf1e04e90e2274ac9c28af, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -73024,6 +73028,10 @@ PrefabInstance:
       value: S_Lamp_low (47)
       objectReference: {fileID: 0}
     - target: {fileID: 1217287529784800271, guid: 62c262f1fcbf1e04e90e2274ac9c28af, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1217287529784800271, guid: 62c262f1fcbf1e04e90e2274ac9c28af, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -81712,7 +81720,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
