@@ -14,7 +14,7 @@ public class PlayerMovementNavMesh : MonoBehaviour
     [SerializeField] private LayerMask ignoreLayer;
 
     [Header("Movement Variables")]
-    //[SerializeField] private float RunSpeed;
+    [SerializeField] private float RunSpeed;
     [SerializeField] private float WalkSpeed;
     //[SerializeField] private float CrouchSpeed;
     [SerializeField] private Transform pivot;
@@ -109,8 +109,8 @@ public class PlayerMovementNavMesh : MonoBehaviour
             float footstepsDelay = 0.5f;
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                //agent.speed = RunSpeed;
-                //footstepsDelay = 0.4f;
+                agent.speed = RunSpeed;
+                footstepsDelay = 0.4f;
             }
             else
             {
@@ -143,12 +143,6 @@ public class PlayerMovementNavMesh : MonoBehaviour
             newCameraPosition.x += oscillationX * agent.velocity.magnitude;
             cameraTransform.localPosition = newCameraPosition;
 
-        }
-
-        if (Input.GetKey(KeyCode.LeftControl))
-        {
-            //    agent.speed = CrouchSpeed;
-            //    cameraTransform.position = cameraTransformCrouch.position;
         }
 
         if (isTPOn)
