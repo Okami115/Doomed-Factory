@@ -6,17 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="38a2fe75-4f9f-405f-b478-aeb8a9ad9a25" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Doomed-Factory/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/- OfficialArt -/Industrial/Modular/Modular Materials/M_Door.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/- OfficialArt -/Industrial/Modular/Modular Materials/M_Door.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/- OfficialArt -/TileableMats/Materials/Metal/MetalRustedGreenTile.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/- OfficialArt -/TileableMats/Materials/Metal/MetalRustedGreenTile.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/ArtPackages/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Materials/Free Flat Battery Tick 6 Icon.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/ArtPackages/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Materials/Free Flat Battery Tick 6 Icon.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Prefabs/Player/Phone_Pos_RW.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Prefabs/Player/Phone_Pos_RW.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelDesign.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelDesign.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SciFi Warehouse Kit/Art/Materials/Extinguisher Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SciFi Warehouse Kit/Art/Materials/Extinguisher Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SciFi Warehouse Kit/Art/Materials/Fan Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SciFi Warehouse Kit/Art/Materials/Fan Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SciFi Warehouse Kit/Art/Materials/Floor Tile Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SciFi Warehouse Kit/Art/Materials/Floor Tile Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SciFi Warehouse Kit/Art/Materials/Light Colored Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SciFi Warehouse Kit/Art/Materials/Light Colored Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Phone/PhoneController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Camera Ui Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Camera Ui Controller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +28,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Keys/Door.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Phone/PhoneApp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputsReader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Puzzle/LockManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Puzzle/Lock_PuzzleManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SO/ChatTextController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SO/GamePauseSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Camera Ui Controller.cs" root0="FORCE_HIGHLIGHTING" />
@@ -165,7 +157,7 @@
       <workItem from="1731451495358" duration="2020000" />
       <workItem from="1740871231421" duration="8117000" />
       <workItem from="1740869760172" duration="2184000" />
-      <workItem from="1740941559991" duration="4253000" />
+      <workItem from="1740941559991" duration="9682000" />
     </task>
     <servers />
   </component>
