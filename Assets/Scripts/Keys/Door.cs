@@ -8,6 +8,7 @@ public class Door : MonoBehaviour, IInteractable
     [Header("Door Settings")] [SerializeField]
     private Keys _doorKey;
 
+    [SerializeField] private bool openWhitPuzzle;
     [SerializeField] private List<GameObject> menssage;
     [SerializeField] private Animator doorTimeline;
     [SerializeField] private float waitTime;
@@ -20,27 +21,40 @@ public class Door : MonoBehaviour, IInteractable
 
     public void Interact(List<Keys> keysList)
     {
-        this.keysList = keysList;
-        
-        if (keysList.Contains(_doorKey))
-            hasKey = true;
-        else
-            hasKey = false;
-
-        if (isPlayerInRange && !isDoorOpen)
+        if (!openWhitPuzzle)
         {
-            if (keysList.Contains(_doorKey) || _doorKey == null)
-            {
-                doorTimeline.SetTrigger("OnOpenDoor");
-
-                if (!corrutineRuning)
-                    StartCoroutine(PlayOpenSound(waitTime));
-
-                isDoorOpen = true;
-            }
+            this.keysList = keysList;
+        
+            if (keysList.Contains(_doorKey))
+                hasKey = true;
             else
-                AkSoundEngine.PostEvent("Play_SFX_Player_Interact_Door_Metal_Lock", gameObject);
+                hasKey = false;
+
+            if (isPlayerInRange && !isDoorOpen)
+            {
+                if (keysList.Contains(_doorKey) || _doorKey == null)
+                {
+                    doorTimeline.SetTrigger("OnOpenDoor");
+
+                    if (!corrutineRuning)
+                        StartCoroutine(PlayOpenSound(waitTime));
+
+                    isDoorOpen = true;
+                }
+                else
+                    AkSoundEngine.PostEvent("Play_SFX_Player_Interact_Door_Metal_Lock", gameObject);
+            }
         }
+    }
+
+    public void OpenDoorWhitPuzzle()
+    {
+        doorTimeline.SetTrigger("OnOpenDoor");
+
+        if (!corrutineRuning)
+            StartCoroutine(PlayOpenSound(waitTime));
+
+        isDoorOpen = true;
     }
 
     public IEnumerator PlayOpenSound(float waitTime)
@@ -60,6 +74,9 @@ public class Door : MonoBehaviour, IInteractable
 
     public GameObject GetMsg()
     {
+        if (openWhitPuzzle)
+            return null;
+        
         if (keysList.Contains(_doorKey))
             hasKey = true;
         else

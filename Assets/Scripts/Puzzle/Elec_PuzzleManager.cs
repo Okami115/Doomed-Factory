@@ -11,11 +11,10 @@ public class Elec_PuzzleManager : MonoBehaviour
     [SerializeField] private int maxEnergyRequired = 7;
     [SerializeField] private int currentEnergy = 0;
     [SerializeField] private List<Light> lights = new List<Light>();
+    [SerializeField] private Door DoorToOpen;
 
-    private void Start()
+    private void Awake()
     {
-        // If there is an instance, and it's not me, delete myself.
-
         if (Instance != null && Instance != this)
         {
             Destroy(this);
@@ -27,6 +26,7 @@ public class Elec_PuzzleManager : MonoBehaviour
 
         if (_playerInputsReader == null)
             _playerInputsReader = FindObjectOfType<PlayerInputsReader>();
+        
         isPuzzleActive = true;
     }
 
@@ -41,9 +41,7 @@ public class Elec_PuzzleManager : MonoBehaviour
     {
         if (currentEnergy == maxEnergyRequired)
         {
-            isPuzzleActive = false;
-            Debug.Log( "OnpuzzleFinished.Invoke()");
-            OnpuzzleFinished?.Invoke();
+            OnPuzzleCompleation();
         }
 
         for (int i = 0; i < lights.Count; i++)
@@ -53,5 +51,12 @@ public class Elec_PuzzleManager : MonoBehaviour
             else
                 lights[i].color = Color.red;
         }
+    }
+
+    public void OnPuzzleCompleation()
+    {
+        DoorToOpen.OpenDoorWhitPuzzle();
+        isPuzzleActive = false;
+        OnpuzzleFinished?.Invoke();
     }
 }
