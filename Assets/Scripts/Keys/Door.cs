@@ -11,6 +11,7 @@ public class Door : MonoBehaviour, IInteractable
     [SerializeField] private List<GameObject> menssage;
     [SerializeField] private Animator doorTimeline;
     [SerializeField] private float waitTime;
+    private List<Keys> keysList;
 
     private bool isPlayerInRange;
     private bool isDoorOpen;
@@ -19,6 +20,8 @@ public class Door : MonoBehaviour, IInteractable
 
     public void Interact(List<Keys> keysList)
     {
+        this.keysList = keysList;
+        
         if (keysList.Contains(_doorKey))
             hasKey = true;
         else
@@ -57,6 +60,11 @@ public class Door : MonoBehaviour, IInteractable
 
     public GameObject GetMsg()
     {
+        if (keysList.Contains(_doorKey))
+            hasKey = true;
+        else
+            hasKey = false;
+        
         if (!hasKey)
         {
             menssage[1].SetActive(false);
