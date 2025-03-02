@@ -12,6 +12,8 @@ public class PhoneController : MonoBehaviour
     [SerializeField] private string AKPhonePositiveInteraction;
     [SerializeField] private string AKPhoneNegativeInteraction;
     [SerializeField] private GamePauseSO gamePauseSO;
+    [SerializeField] private MeshRenderer phonemesh;
+    [SerializeField] private GameObject phonobject;
 
     private void Start()
     {
@@ -46,6 +48,8 @@ public class PhoneController : MonoBehaviour
         {
             isActive = !isActive;
             gameObject.SetActive(isActive);
+            phonemesh.enabled = true;
+            phonobject.SetActive(true);
             foreach (PhoneApp app in _apps)
             {
                 if (!isActive)

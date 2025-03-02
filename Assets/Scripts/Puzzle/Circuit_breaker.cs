@@ -7,6 +7,7 @@ public class Circuit_breaker : MonoBehaviour,IInteractable
     private static readonly int BreakInteract = Animator.StringToHash("BreakInteract");
     [SerializeField] private Light _bulbLight;
     [SerializeField] private Animator _breakerAnimator;
+    [SerializeField] private Elec_PuzzleManager puzzleManager;
     private PlayerInputsReader _playerInputsReader;
     public int BreakerValue;
     private bool isPlayerInRange;
@@ -15,7 +16,8 @@ public class Circuit_breaker : MonoBehaviour,IInteractable
 
     private void OnEnable()
     {
-        _playerInputsReader = Elec_PuzzleManager.Instance._playerInputsReader;
+        puzzleManager = FindObjectOfType<Elec_PuzzleManager>();
+        _playerInputsReader = puzzleManager._playerInputsReader;
         _playerInputsReader.OnPlayerInteract += OnPlayerInteract;
     }
 
@@ -55,6 +57,9 @@ public class Circuit_breaker : MonoBehaviour,IInteractable
 
     public GameObject GetMsg()
     {
+        if (!puzzleManager.isPuzzleActive)
+            return null;
+        
         return menssage[0];
     }
 

@@ -31,7 +31,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{755ADC35-006B-4510-6AA6-31C98900F65C}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{4E685090-2205-D5C3-5423-0ED332C49626}">
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
 			<Media>
@@ -50,6 +50,10 @@
 				<File Id="148017773" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Footsteps_Metal_Walk_DEMO-010.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Footsteps_Metal_Walk_DEMO-010_818F3B66.wem</CachePath>
+				</File>
+				<File Id="150918952" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>slow-motion-crack-nuts-71416.wav</ShortName>
+					<CachePath>SFX/slow-motion-crack-nuts-71416_818F3B66.wem</CachePath>
 				</File>
 				<File Id="181072394" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Interact_Door_Metal_Lock_DEMO.wav</ShortName>
@@ -130,6 +134,10 @@
 				<File Id="539844870" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mixkit-light-rain-loop-2393.wav</ShortName>
 					<CachePath>SFX/mixkit-light-rain-loop-2393_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="547615112" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SonidoParaDariusCogidoLaVenganza.wav</ShortName>
+					<CachePath>SFX/SonidoParaDariusCogidoLaVenganza_818F3B66.wem</CachePath>
 				</File>
 				<File Id="550848481" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Interact_Door_Metal_Unlock_DEMO.wav</ShortName>
@@ -258,6 +266,11 @@
 						<MediaRef Id="348244579"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1663434169" Name="Play_EnzoGlitch" MaxAttenuation="10" DurationType="OneShot" DurationMin="23" DurationMax="23">
+					<MediaRefs>
+						<MediaRef Id="547615112"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3765695918" Name="Play_Heartbeat" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="337833479"/>
@@ -280,6 +293,11 @@
 				<Event Id="3012732428" Name="Play_LighBulb_Hum" MaxAttenuation="10" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="610006166"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2563701107" Name="Play_mannequinFootSteps" DurationType="OneShot" DurationMin="5.979585" DurationMax="5.979585">
+					<MediaRefs>
+						<MediaRef Id="150918952"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="98439365" Name="Play_Player_FootSteps" DurationType="OneShot" DurationMin="0.36138323" DurationMax="0.6521413">
@@ -418,5 +436,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{202399FE-B5CD-0BAD-D76B-1C30B2C4E0D8}</FileHash>
+	<FileHash>{FA880DA5-870F-9F8E-CE93-CBD24A9DE34F}</FileHash>
 </SoundBanksInfo>

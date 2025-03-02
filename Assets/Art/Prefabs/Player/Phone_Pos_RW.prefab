@@ -335,6 +335,9 @@ MonoBehaviour:
   isActive: 0
   AKPhonePositiveInteraction: 
   AKPhoneNegativeInteraction: 
+  gamePauseSO: {fileID: 0}
+  phonemesh: {fileID: 0}
+  phonobject: {fileID: 0}
 --- !u!1 &462337941343417580
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,7 +482,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 35f09ef09d19a1c43a89eeaeb3a2b354, type: 2}
+  - {fileID: 2100000, guid: 3aa53cba3478ae447b66cf8026d7d16e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

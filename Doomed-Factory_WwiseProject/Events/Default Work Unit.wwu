@@ -307,6 +307,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_EnzoGlitch" ID="{048948AA-DBE4-43A8-AA66-7C24246A6192}">
+					<ChildrenList>
+						<Action Name="" ID="{16E0BC5A-33A6-45D5-91B9-77DC164DEA49}" ShortID="377391865">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SonidoParaDariusCogidoLaVenganza" ID="{DFACBC75-3B53-4C1D-96DC-3C4F93B81810}" WorkUnitID="{F3627F8F-7E7B-415A-819B-9F7E7826558C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_mannequinFootSteps" ID="{DA47FF68-9454-4434-BF79-D36480160436}">
+					<ChildrenList>
+						<Action Name="" ID="{85B7CA86-ABB4-4450-8D01-49801B3637BB}" ShortID="734693188">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="slow-motion-crack-nuts-71416" ID="{F7CBCB2F-527F-40A2-AEB0-45747B0BDA5D}" WorkUnitID="{F3627F8F-7E7B-415A-819B-9F7E7826558C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
