@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_DEFAULTENVIROMENT = 3051613610U;
+        static const AkUniqueID PLAY_ENZOGLITCH = 1663434169U;
         static const AkUniqueID PLAY_HEARTBEAT = 3765695918U;
         static const AkUniqueID PLAY_KEYPICKUP = 885077343U;
         static const AkUniqueID PLAY_LIGHBULB_DROP = 729854429U;

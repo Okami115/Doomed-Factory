@@ -31,7 +31,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{755ADC35-006B-4510-6AA6-31C98900F65C}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{8D2722F0-2455-5A5F-9703-060477C195A9}">
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
 			<Media>
@@ -130,6 +130,10 @@
 				<File Id="539844870" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mixkit-light-rain-loop-2393.wav</ShortName>
 					<CachePath>SFX/mixkit-light-rain-loop-2393_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="547615112" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SonidoParaDariusCogidoLaVenganza.wav</ShortName>
+					<CachePath>SFX/SonidoParaDariusCogidoLaVenganza_818F3B66.wem</CachePath>
 				</File>
 				<File Id="550848481" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Interact_Door_Metal_Unlock_DEMO.wav</ShortName>
@@ -256,6 +260,11 @@
 				<Event Id="3051613610" Name="Play_DefaultEnviroment" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="348244579"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1663434169" Name="Play_EnzoGlitch" DurationType="OneShot" DurationMin="23" DurationMax="23">
+					<MediaRefs>
+						<MediaRef Id="547615112"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3765695918" Name="Play_Heartbeat" DurationType="Infinite">
@@ -418,5 +427,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{202399FE-B5CD-0BAD-D76B-1C30B2C4E0D8}</FileHash>
+	<FileHash>{476BD90D-F0DD-F014-F2B7-2A49FD121697}</FileHash>
 </SoundBanksInfo>

@@ -1308,6 +1308,28 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
+						<Sound Name="SonidoParaDariusCogidoLaVenganza" ID="{DFACBC75-3B53-4C1D-96DC-3C4F93B81810}" ShortID="185397686">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CCCA1668-3107-4C89-9A4E-106F1E3411AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C38E60E3-3A6B-4B70-8891-C9DEFFF15D43}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SonidoParaDariusCogidoLaVenganza" ID="{642981B4-5EEC-4CA2-BC1D-E19E6D9D695E}">
+									<Language>SFX</Language>
+									<AudioFile>SonidoParaDariusCogidoLaVenganza.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="547615112"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SonidoParaDariusCogidoLaVenganza" ID="{642981B4-5EEC-4CA2-BC1D-E19E6D9D695E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
