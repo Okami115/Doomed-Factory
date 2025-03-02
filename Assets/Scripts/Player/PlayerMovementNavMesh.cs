@@ -181,6 +181,7 @@ public class PlayerMovementNavMesh : MonoBehaviour
         agent.Warp(targetTransform.position);
         movement = Vector3.zero;
         cam.yRotation = -90;
+        cam.xRotation = -90;
     }
 
     public IEnumerator FadeBackground()

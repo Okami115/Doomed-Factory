@@ -64994,6 +64994,10 @@ PrefabInstance:
       propertyPath: gamePauseSO
       value: 
       objectReference: {fileID: 11400000, guid: eba8ba4dc43c10042b247c9b1db7dc59, type: 2}
+    - target: {fileID: 264766218408077398, guid: b86787d5d3a13c34baad7ee7704d7ec3, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 1243848023}
     - target: {fileID: 1202193880422344877, guid: b86787d5d3a13c34baad7ee7704d7ec3, type: 3}
       propertyPath: menssage
       value: 
