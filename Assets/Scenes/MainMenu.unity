@@ -56910,7 +56910,15 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1825245688797116925, guid: 4270f8241dba30c49bae06a9248f7df1, type: 3}
+      propertyPath: endDuration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825245688797116925, guid: 4270f8241dba30c49bae06a9248f7df1, type: 3}
       propertyPath: durationStart
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825245688797116925, guid: 4270f8241dba30c49bae06a9248f7df1, type: 3}
+      propertyPath: startDuration
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3641379183255493508, guid: 4270f8241dba30c49bae06a9248f7df1, type: 3}
@@ -57015,7 +57023,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4941269650898909603, guid: 4270f8241dba30c49bae06a9248f7df1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartScrollingFunc
+      value: StartCreditsButton
       objectReference: {fileID: 0}
     - target: {fileID: 4941269650898909603, guid: 4270f8241dba30c49bae06a9248f7df1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -57100,7 +57108,7 @@ PrefabInstance:
       insertIndex: 1
       addedObject: {fileID: 678725813}
     - targetCorrespondingSourceObject: {fileID: 5787788664775874594, guid: 4270f8241dba30c49bae06a9248f7df1, type: 3}
-      insertIndex: 0
+      insertIndex: -1
       addedObject: {fileID: 1149336315}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4270f8241dba30c49bae06a9248f7df1, type: 3}

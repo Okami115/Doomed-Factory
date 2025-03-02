@@ -11,6 +11,7 @@ public class PhoneController : MonoBehaviour
     [SerializeField] private bool isActive = false;
     [SerializeField] private string AKPhonePositiveInteraction;
     [SerializeField] private string AKPhoneNegativeInteraction;
+    [SerializeField] private GamePauseSO gamePauseSO;
 
     private void Start()
     {
@@ -41,20 +42,64 @@ public class PhoneController : MonoBehaviour
 
     private void UsePhone()
     {
-        isActive = !isActive;
-        gameObject.SetActive(isActive);
-        foreach (PhoneApp app in _apps)
+        if (!gamePauseSO.isPause)
         {
-            if (!isActive)
+            isActive = !isActive;
+            gameObject.SetActive(isActive);
+            foreach (PhoneApp app in _apps)
             {
-                app.AppInteraction(isActive);
+                if (!isActive)
+                {
+                    app.AppInteraction(isActive);
+                }
             }
         }
     }
 
     private void OnOpenApp()
     {
-        if (isActive)
+        if (!gamePauseSO.isPause)
+        {
+            if (isActive)
+            {
+                int openApps = 0;
+                foreach (PhoneApp app in _apps)
+                {
+                    if (app.isOpen)
+                        openApps++;
+                }
+                
+                foreach (PhoneApp app in _apps)
+                {
+                    if (app.isSelected && openApps == 0)
+                    {
+                        app.AppInteraction(true);
+                        app.isOpen = true;
+                        _inputsReader.OnScroll -= MouseScroll;
+                    }
+                }
+            }
+        }
+    }
+
+    private void OnCloseApp()
+    {
+        if (!gamePauseSO.isPause)
+        {
+            foreach (PhoneApp app in _apps)
+            {
+                if (app.isOpen)
+                {
+                    app.AppInteraction(false);
+                    app.isOpen = false;
+                    _inputsReader.OnScroll += MouseScroll;
+                }
+            }
+        }
+    }
+    private void MouseScroll(float mouseY)
+    {
+        if (!gamePauseSO.isPause)
         {
             int openApps = 0;
             foreach (PhoneApp app in _apps)
@@ -63,57 +108,23 @@ public class PhoneController : MonoBehaviour
                     openApps++;
             }
             
-            foreach (PhoneApp app in _apps)
+            if (!isActive)
+                return;
+            if (openApps != 0)
+                return;
+
+            if (mouseY > 0)
             {
-                if (app.isSelected && openApps == 0)
-                {
-                    app.AppInteraction(true);
-                    app.isOpen = true;
-                    _inputsReader.OnScroll -= MouseScroll;
-                }
+                currentSelectedApp++;
+                ChechIndex();
+            }
+            else if (mouseY < 0)
+            {
+                currentSelectedApp--;
+                ChechIndex();
             }
         }
-    }
-
-    private void OnCloseApp()
-    {
         
-        foreach (PhoneApp app in _apps)
-        {
-            if (app.isOpen)
-            {
-                app.AppInteraction(false);
-                app.isOpen = false;
-                _inputsReader.OnScroll += MouseScroll;
-            }
-
-            
-        }
-    }
-    private void MouseScroll(float mouseY)
-    {
-        int openApps = 0;
-        foreach (PhoneApp app in _apps)
-        {
-            if (app.isOpen)
-                openApps++;
-        }
-        
-        if (!isActive)
-            return;
-        if (openApps != 0)
-            return;
-
-        if (mouseY > 0)
-        {
-            currentSelectedApp++;
-            ChechIndex();
-        }
-        else if (mouseY < 0)
-        {
-            currentSelectedApp--;
-            ChechIndex();
-        }
     }
 
     private void ChechIndex()

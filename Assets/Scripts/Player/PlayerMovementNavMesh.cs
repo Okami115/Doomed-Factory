@@ -12,6 +12,7 @@ public class PlayerMovementNavMesh : MonoBehaviour
     [SerializeField] private KeysEventChannel _doorInteraction;
     [SerializeField] private List<Keys> playerKeys;
     [SerializeField] private LayerMask ignoreLayer;
+    [SerializeField] private GamePauseSO gamePauseSO;
 
     [Header("Movement Variables")]
     [SerializeField] private float RunSpeed;
@@ -66,87 +67,96 @@ public class PlayerMovementNavMesh : MonoBehaviour
 
     private void Update()
     {
-        movement = Vector3.zero;
-
-        bool anyKey = false;
-
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            movement += transform.forward;
-            anyKey = true;
+            gamePauseSO.isPause = !gamePauseSO.isPause;
         }
+        
+        if (!gamePauseSO.isPause)
+        {
+            movement = Vector3.zero;
 
-        if (Input.GetKey(KeyCode.S))
-        {
-            movement += transform.forward * -1;
-            anyKey = true;
-        }
+            bool anyKey = false;
 
-        if (Input.GetKey(KeyCode.A))
-        {
-            movement += transform.right * -1;
-            anyKey = true;
-        }
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            movement += transform.right;
-            anyKey = true;
-        }
-
-        if (!anyKey)
-        {
-            agent.destination = transform.position;
-            agent.isStopped = true;
-            agent.velocity = Vector3.zero;
-            rigidbody.velocity = Vector3.zero;
-            cameraTransform.localPosition = originalCameraPosition;
-        }
-        else
-        {
-            float footstepsDelay = 0.5f;
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetKey(KeyCode.W))
             {
-                agent.speed = RunSpeed;
-                footstepsDelay = 0.4f;
+                movement += transform.forward;
+                anyKey = true;
+            }
+
+            if (Input.GetKey(KeyCode.S))
+            {
+                movement += transform.forward * -1;
+                anyKey = true;
+            }
+
+            if (Input.GetKey(KeyCode.A))
+            {
+                movement += transform.right * -1;
+                anyKey = true;
+            }
+
+            if (Input.GetKey(KeyCode.D))
+            {
+                movement += transform.right;
+                anyKey = true;
+            }
+
+            if (!anyKey)
+            {
+                agent.destination = transform.position;
+                agent.isStopped = true;
+                agent.velocity = Vector3.zero;
+                rigidbody.velocity = Vector3.zero;
+                cameraTransform.localPosition = originalCameraPosition;
             }
             else
             {
-                agent.speed = WalkSpeed;
-                footstepsDelay = 0.5f;
+                float footstepsDelay = 0.5f;
+                if (Input.GetKey(KeyCode.LeftShift))
+                {
+                    agent.speed = RunSpeed;
+                    footstepsDelay = 0.4f;
+                }
+                else
+                {
+                    agent.speed = WalkSpeed;
+                    footstepsDelay = 0.5f;
+                }
+
+                if (!_movementCorrutineRuning)
+                    StartCoroutine(PlayWalkSound( footstepsDelay));
+
+                agent.isStopped = false;
+                movement += transform.position + (movement.normalized / 100);
+
+                movement.y = pivot.position.y;
+
+                RaycastHit hit;
+                if (Physics.Raycast(movement, Vector3.down, out hit, Mathf.Infinity, ~ignoreLayer))
+                {
+                    movement.y = hit.point.y + 0.1f;
+                }
+
+                agent.destination = movement;
+
+                elapsedTime += Time.deltaTime;
+
+                float oscillationY = Mathf.Sin(elapsedTime * frequencyY) * amplitudeY;
+                float oscillationX = Mathf.Sin(elapsedTime * frequencyX) * amplitudeX;
+                Vector3 newCameraPosition = originalCameraPosition;
+                newCameraPosition.y += oscillationY * agent.velocity.magnitude;
+                newCameraPosition.x += oscillationX * agent.velocity.magnitude;
+                cameraTransform.localPosition = newCameraPosition;
+
             }
 
-            if (!_movementCorrutineRuning)
-                StartCoroutine(PlayWalkSound( footstepsDelay));
-
-            agent.isStopped = false;
-            movement += transform.position + (movement.normalized / 100);
-
-            movement.y = pivot.position.y;
-
-            RaycastHit hit;
-            if (Physics.Raycast(movement, Vector3.down, out hit, Mathf.Infinity, ~ignoreLayer))
+            if (isTPOn)
             {
-                movement.y = hit.point.y + 0.1f;
+                TPPlayer();
+                isTPOn=false;
             }
-
-            agent.destination = movement;
-
-            elapsedTime += Time.deltaTime;
-
-            float oscillationY = Mathf.Sin(elapsedTime * frequencyY) * amplitudeY;
-            float oscillationX = Mathf.Sin(elapsedTime * frequencyX) * amplitudeX;
-            Vector3 newCameraPosition = originalCameraPosition;
-            newCameraPosition.y += oscillationY * agent.velocity.magnitude;
-            newCameraPosition.x += oscillationX * agent.velocity.magnitude;
-            cameraTransform.localPosition = newCameraPosition;
-
-        }
-
-        if (isTPOn)
-        {
-            TPPlayer();
-            isTPOn=false;
+            
         }
     }
 

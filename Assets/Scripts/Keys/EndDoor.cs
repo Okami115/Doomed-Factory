@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class KeyDebug : MonoBehaviour
+public class EndDoor : MonoBehaviour
 {
     [SerializeField] private float endGameDuration;
     [SerializeField] private Image FadeImage;
