@@ -4,39 +4,32 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MenuManager : MonoBehaviour
+public class EndDoor : MonoBehaviour
 {
+    [SerializeField] private float endGameDuration;
     [SerializeField] private Image FadeImage;
-    [SerializeField] private float startGameDuration;
-    public void ExitGame()
+    
+    private void OnTriggerEnter(Collider other)
     {
-        #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-        #else
-        Application.Quit();
-        #endif
+        StartCoroutine(EndGame());
     }
-
-    public void PlayGame()
-    {
-        StartCoroutine(StartGame());
-    }
-
-    IEnumerator StartGame()
+    
+    IEnumerator EndGame()
     {
         float elapsedTime = 0f;
 
         while (FadeImage.color.a < 1)
         {
             elapsedTime += Time.deltaTime;
-            float newAlpha = Mathf.Clamp01(elapsedTime / startGameDuration);
+            float newAlpha = Mathf.Clamp01(elapsedTime / endGameDuration);
 
             FadeImage.color = new Color(FadeImage.color.r, FadeImage.color.g, FadeImage.color.b, newAlpha);
 
             yield return null;
         }
         
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
+        AkSoundEngine.StopAll();
+        UnityEngine.Cursor.lockState = CursorLockMode.Confined;
     }
-
 }
