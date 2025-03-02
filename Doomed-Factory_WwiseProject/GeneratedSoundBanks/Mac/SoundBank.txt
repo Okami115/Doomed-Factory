@@ -11,6 +11,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1936894595	Play_SFX_Player_Interact_Door_Wood_Lock			\Default Work Unit\Player_Interect_Events\Doors\Play_SFX_Player_Interact_Door_Wood_Lock	
 	1974193772	Play_SFX_Player_Interact_Phone_Light_Off			\Default Work Unit\Player_Interect_Events\Phone\Play_SFX_Player_Interact_Phone_Light_Off	
 	2178443270	Play_SFX_Player_Interact_Phone_Light_On			\Default Work Unit\Player_Interect_Events\Phone\Play_SFX_Player_Interact_Phone_Light_On	
+	2563701107	Play_mannequinFootSteps			\Default Work Unit\Play_mannequinFootSteps	
 	2695146928	Play_RadioGlitch			\Default Work Unit\Radio\Play_RadioGlitch	
 	2838936948	Play_Rain			\Default Work Unit\Enciroment_Music\Play_Rain	
 	2920634929	Play_SFX_Player_Interact_Phone_Light_Fail			\Default Work Unit\Player_Interect_Events\Phone\Play_SFX_Player_Interact_Phone_Light_Fail	
@@ -38,6 +39,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	35266308	SFX_Player_Footsteps_Concrete_Walk-009	C:\GithubRepo\Doomed-Factory\Doomed-Factory_WwiseProject\.cache\Mac\SFX\SFX_Player_Footsteps_Concrete_Walk_DEMO-009_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Footsteps\Concrete\SFX_Player_Footsteps_Concrete_Walk-009		110260
 	85581193	SFX_Player_Footsteps_Concrete_Walk-003	C:\GithubRepo\Doomed-Factory\Doomed-Factory_WwiseProject\.cache\Mac\SFX\SFX_Player_Footsteps_Concrete_Walk_DEMO-003_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Footsteps\Concrete\SFX_Player_Footsteps_Concrete_Walk-003		100308
 	148017773	SFX_Player_Footsteps_Metal_Walk-010	C:\GithubRepo\Doomed-Factory\Doomed-Factory_WwiseProject\.cache\Mac\SFX\SFX_Player_Footsteps_Metal_Walk_DEMO-010_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Footsteps\Metal\SFX_Player_Footsteps_Metal_Walk-010		71556
+	150918952	slow-motion-crack-nuts-71416	C:\GithubRepo\Doomed-Factory\Doomed-Factory_WwiseProject\.cache\Mac\SFX\slow-motion-crack-nuts-71416_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enviroment_SFX\slow-motion-crack-nuts-71416		1822560
 	181072394	SFX_Player_Interact_Door_Metal_Lock	C:\GithubRepo\Doomed-Factory\Doomed-Factory_WwiseProject\.cache\Mac\SFX\SFX_Player_Interact_Door_Metal_Lock_DEMO_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Interact\Doors\SFX_Player_Interact_Door_Metal_Lock		365644
 	228849478	SFX_Player_Footsteps_Concrete_Walk-008	C:\GithubRepo\Doomed-Factory\Doomed-Factory_WwiseProject\.cache\Mac\SFX\SFX_Player_Footsteps_Concrete_Walk_DEMO-008_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Footsteps\Concrete\SFX_Player_Footsteps_Concrete_Walk-008		108520
 	276111761	mixkit-creepy-radio-frequency-2558	C:\GithubRepo\Doomed-Factory\Doomed-Factory_WwiseProject\.cache\Mac\SFX\mixkit-creepy-radio-frequency-2558_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Enviroment_Music\RadioGlitch\RadioGlitch_Sound\mixkit-creepy-radio-frequency-2558		645716

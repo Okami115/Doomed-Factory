@@ -31,7 +31,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{8D2722F0-2455-5A5F-9703-060477C195A9}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{4E685090-2205-D5C3-5423-0ED332C49626}">
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
 			<Media>
@@ -50,6 +50,10 @@
 				<File Id="148017773" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Footsteps_Metal_Walk_DEMO-010.wav</ShortName>
 					<CachePath>SFX/SFX_Player_Footsteps_Metal_Walk_DEMO-010_818F3B66.wem</CachePath>
+				</File>
+				<File Id="150918952" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>slow-motion-crack-nuts-71416.wav</ShortName>
+					<CachePath>SFX/slow-motion-crack-nuts-71416_818F3B66.wem</CachePath>
 				</File>
 				<File Id="181072394" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Player_Interact_Door_Metal_Lock_DEMO.wav</ShortName>
@@ -262,7 +266,7 @@
 						<MediaRef Id="348244579"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1663434169" Name="Play_EnzoGlitch" DurationType="OneShot" DurationMin="23" DurationMax="23">
+				<Event Id="1663434169" Name="Play_EnzoGlitch" MaxAttenuation="10" DurationType="OneShot" DurationMin="23" DurationMax="23">
 					<MediaRefs>
 						<MediaRef Id="547615112"/>
 					</MediaRefs>
@@ -289,6 +293,11 @@
 				<Event Id="3012732428" Name="Play_LighBulb_Hum" MaxAttenuation="10" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="610006166"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2563701107" Name="Play_mannequinFootSteps" DurationType="OneShot" DurationMin="5.979585" DurationMax="5.979585">
+					<MediaRefs>
+						<MediaRef Id="150918952"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="98439365" Name="Play_Player_FootSteps" DurationType="OneShot" DurationMin="0.36138323" DurationMax="0.6521413">
@@ -427,5 +436,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{476BD90D-F0DD-F014-F2B7-2A49FD121697}</FileHash>
+	<FileHash>{FA880DA5-870F-9F8E-CE93-CBD24A9DE34F}</FileHash>
 </SoundBanksInfo>

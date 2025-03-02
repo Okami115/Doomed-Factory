@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class PlayerMovementNavMesh : MonoBehaviour
 {
     [Header("Init Variables")]
+    public bool CanMove;
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private PlayerInputsReader _inputsReader;
     [SerializeField] private KeysEventChannel _doorInteraction;
@@ -43,6 +44,7 @@ public class PlayerMovementNavMesh : MonoBehaviour
     {
         originalCameraPosition = cameraTransform.localPosition;
         _inputsReader.OnPlayerInteract += OnPlayerInteract;
+        CanMove = true;
     }
 
     private void OnDestroy()
@@ -72,7 +74,7 @@ public class PlayerMovementNavMesh : MonoBehaviour
             gamePauseSO.isPause = !gamePauseSO.isPause;
         }
         
-        if (!gamePauseSO.isPause)
+        if (!gamePauseSO.isPause && CanMove)
         {
             movement = Vector3.zero;
 
@@ -172,6 +174,13 @@ public class PlayerMovementNavMesh : MonoBehaviour
         movement = Vector3.zero;
         cam.yRotation = 0;
         StartCoroutine(FadeBackground());
+    }
+    
+    public void TPPlayer(Transform targetTransform)
+    {
+        agent.Warp(targetTransform.position);
+        movement = Vector3.zero;
+        cam.yRotation = -90;
     }
 
     public IEnumerator FadeBackground()

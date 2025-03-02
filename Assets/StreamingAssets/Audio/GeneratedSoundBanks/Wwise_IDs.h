@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID PLAY_KEYPICKUP = 885077343U;
         static const AkUniqueID PLAY_LIGHBULB_DROP = 729854429U;
         static const AkUniqueID PLAY_LIGHBULB_HUM = 3012732428U;
+        static const AkUniqueID PLAY_MANNEQUINFOOTSTEPS = 2563701107U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS = 98439365U;
         static const AkUniqueID PLAY_RADIOGLITCH = 2695146928U;
         static const AkUniqueID PLAY_RAIN = 2838936948U;
