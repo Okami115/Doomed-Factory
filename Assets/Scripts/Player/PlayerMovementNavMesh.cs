@@ -16,7 +16,6 @@ public class PlayerMovementNavMesh : MonoBehaviour
     [Header("Movement Variables")]
     [SerializeField] private float RunSpeed;
     [SerializeField] private float WalkSpeed;
-    //[SerializeField] private float CrouchSpeed;
     [SerializeField] private Transform pivot;
     [SerializeField] private Rigidbody rigidbody;
     private bool _movementCorrutineRuning = false;
@@ -30,7 +29,6 @@ public class PlayerMovementNavMesh : MonoBehaviour
     [SerializeField] private Image background;
     [SerializeField] private float multiplierTrancition;
     [SerializeField] private Transform cameraTransform;
-    //[SerializeField] private Transform cameraTransformCrouch;
 
     [Header("Debug Variables")]
     [SerializeField] private Transform target;

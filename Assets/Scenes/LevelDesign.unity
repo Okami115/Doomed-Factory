@@ -64810,6 +64810,10 @@ PrefabInstance:
       propertyPath: menssage
       value: 
       objectReference: {fileID: 434247624}
+    - target: {fileID: 1857994526799837056, guid: b86787d5d3a13c34baad7ee7704d7ec3, type: 3}
+      propertyPath: m_OcclusionCulling
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2849762604173481474, guid: b86787d5d3a13c34baad7ee7704d7ec3, type: 3}
       propertyPath: m_Name
       value: RIG_Selene
@@ -89483,6 +89487,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c73a1c9557002347aba6d745849d712, type: 3}
+--- !u!1 &887306301 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1671956784283847456, guid: d66e04096489a744286b3928f02e2e21, type: 3}
+  m_PrefabInstance: {fileID: 355630901368166326}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &887341818
 GameObject:
   m_ObjectHideFlags: 0
@@ -135580,6 +135589,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9efd9c10f365c73408591cf266b37ae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endGameDuration: 0.5
+  FadeImage: {fileID: 1588903864}
 --- !u!65 &1382339013
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -153751,12 +153762,25 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4415777838858426344, guid: d66e04096489a744286b3928f02e2e21, type: 3}
   m_PrefabInstance: {fileID: 355630901368166326}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 887306301}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1588903867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887306301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2eca6c9ed596594785f08a97c49ade1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startGameDuration: 2
 --- !u!1001 &1591245920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -208733,10 +208757,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4415777838858426344, guid: d66e04096489a744286b3928f02e2e21, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1671956784283847456, guid: d66e04096489a744286b3928f02e2e21, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1588903867}
   m_SourcePrefab: {fileID: 100100000, guid: d66e04096489a744286b3928f02e2e21, type: 3}
 --- !u!4 &543450653299366691 stripped
 Transform:
