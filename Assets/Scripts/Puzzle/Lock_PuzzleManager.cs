@@ -8,6 +8,7 @@ using UnityEngine;
 public class Lock_PuzzleManager : MonoBehaviour
 {
     [SerializeField] private PlayerMovementNavMesh playerMovementNav;
+    [SerializeField] private GameObject playerLight;
     [SerializeField] private GameObject hand;
     [SerializeField] private GameObject UI;
     [SerializeField] private GameObject Lock;
@@ -37,6 +38,7 @@ public class Lock_PuzzleManager : MonoBehaviour
         gamePauseSO.isPlayPuzzle = true;
         UI.SetActive(true);
         Lock.SetActive(true);
+        playerLight.SetActive(false);
     }
 
     private void OnDisable()
@@ -45,6 +47,7 @@ public class Lock_PuzzleManager : MonoBehaviour
         playerMovementNav.CanMove = true;
         UI.SetActive(false);
         Lock.SetActive(false);
+        playerLight.SetActive(true);
     }
 
     public void UpWheel(int wheelNumber)

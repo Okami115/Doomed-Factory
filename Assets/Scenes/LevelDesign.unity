@@ -135536,6 +135536,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovementNav: {fileID: 1243848023}
+  playerLight: {fileID: 1108017595}
+  hand: {fileID: 434247624}
   UI: {fileID: 1358710315}
   Lock: {fileID: 710730871}
   firstWheel: {fileID: 2024456119}
