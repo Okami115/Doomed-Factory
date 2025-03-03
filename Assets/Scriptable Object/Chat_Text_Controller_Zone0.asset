@@ -13,9 +13,17 @@ MonoBehaviour:
   m_Name: Chat_Text_Controller_Zone0
   m_EditorClassIdentifier: 
   ChatTexts:
-  - 'Okami : hola'
-  - 'Okami : hola 2'
-  - 'Okami : hola 3'
-  - 'Okami : hola 4'
-  - 'Okami : hola 5'
-  - 'Okami : hola 6'
+  - "Okami : 987 (n\xFAmero del candado) vos conf\xEDa"
+  - 'Rampa : Re turbio el Lugar'
+  - 'Plunkof : Que tendran las cajas ? '
+  - 'Optsh : Que son esos carteles ?'
+  - 'VonOpt : ! hola mama !'
+  - 'Baadesu : Es el Gulag !'
+  - 'SucaPeol : Esta Re sucio el lugar che.'
+  - "ElPeluca69 : Guarda q hay kukas en\_el\_piso"
+  - 'Loibow : Y esa cosa azul sobre la caja ?'
+  - 'Bowoff : manzo phono e!'
+  - 'O97ry : Que paso aca ?'
+  - 'Henrysan : Rico mapita'
+  - 'Henrykun : Rico Henrysan :)'
+  - 'VonRam : Vamo lo ladyboy!!!!'

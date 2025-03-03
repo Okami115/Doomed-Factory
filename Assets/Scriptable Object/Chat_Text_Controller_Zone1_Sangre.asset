@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b81a307a22e6b4f41982357281efe08b, type: 3}
+  m_Name: Chat_Text_Controller_Zone1_Sangre
+  m_EditorClassIdentifier: 
+  ChatTexts:
+  - 'Zoiet : Llega un punto que me estas cagando'
+  - 'Zoics : A mi tio lo valearon en un lugar asi'
+  - 'Fiddle : Manza Chata'
+  - 'Maychu : Me gusta trabjar con pendejos'
+  - 'Ossif : Sali cagando'
+  - 'Amu : Me gusta trabjar a los pendejos'
+  - 'Byuri : llamo a la cana o algo ?'
+  - 'DasO : Mando foto de las patas'
+  - 'Diref : Ta complicado pa caga mano'
+  - 'Vinc : A cuanto los trabas querras decir'
+  - 'TheGainf : PUTA MADRE QUE ES ESOO'
+  - 'Nyov : A cuanto las rabas'
+  - 'D1rn7 : Quiero fotos del hombre aramia'
+  - 'Blug : Yo me dedico al alcohol'

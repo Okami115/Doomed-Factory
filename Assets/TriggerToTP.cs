@@ -9,6 +9,7 @@ public class TriggerToTP : MonoBehaviour
     [SerializeField] private PlayerMovementNavMesh player;
     [SerializeField] private Image background;
     [SerializeField] private GameObject Loop;
+    [SerializeField] private PhoneChat phoneChat;
     [SerializeField] private List<GameObject> LoopDisableObjects = new List<GameObject>();
     [SerializeField] private string _loopSoundName;
 
@@ -28,6 +29,12 @@ public class TriggerToTP : MonoBehaviour
                 }
             }
 
+            if (phoneChat != null)
+            {
+                phoneChat.ChangeZoneIndex(2);
+                phoneChat.SetQuestText("Busca la forma de Salir");
+            }
+            
             player.isTPOn = true;
             background.color = new Color(0, 0, 0, 255);
             AkSoundEngine.PostEvent(_loopSoundName, gameObject);
