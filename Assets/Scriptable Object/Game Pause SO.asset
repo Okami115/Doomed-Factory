@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1cd21d3b10607e4699cd1bb56b013f7, type: 3}
   m_Name: Game Pause SO
   m_EditorClassIdentifier: 
-  isPause: 0
+  isPause: 1
+  isPlayerInRange: 0
+  isPlayPuzzle: 0

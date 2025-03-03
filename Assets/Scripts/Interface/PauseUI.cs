@@ -14,13 +14,16 @@ public class PauseUI : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (!gamePauseSO.isPlayPuzzle)
         {
-            pauseUI.SetActive(!gamePauseSO.isPause);
-            if(!gamePauseSO.isPause)
-                UnityEngine.Cursor.lockState = CursorLockMode.Confined;
-            else
-                UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                pauseUI.SetActive(!gamePauseSO.isPause);
+                if(!gamePauseSO.isPause)
+                    UnityEngine.Cursor.lockState = CursorLockMode.Confined;
+                else
+                    UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+            }
         }
     }
 }

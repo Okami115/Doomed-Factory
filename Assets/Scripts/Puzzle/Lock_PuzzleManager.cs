@@ -8,6 +8,7 @@ using UnityEngine;
 public class Lock_PuzzleManager : MonoBehaviour
 {
     [SerializeField] private PlayerMovementNavMesh playerMovementNav;
+    [SerializeField] private GameObject hand;
     [SerializeField] private GameObject UI;
     [SerializeField] private GameObject Lock;
     [SerializeField] private GameObject firstWheel;
@@ -19,6 +20,7 @@ public class Lock_PuzzleManager : MonoBehaviour
     public bool isPuzzleActive = false;
     private Vector3 newRot = Vector3.zero;
     public Action OnPuzzleComplete;
+    [SerializeField] private GamePauseSO gamePauseSO;
 
     private void Awake()
     {
@@ -30,7 +32,9 @@ public class Lock_PuzzleManager : MonoBehaviour
     public void InitPuzzle()
     {
         Cursor.lockState = CursorLockMode.Confined;
+        hand.SetActive(false);
         playerMovementNav.CanMove = false;
+        gamePauseSO.isPlayPuzzle = true;
         UI.SetActive(true);
         Lock.SetActive(true);
     }
@@ -154,7 +158,9 @@ public class Lock_PuzzleManager : MonoBehaviour
         gameObject.SetActive(false);
         DoorToOpen.OpenDoorWhitPuzzle();
         isPuzzleActive = false;
+        gamePauseSO.isPlayPuzzle = false;
         OnPuzzleComplete.Invoke();
+        
     }
 
     private IEnumerator TurnWheel()

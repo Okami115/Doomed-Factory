@@ -27,39 +27,42 @@ public class CamaraMovement : MonoBehaviour
 
     void Update()
     {
-        if (!playerMovement.CanMove)
+        if (!gamePauseSO.isPlayPuzzle)
         {
-            float mouseX = Input.GetAxis("Mouse X");
-            float mouseY = Input.GetAxis("Mouse Y");
-
-            yRotation += mouseX;
-            yRotation = Mathf.Clamp(yRotation, -150, -30);
-
-            xRotation -= mouseY;
-            xRotation = Mathf.Clamp(xRotation, -30, 10);
-
-            transform.rotation = Quaternion.Euler(0, yRotation, 0);
-            camera.rotation = Quaternion.Euler(xRotation, yRotation, 0);
-        }
-        else
-        {
-            if (!gamePauseSO.isPause)
+            if (!playerMovement.CanMove)
             {
                 float mouseX = Input.GetAxis("Mouse X");
                 float mouseY = Input.GetAxis("Mouse Y");
 
                 yRotation += mouseX;
+                yRotation = Mathf.Clamp(yRotation, -150, -30);
 
                 xRotation -= mouseY;
-                xRotation = Mathf.Clamp(xRotation, clampToDown, clampToUp);
-
-                if (Input.GetKey(KeyCode.J))
-                {
-                    yRotation = 0;
-                }
+                xRotation = Mathf.Clamp(xRotation, -30, 10);
 
                 transform.rotation = Quaternion.Euler(0, yRotation, 0);
                 camera.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+            }
+            else
+            {
+                if (!gamePauseSO.isPause)
+                {
+                    float mouseX = Input.GetAxis("Mouse X");
+                    float mouseY = Input.GetAxis("Mouse Y");
+
+                    yRotation += mouseX;
+
+                    xRotation -= mouseY;
+                    xRotation = Mathf.Clamp(xRotation, clampToDown, clampToUp);
+
+                    if (Input.GetKey(KeyCode.J))
+                    {
+                        yRotation = 0;
+                    }
+
+                    transform.rotation = Quaternion.Euler(0, yRotation, 0);
+                    camera.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+                }
             }
         }
     }

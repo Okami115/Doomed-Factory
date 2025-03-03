@@ -8,7 +8,7 @@ public class LockManager : MonoBehaviour, IInteractable
     [SerializeField] private GameObject msg;
     [SerializeField] private Lock_PuzzleManager lockPuzzle;
     [SerializeField] private PlayerInputsReader _inputsReader;
-    private bool isPlayerInRange;
+    [SerializeField] private GamePauseSO gamePause;
 
     private void Awake()
     {
@@ -23,13 +23,13 @@ public class LockManager : MonoBehaviour, IInteractable
 
     private void InputsReaderOnOnPlayerInteract()
     {
-        if (isPlayerInRange)
+        if (gamePause.isPlayerInRange)
             lockPuzzle.InitPuzzle();
     }
 
     public void ReadyToInteract(bool ans)
     {
-        isPlayerInRange = ans;
+        gamePause.isPlayerInRange = ans;
     }
 
     public GameObject GetMsg()

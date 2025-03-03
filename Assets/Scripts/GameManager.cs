@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private PlayerInventory inventory;
+    [SerializeField] private GamePauseSO gamePauseSO;
     void Start()
     {
-        inventory.KeyRed = false;
-        inventory.KeyGreen = false;
-        inventory.KeyBlue = false;
-        inventory.KeyOrange = false;
-        inventory.KeyYellow = false;
+        gamePauseSO.isPause = false;
+        gamePauseSO.isPlayerInRange = false;
+        gamePauseSO.isPlayPuzzle = false;
     }
-
 }
