@@ -20,6 +20,7 @@ public class Lock_PuzzleManager : MonoBehaviour
     [SerializeField] private LockConvination selectedConvination;
     public bool isPuzzleActive = false;
     private Vector3 newRot = Vector3.zero;
+    private bool lastState;
     public Action OnPuzzleComplete;
     [SerializeField] private GamePauseSO gamePauseSO;
 
@@ -38,7 +39,9 @@ public class Lock_PuzzleManager : MonoBehaviour
         gamePauseSO.isPlayPuzzle = true;
         UI.SetActive(true);
         Lock.SetActive(true);
+        lastState = playerLight.activeInHierarchy;
         playerLight.SetActive(false);
+        
     }
 
     private void OnDisable()
@@ -47,7 +50,7 @@ public class Lock_PuzzleManager : MonoBehaviour
         playerMovementNav.CanMove = true;
         UI.SetActive(false);
         Lock.SetActive(false);
-        playerLight.SetActive(true);
+        playerLight.SetActive(lastState);
     }
 
     public void UpWheel(int wheelNumber)
