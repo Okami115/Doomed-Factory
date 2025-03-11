@@ -11,6 +11,7 @@ public class EndDoor : MonoBehaviour
     [SerializeField] private PlayerMovementNavMesh playerMovement;
     [SerializeField] private Transform taget;
     [SerializeField] private GameObject soundTaget;
+    [SerializeField] private Animator EndAnimation;
     private bool coroutineRunning = false;
 
     private void OnTriggerEnter(Collider other)
@@ -21,6 +22,7 @@ public class EndDoor : MonoBehaviour
             playerMovement.TPPlayer(taget);
             coroutineRunning = true;
             StartCoroutine(EndGame());
+            EndAnimation.SetTrigger("EndGame");
         }
     }
 
