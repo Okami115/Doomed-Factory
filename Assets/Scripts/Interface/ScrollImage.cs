@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class ScrollImage : MonoBehaviour
@@ -9,6 +10,7 @@ public class ScrollImage : MonoBehaviour
     [SerializeField] private float startDuration;
     [SerializeField] private float endDuration;
     [SerializeField] private Image FadeImage;
+    [FormerlySerializedAs("MainFadeImage")] [SerializeField] private mainFade mainMainFadeImage;
 
     [SerializeField] private GameObject CreditsOBJ;
 
@@ -50,26 +52,29 @@ public class ScrollImage : MonoBehaviour
         while (FadeImage.color.a < 1)
         {
             elapsedTime += Time.deltaTime;
-            float newAlpha = Mathf.Clamp01(elapsedTime / startDuration);
+            float newAlpha = Mathf.Clamp01(elapsedTime / endDuration);
 
             FadeImage.color = new Color(FadeImage.color.r, FadeImage.color.g, FadeImage.color.b, newAlpha);
 
             yield return null;
         }
-
+        
         StartScrolling = false;
         CreditsOBJ.SetActive(false);
+        mainMainFadeImage.startFade();
     }
 
     IEnumerator WaitForTheStart()
     {
+        
+        
         transform.position = startPosition;
         float elapsedTime = 0f;
 
         while (FadeImage.color.a > 0)
         {
             elapsedTime += Time.deltaTime;
-            float newAlpha = Mathf.Clamp01(1f - (elapsedTime / startDuration));
+            float newAlpha = Mathf.Clamp01(1f - (elapsedTime / (endDuration/2)));
 
             FadeImage.color = new Color(FadeImage.color.r, FadeImage.color.g, FadeImage.color.b, newAlpha);
 

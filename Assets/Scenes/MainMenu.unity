@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.079
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.093676664, g: 0.096323155, b: 0.0886785, a: 0.079}
+  m_IndirectSpecularColor: {r: 0.09367672, g: 0.0963232, b: 0.08867865, a: 0.079}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -19412,7 +19412,7 @@ GameObject:
   - component: {fileID: 678725811}
   - component: {fileID: 678725814}
   m_Layer: 5
-  m_Name: fade (1)
+  m_Name: mainFade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19488,6 +19488,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startGameDuration: 2
+  credits: {fileID: 940063274}
+  tutorialScreen: {fileID: 1212920471}
+  FadeImage: {fileID: 678725811}
 --- !u!1 &679614916
 GameObject:
   m_ObjectHideFlags: 0
@@ -21141,9 +21144,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2032542680}
-        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: PlayGame
+      - m_Target: {fileID: 678725814}
+        m_TargetAssemblyTypeName: mainFade, Assembly-CSharp
+        m_MethodName: playTutorialFade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21151,7 +21154,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &755978820
 MonoBehaviour:
@@ -30763,6 +30766,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b810d22e1ad1ea42bd056ae4745aa4c, type: 3}
+--- !u!1 &1212920466 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2862961844758570706, guid: 92ee64067da560a4795985ea3bfd9db1, type: 3}
+  m_PrefabInstance: {fileID: 5970434024654419028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1212920471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212920466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1e3bbc5000472190f9acffb4a5e0c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialScreen: {fileID: 1212920466}
+  startDuration: 2
+  endDuration: 2
+  FadeImage: {fileID: 1371227071}
+  mainFade: {fileID: 678725814}
 --- !u!43 &1216630436
 Mesh:
   m_ObjectHideFlags: 0
@@ -35128,6 +35153,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4738531242522992348, guid: 840afeab7b40c5a4b9736cdb5ee5617e, type: 3}
   m_PrefabInstance: {fileID: 616313435}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1371227071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2811910591764528746, guid: 92ee64067da560a4795985ea3bfd9db1, type: 3}
+  m_PrefabInstance: {fileID: 5970434024654419028}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1383757205
 GameObject:
   m_ObjectHideFlags: 0
@@ -57051,6 +57087,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1825245688797116925, guid: 4270f8241dba30c49bae06a9248f7df1, type: 3}
+      propertyPath: MainFadeImage
+      value: 
+      objectReference: {fileID: 678725814}
+    - target: {fileID: 1825245688797116925, guid: 4270f8241dba30c49bae06a9248f7df1, type: 3}
       propertyPath: durationStart
       value: 2
       objectReference: {fileID: 0}
@@ -57058,6 +57098,10 @@ PrefabInstance:
       propertyPath: startDuration
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1825245688797116925, guid: 4270f8241dba30c49bae06a9248f7df1, type: 3}
+      propertyPath: mainMainFadeImage
+      value: 
+      objectReference: {fileID: 678725814}
     - target: {fileID: 2861389127990454441, guid: 4270f8241dba30c49bae06a9248f7df1, type: 3}
       propertyPath: m_SizeDelta.x
       value: 274
@@ -57201,18 +57245,18 @@ PrefabInstance:
     - target: {fileID: 4941269650898909603, guid: 4270f8241dba30c49bae06a9248f7df1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 940063274}
+      objectReference: {fileID: 678725814}
     - target: {fileID: 4941269650898909603, guid: 4270f8241dba30c49bae06a9248f7df1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4941269650898909603, guid: 4270f8241dba30c49bae06a9248f7df1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartCreditsButton
+      value: playCreditsFade
       objectReference: {fileID: 0}
     - target: {fileID: 4941269650898909603, guid: 4270f8241dba30c49bae06a9248f7df1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ScrollImage, Assembly-CSharp
+      value: mainFade, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4941269650898909603, guid: 4270f8241dba30c49bae06a9248f7df1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -57824,18 +57868,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2811910591764528746, guid: 92ee64067da560a4795985ea3bfd9db1, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2862961844758570706, guid: 92ee64067da560a4795985ea3bfd9db1, type: 3}
       propertyPath: m_Name
       value: UI_Tutorial
       objectReference: {fileID: 0}
+    - target: {fileID: 2862961844758570706, guid: 92ee64067da560a4795985ea3bfd9db1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546340573124754252, guid: 92ee64067da560a4795985ea3bfd9db1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546340573124754252, guid: 92ee64067da560a4795985ea3bfd9db1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7546340573124754252, guid: 92ee64067da560a4795985ea3bfd9db1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2032542680}
+      objectReference: {fileID: 1212920471}
+    - target: {fileID: 7546340573124754252, guid: 92ee64067da560a4795985ea3bfd9db1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: endTutorialButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546340573124754252, guid: 92ee64067da560a4795985ea3bfd9db1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TutorialScreen, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546340573124754252, guid: 92ee64067da560a4795985ea3bfd9db1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2862961844758570706, guid: 92ee64067da560a4795985ea3bfd9db1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1212920471}
   m_SourcePrefab: {fileID: 100100000, guid: 92ee64067da560a4795985ea3bfd9db1, type: 3}
 --- !u!4 &6264378716547453626 stripped
 Transform:
