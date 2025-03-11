@@ -139695,7 +139695,7 @@ MonoBehaviour:
   playerMovement: {fileID: 1243848023}
   taget: {fileID: 88923020}
   soundTaget: {fileID: 887871295}
-  EndAnimation: {fileID: 0}
+  EndAnimation: {fileID: 64843114}
 --- !u!65 &1382339013
 BoxCollider:
   m_ObjectHideFlags: 0
